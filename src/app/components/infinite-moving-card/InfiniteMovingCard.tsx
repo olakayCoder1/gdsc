@@ -92,7 +92,7 @@ export const InfiniteMovingCards = ({
             >
                 {items.map((item, idx) => (
                     <li
-                        className="w-[320px] max-w-full relative rounded-2xl border-b-0 flex-shrink-0 md:w-[450px]"
+                        className="w-[320px] max-w-full relative rounded-2xl flex-shrink-0 md:w-[450px]"
                         key={`recap-image${idx}`}
                     >
                         <Image

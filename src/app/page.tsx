@@ -129,12 +129,16 @@ export default function Home() {
           </div>
         </div>
       
-        <div className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
+        <div className="flex flex-col antialiased items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
             items={testimonials}
             direction="right"
             speed="slow"
           />
+        </div>
+
+        <div>
+
         </div>
       </div>
     </>

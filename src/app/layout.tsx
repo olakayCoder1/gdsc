@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans">
         <ThemeProvider>
-          <main className="flex flex-col w-full">
+          <main className="flex flex-col w-full pb-[100px]">
             {children}
           </main>
         </ThemeProvider>
