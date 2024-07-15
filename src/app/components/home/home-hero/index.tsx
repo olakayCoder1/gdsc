@@ -6,7 +6,7 @@ import ConfettiContainer from "../../confetti/ConfettiContainer";
 
 const HomeHero = () => {
   return (
-    <section className="px-10 lg:px-20 bg-devfest-hero">
+    <section className="px-10 lg:px-20 bg-devfest-hero pt-10">
       <div className="container mx-auto flex flex-col items-center justify-center gap-2 z-10">
         <h1 className="text-wrap text-center mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-[74px]">
           Devfest Ilorin
