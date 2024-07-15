@@ -27,7 +27,7 @@ const buttonTheme = {
             border: `2px solid ${colors.primary.body}`,
             color: colors.primary.body,
             _hover: {
-                bg: props.colorMode === 'dark' ? '#ffffff5e' : '#ffffff5e',
+                bg: props.colorMode === 'dark' ? '#f7c7c7' : '#f7c7c7',
             },
             _active: {
                 bg: props.colorMode === 'dark' ? 'blue.400' : 'blue.700',

@@ -26,7 +26,7 @@ import OpenBracketImg from '@public/confetti/open-bracket.svg';
 import PlusImg from '@public/confetti/plus.svg';
 import { useEffect, useState } from 'react';
 
-const defaultSize = 150;
+const defaultSize = 120;
 
 type ConfettiImg = {
     src: string | StaticImageData;
@@ -46,21 +46,21 @@ const initialConfettiItems = {
         { src: CloseCurlyBraceImg, delay: 0.7, },
         { src: CommentImg, delay: 0.9, },
         { src: SemiColonImg, delay: 1.1, },
+        { src: SpeadImg, delay: 1.5, },
+        { src: SquareBracketImg, delay: 0.1, },
     ],
     row2: [
-        { src: MultiplyImg, delay: 1.3, },
-        { src: SpeadImg, delay: 1.5, },
         { src: EqualsImg, delay: 1.7, },
-        { src: DotImg, delay: 1.9, width: 70, height: 70 },
-        { src: SquareBracketImg, delay: 0.1, },
-        { src: HourGlassImg, delay: 0.3, },
-        { src: OpenQuoteImg, delay: 0.5, },
-        { src: ClosingQuoteImg, delay: 0.7, },
+        { src: DotImg, delay: 1.9, width: 32, height: 32 },
+        { src: MultiplyImg, delay: 1.3, },
+        { src: HourGlassImg, delay: 0.3, width: 200, height: 200 },
+        { src: OpenQuoteImg, delay: 0.5, width: 90, height: 90 },
         { src: ColonImg, delay: 0.9, },
         { src: GreatherThanImg, delay: 1.1, },
         { src: LessThanImg, delay: 1.3, },
         { src: OpenBracketImg, delay: 1.5, },
         { src: PlusImg, delay: 1.7, },
+        { src: ClosingQuoteImg, delay: 0.7, width: 75, height: 75 },
     ]
 };
 
@@ -117,7 +117,7 @@ const ConfettiContainer = (): JSX.Element => {
             initial="hidden"
             animate="visible"
         >
-            <div className="lg:max-w-[900px] mx-auto flex flex-row flex-wrap justify-center items-center relative w-full">
+            <div className="lg:max-w-[1200px] mx-auto flex flex-row flex-wrap justify-center items-center relative w-full">
                 {confettiItems.row1.map((item, index) => (
                     <Confetti
                         key={index}
@@ -130,7 +130,7 @@ const ConfettiContainer = (): JSX.Element => {
                     />  
                 ))}
             </div>
-            <div className="lg:max-w-[1200px] mx-auto flex flex-row flex-wrap justify-center items-center relative w-full">
+            <div className="mx-auto flex flex-row flex-wrap justify-center items-center relative w-full -top-10">
                 {confettiItems.row2.map((item, index) => (
                     <Confetti
                         key={index}
