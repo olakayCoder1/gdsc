@@ -1,6 +1,6 @@
-import speakers from "@/speakers";
-import DateAndLocation from "../components/date-and-location/DateAndLocation";
-import SpeakersCard from "../components/speakers-card";
+import speakers from "@/data/speakers";
+import DateAndLocation from "@component/date-and-location/DateAndLocation";
+import SpeakersCard from "@component/speakers-card";
 
 import devfestFrame from "@public/devfest-lanyard.png";
 import lanyard from "@public/icon/lanyard-white-bg.svg";
