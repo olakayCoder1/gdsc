@@ -5,36 +5,13 @@ import Link from "next/link";
 import { Button } from "@chakra-ui/react";
 import { BsArrowUpRight } from "react-icons/bs";
 import clsx from "clsx";
+import { menuLinks } from "@/data";
 
 export interface NavMenuProps {
   currentPath: "home" | "speakers" | "schedule" | "sponsors" | "team";
 }
 
-type MenuItem = {
-  title: string;
-  path: string;
-};
-
 export default function NavMenu({ currentPath = "home" }: NavMenuProps) {
-  const menuLinks: MenuItem[] = [
-    {
-      title: "Speakers",
-      path: "/speakers",
-    },
-    {
-      title: "Schedule",
-      path: "/schedule",
-    },
-    {
-      title: "Sponsors",
-      path: "/sponsors",
-    },
-    {
-      title: "Team",
-      path: "/team",
-    },
-  ];
-
   return (
     <nav className={currentPath === "home" ? "bg-devfest-hero" : "#F0F0F0"}>
       <div className="container mx-auto w-full flex flex-col lg:flex-row items-center px-10 lg:px-20 py-5 justify-between">
@@ -57,7 +34,7 @@ export default function NavMenu({ currentPath = "home" }: NavMenuProps) {
                 <li
                   key={link.path}
                   className={clsx({
-                    "text-devfest-markee border-b-2 border-devfest-markee":
+                    "text-devfest-active border-b-2 border-devfest-active":
                       currentPath.toLowerCase() === link.title.toLowerCase(),
                   })}
                 >

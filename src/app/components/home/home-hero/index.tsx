@@ -2,7 +2,7 @@ import { Button } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
-import ConfettiContainer from "../../confetti/ConfettiContainer";
+import ConfettiContainer from "@component/confetti/ConfettiContainer";
 
 const HomeHero = () => {
   return (
