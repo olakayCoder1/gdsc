@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ThemeProvider from "@/lib/providers/themeProvider";
+import Footer from "./components/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,9 +17,8 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans">
         <ThemeProvider>
-          <main className="flex flex-col w-full pb-[100px]">
-            {children}
-          </main>
+          <main className="flex flex-col w-full">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
