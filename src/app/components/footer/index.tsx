@@ -13,7 +13,7 @@ import Link from "next/link";
 const socials = [
   {
     icon: twitter,
-    link: "",
+    link: "https://x.com/gdgIlorin",
   },
   {
     icon: ig,

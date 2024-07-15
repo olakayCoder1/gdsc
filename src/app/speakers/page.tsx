@@ -1,25 +1,25 @@
 import DateAndLocation from "../components/date-and-location/DateAndLocation";
 import SpeakersCard from "../components/speakers-card";
 
-import devfestFrame from "../../../public/icon/devfest-frame.svg";
-import lanyard from "../../../public/icon/lanyard-white-bg.svg";
-import plus from "../../../public/plus.png";
+import devfestFrame from "/public/devfest-lanyard.png";
+import lanyard from "/public/icon/lanyard-white-bg.svg";
+import plus from "/public/plus.png";
 
 import { Button } from "@chakra-ui/react";
 import Image from "next/image";
 import { BsArrowUpRight } from "react-icons/bs";
-import ayotomide from "../../../public/speakers/ayotomide.png";
-import elizabeth from "../../../public/speakers/elizabeth.png";
-import goodness from "../../../public/speakers/goodness.png";
-import idris from "../../../public/speakers/idris.png";
-import jamiu from "../../../public/speakers/jamiu.png";
-import john from "../../../public/speakers/john.png";
-import kamaldeen from "../../../public/speakers/kamaldeen.png";
-import kolapo from "../../../public/speakers/kolapo.png";
-import samson from "../../../public/speakers/samson.png";
-import stephen from "../../../public/speakers/stephen.png";
-import temi from "../../../public/speakers/temi.png";
-import victoria from "../../../public/speakers/victoria.png";
+import ayotomide from "/public/speakers/ayotomide.png";
+import elizabeth from "/public/speakers/elizabeth.png";
+import goodness from "/public/speakers/goodness.png";
+import idris from "/public/speakers/idris.png";
+import jamiu from "/public/speakers/jamiu.png";
+import john from "/public/speakers/john.png";
+import kamaldeen from "/public/speakers/kamaldeen.png";
+import kolapo from "/public/speakers/kolapo.png";
+import samson from "/public/speakers/samson.png";
+import stephen from "/public/speakers/stephen.png";
+import temi from "/public/speakers/temi.png";
+import victoria from "/public/speakers/victoria.png";
 
 export const speakers = [
   {
