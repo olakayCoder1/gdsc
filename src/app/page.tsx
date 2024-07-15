@@ -1,50 +1,116 @@
-'use client'
+"use client";
 
-import Link from "next/link";
-import { Button, } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
+import Image from "next/image";
 import { BsArrowUpRight } from "react-icons/bs";
-import ConfettiContainer from "./components/confetti/ConfettiContainer";
-import NavMenu from "./components/menu/NavMenu";
-import EventRecapSection from "./components/event-recap/EventRecap";
-import SpeakerSection from "./components/speaker-section/SpeakerSection";
+import EventRecapSection from "./components/home/event-recap/EventRecap";
+import SpeakerSection from "./components/home/speaker-section";
+import SectionTitle from "./components/section-title";
+
+import sponsor1 from "/public/sponsor-1.png";
+import venue from "/public/venue.png";
+
+import CommunityPartners from "./components/home/community-partners";
+import HomeHero from "./components/home/home-hero";
+import partner1 from "/public/partners/partner-1.png";
+import {
+  default as partner2,
+  default as partner3,
+} from "/public/partners/partner-3.png";
+
+const sponsors = [sponsor1];
+const partners = [partner1, partner2, partner3];
 
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col min-h-[300px] bg-devfest-hero w-full px-10 lg:px-0">
-        <div className="lg:min-w-[1200px] mx-auto flex justify-center">
-          <NavMenu currentPath={'home'} />
-        </div>
-
-        <div className="lg:mt-[100px] flex flex-col items-center justify-center gap-2 z-10">
-          <h1 className="text-wrap text-center mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-[74px]">
-            Devfest Ilorin
-          </h1>
-          <h1 className="text-wrap text-center mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-[74px]">
-            2024
-          </h1>
-          <p className="text-wrap text-center lg:max-w-[912px] text-[18px] text-primary-gray">
-            Join us at DevFest Ilorin 2024 from October 17 to 19 for 3 days of inspiring talks, interactive workshops, and unparalleled networking opportunities.
-            With over 2,000 attendees, this event is your gateway to the latest in AI, Android, Cloud, and more.
-            Don’t miss out on Ilorin&apos;s largest tech celebration of the year!
-          </p>
-
-          <div className="flex flex-col lg:flex-row justify-between gap-5 px-10 lg:px-10 mt-5">
-            <Button as={Link} href={'#'} borderRadius={50} px={10} py={8}>
-              Register Now <BsArrowUpRight />
-            </Button>
-            <Button href={'#'} as={Link} variant={'outline-black'} borderRadius={50} px={10} py={8}>
-              Apply to Speak
-            </Button>
-          </div>
-        </div>
-
-        <ConfettiContainer />
-      </div>
+      <HomeHero />
 
       <EventRecapSection />
 
       <SpeakerSection />
+
+      <section className="bg-[#C3ECF6] py-10 lg:py-20">
+        <div className="px-10 lg:px-20 container mx-auto">
+          <SectionTitle title="Venue" size="lg" />
+
+          <div className="mt-10">
+            <h2 className="text-wrap text-center mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900">
+              Diamond Arena ( Diamond Park ), <br className="hidden lg:block" />{" "}
+              Ilorin, Kwara State.
+            </h2>
+
+            <Image src={venue} alt="venue" />
+          </div>
+
+          <div className="mt-10 flex justify-center">
+            <Button
+              borderRadius={50}
+              px={10}
+              py={8}
+              className="!bg-[#33A852] !text-white hover:opacity-80"
+            >
+              Register Now <BsArrowUpRight />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#CCF6C5] py-10 lg:py-20">
+        <div className="px-10 lg:px-20 container mx-auto">
+          <SectionTitle title="Sponsors" size="lg" />
+
+          <div className="grid lg:grid-cols-3 gap-10 mt-10">
+            {sponsors.map((sponsor, index) => (
+              <Image src={sponsor} key={index} alt={`sponsor-${index}`} />
+            ))}
+          </div>
+
+          <div className="mt-10 flex justify-end">
+            <Button
+              borderRadius={50}
+              px={10}
+              py={8}
+              className="!bg-primary-body !text-white hover:opacity-80"
+            >
+              Sponsor Us <BsArrowUpRight />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#FFE7A5] py-10 lg:py-20">
+        <div className="px-10 lg:px-20 container mx-auto">
+          <SectionTitle title="Partners" size="lg" />
+
+          <div className="grid lg:grid-cols-3 gap-10 mt-10">
+            {partners.map((partner, index) => (
+              <Image src={partner} key={index} alt={`sponsor-${index}`} />
+            ))}
+          </div>
+
+          <div className="mt-10 flex justify-end">
+            <Button
+              borderRadius={50}
+              px={10}
+              py={8}
+              className="!bg-primary-body !text-white hover:opacity-80"
+            >
+              Partner with Us <BsArrowUpRight />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <CommunityPartners />
+
+      <section className="bg-[#F0F0F0] py-10 lg:py-20">
+        <div className="px-10 lg:px-20 container mx-auto">
+          <SectionTitle title="Schedule" size="lg" />
+
+          <div className="grid lg:grid-cols-3 gap-10 mt-10"></div>
+        </div>
+      </section>
     </>
   );
 }
