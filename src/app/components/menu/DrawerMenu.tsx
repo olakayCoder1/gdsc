@@ -31,10 +31,9 @@ export default function DrawerMenu({ currentPath }: NavMenuProps) {
             <IconButton
                 ref={btnRef}
                 colorScheme='primary'
-                variant={'solid'}
+                variant={'ghost'}
                 onClick={onOpen} aria-label={''}
-                icon={<RiMenu3Line size={24} />}
-                height={12}
+                icon={<RiMenu3Line size={48} />}
                 width={12}
                 display={{base: 'flex', lg: 'none'}}
             />
@@ -55,6 +54,15 @@ export default function DrawerMenu({ currentPath }: NavMenuProps) {
                             divider={<StackDivider />}
                             className="flex flex-col items-center gap-10 font-medium overflow-x-auto"
                         >
+                            <li
+                                key={'home'}
+                                className={clsx({
+                                    "text-devfest-active border-b-2 border-devfest-active":
+                                        currentPath.toLowerCase() === 'home',
+                                })}
+                            >
+                                <Link href={'/'} onClick={onClose}>Home</Link>
+                            </li>
                             {menuLinks.map((link) => {
                                 return (
                                     <li
@@ -64,7 +72,7 @@ export default function DrawerMenu({ currentPath }: NavMenuProps) {
                                                 currentPath.toLowerCase() === link.title.toLowerCase(),
                                         })}
                                     >
-                                        <Link href={link.path}>{link.title}</Link>
+                                        <Link href={link.path} onClick={onClose}>{link.title}</Link>
                                     </li>
                                 );
                             })}
