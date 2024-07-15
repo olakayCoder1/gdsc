@@ -11,12 +11,14 @@ export const InfiniteMovingCards = ({
   speed = "fast",
   pauseOnHover = true,
   className,
+  render,
 }: {
   items: RecapItem[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
+  render?: boolean;
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
@@ -92,8 +94,10 @@ export const InfiniteMovingCards = ({
           >
             <Image
               src={item.src}
-              alt={""}
-              className="h-full w-full contain-content"
+              alt={`recap-image${idx}`}
+              className={`"h-full contain-content" ${
+                render ? "w-[200px]" : "w-full"
+              }`}
             />
           </li>
         ))}
