@@ -1,9 +1,9 @@
-import { speakers } from "@/app/speakers/page";
 import { Button } from "@chakra-ui/react";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 import SectionTitle from "../../section-title";
 import SpeakersCard from "../../speakers-card";
+import speakers from "@/speakers";
 
 export default function SpeakerSection() {
   return (
