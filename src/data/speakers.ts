@@ -1,3 +1,4 @@
+import { Speaker } from "@/types";
 import ayotomide from "/public/speakers/ayotomide.png";
 import elizabeth from "/public/speakers/elizabeth.png";
 import goodness from "/public/speakers/goodness.png";
@@ -11,7 +12,7 @@ import stephen from "/public/speakers/stephen.png";
 import temi from "/public/speakers/temi.png";
 import victoria from "/public/speakers/victoria.png";
 
-const speakers = [
+export const speakers: Speaker[] = [
   {
     image: samson,
     name: "Samson Goddy",
@@ -97,5 +98,3 @@ const speakers = [
     day: "conference",
   },
 ];
-
-export default speakers;

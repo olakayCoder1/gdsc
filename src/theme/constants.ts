@@ -5,7 +5,8 @@ export const colors = {
         venue: '#C3ECF6',
         sponsor: '#CCF6C5',
         partner: '#FFE7A5',
-        footer: '#1E1E1E'
+        footer: '#1E1E1E',
+        active: '#faab00'
     },
     primary: {
         DEFAULT: '#000000',

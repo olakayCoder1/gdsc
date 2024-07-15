@@ -1,6 +1,6 @@
 import React from "react";
-import SectionTitle from "../../section-title";
-import { InfiniteMovingCards } from "../../infinite-moving-card/InfiniteMovingCard";
+import SectionTitle from "@component/section-title";
+import { InfiniteMovingCards } from "@component/infinite-moving-card/InfiniteMovingCard";
 
 import gdscalhikma from "@public/community-partners/gdscalhikma.svg";
 import gdsckwarapoly from "@public/community-partners/gdsckwarapoly.svg";

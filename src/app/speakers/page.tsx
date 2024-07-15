@@ -1,10 +1,10 @@
-import speakers from "@/speakers";
-import DateAndLocation from "../components/date-and-location";
-import SpeakersCard from "../components/speakers-card";
+import { speakers } from "@/data";
+import DateAndLocation from "@component/date-and-location";
+import SpeakersCard from "@component/speakers-card";
 
-import devfestFrame from "/public/devfest-lanyard.png";
-import lanyard from "/public/icon/lanyard-white-bg.svg";
-import plus from "/public/plus.png";
+import devfestFrame from "@public/devfest-lanyard.png";
+import lanyard from "@public/icon/lanyard-white-bg.svg";
+import plus from "@public/plus.png";
 
 import { Button } from "@chakra-ui/react";
 import Image from "next/image";
