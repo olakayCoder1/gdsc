@@ -109,7 +109,7 @@ const ConfettiContainer = (): JSX.Element => {
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    })
+    }, [])
     return (
         <motion.div
             className="confetti relative lg:min-h-[300px]"

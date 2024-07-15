@@ -11,7 +11,8 @@ import {
     IconButton,
     Spacer,
     Stack,
-    StackDivider
+    StackDivider,
+    Text
 } from '@chakra-ui/react'
 import React, { useRef } from 'react'
 import { RiMenu3Line } from 'react-icons/ri'
@@ -61,7 +62,7 @@ export default function DrawerMenu({ currentPath }: NavMenuProps) {
                                         currentPath.toLowerCase() === 'home',
                                 })}
                             >
-                                <Link href={'/'} onClick={onClose}>Home</Link>
+                                <Link href={'/'} onClick={onClose} passHref prefetch={false}>Home</Link>
                             </li>
                             {menuLinks.map((link) => {
                                 return (
@@ -72,7 +73,9 @@ export default function DrawerMenu({ currentPath }: NavMenuProps) {
                                                 currentPath.toLowerCase() === link.title.toLowerCase(),
                                         })}
                                     >
-                                        <Link href={link.path} onClick={onClose}>{link.title}</Link>
+                                        <Link href={link.path} onClick={onClose} passHref prefetch={false}>
+                                            <Text>{link.title}</Text>
+                                        </Link>
                                     </li>
                                 );
                             })}
