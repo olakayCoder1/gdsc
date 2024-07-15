@@ -32,7 +32,11 @@ const socials = [
 const Footer = () => {
   return (
     <footer className="bg-devfest-footer p-4 flex flex-col items-center justify-center gap-10 py-20">
-      <Image src={logo} alt="gdg-ilorin-logo" className="w-[300px]" />
+      <Image
+        src={logo}
+        alt="gdg-ilorin-logo"
+        className="w-[250px] lg:w-[300px]"
+      />
       <Image src={lanyard} alt="lanyard" className="w-[300px]" />
       <div className="flex items-center gap-6">
         {socials.map((social, index) => (

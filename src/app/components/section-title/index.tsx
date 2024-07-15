@@ -17,7 +17,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ title, size }) => {
       >
         {title}
       </h1>
-      <Image src={devfestFrame} alt="devfest-frame" className="lg:w-[70%]" />
+      <Image src={devfestFrame} alt="devfest-frame" className="lg:w-[75%]" />
     </div>
   );
 };

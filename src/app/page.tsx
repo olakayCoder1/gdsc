@@ -7,7 +7,7 @@ import EventRecapSection from "./components/home/event-recap/EventRecap";
 import SpeakerSection from "./components/home/speaker-section";
 import SectionTitle from "./components/section-title";
 
-import sponsor1 from "/public/sponsor-1.png";
+import sponsor1 from "/public/sponsors/sponsor-1.png";
 import venue from "/public/venue.png";
 
 import CommunityPartners from "./components/home/community-partners";
@@ -17,6 +17,7 @@ import {
   default as partner2,
   default as partner3,
 } from "/public/partners/partner-3.png";
+import Schedule from "./components/schedule";
 
 const sponsors = [sponsor1];
 const partners = [partner1, partner2, partner3];
@@ -31,7 +32,7 @@ export default function Home() {
       <SpeakerSection />
 
       <section className="bg-[#C3ECF6] py-10 lg:py-20">
-        <div className="px-10 lg:px-20 container mx-auto">
+        <div className="px-4 lg:px-20 container mx-auto">
           <SectionTitle title="Venue" size="lg" />
 
           <div className="mt-10">
@@ -57,7 +58,7 @@ export default function Home() {
       </section>
 
       <section className="bg-[#CCF6C5] py-10 lg:py-20">
-        <div className="px-10 lg:px-20 container mx-auto">
+        <div className="px-4 lg:px-20 container mx-auto">
           <SectionTitle title="Sponsors" size="lg" />
 
           <div className="grid lg:grid-cols-3 gap-10 mt-10">
@@ -80,7 +81,7 @@ export default function Home() {
       </section>
 
       <section className="bg-[#FFE7A5] py-10 lg:py-20">
-        <div className="px-10 lg:px-20 container mx-auto">
+        <div className="px-4 lg:px-20 container mx-auto">
           <SectionTitle title="Partners" size="lg" />
 
           <div className="grid lg:grid-cols-3 gap-10 mt-10">
@@ -104,13 +105,7 @@ export default function Home() {
 
       <CommunityPartners />
 
-      <section className="bg-[#F0F0F0] py-10 lg:py-20">
-        <div className="px-10 lg:px-20 container mx-auto">
-          <SectionTitle title="Schedule" size="lg" />
-
-          <div className="grid lg:grid-cols-3 gap-10 mt-10"></div>
-        </div>
-      </section>
+      <Schedule />
     </>
   );
 }
