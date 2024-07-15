@@ -37,7 +37,7 @@ export default function NavMenu({ currentPath = "home" }: NavMenuProps) {
 
   return (
     <nav className={currentPath === "home" ? "bg-devfest-hero" : "#F0F0F0"}>
-      <div className="container mx-auto w-full flex flex-col lg:flex-row items-center px-10 lg:px-20 py-5 justify-between">
+      <div className="container mx-auto w-full flex flex-col lg:flex-row items-center px-4 lg:px-20 py-5 justify-between">
         <Link href={"/"}>
           <Image
             src={DevFestLogo}

@@ -34,7 +34,7 @@ const communityPartners = [
 const CommunityPartners = () => {
   return (
     <section className="bg-[#FFD427] py-10 lg:py-20">
-      <div className="px-10 lg:px-20 container mx-auto">
+      <div className="px-4 lg:px-20 container mx-auto">
         <SectionTitle title="Community Partners" />
       </div>
 
@@ -43,6 +43,7 @@ const CommunityPartners = () => {
           items={communityPartners}
           direction="right"
           speed="slow"
+          render
         />
       </div>
     </section>

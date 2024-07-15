@@ -47,7 +47,7 @@ const testimonials: RecapItem[] = [
 export default function EventRecapSection() {
   return (
     <section className="bg-devfest-markee py-10 space-y-10">
-      <div className="px-10 lg:px-20 container mx-auto">
+      <div className="px-4 lg:px-20 container mx-auto">
         <SectionTitle title="Previous Devfest Recaps:" />
       </div>
 

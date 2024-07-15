@@ -1,0 +1,53 @@
+import React from "react";
+import ScheduleCard from "./ScheduleCard";
+
+const schedule = [
+  {
+    day: 1,
+    type: "Workshop",
+    price: "Free",
+    description: "Full day of workshop in web, mobile, cloud, Design",
+    button: {
+      text: "Register Now",
+      link: "#register-now-link",
+    },
+    background: "#F8D8D8",
+    textColor: "#FF7DAF",
+  },
+  {
+    day: 2,
+    type: "Private Network",
+    price: "₦15,000",
+    description: "Full day of workshop in web, mobile, cloud, Design",
+    button: {
+      text: "Buy Ticket",
+      link: "#buy-ticket-link",
+    },
+    background: "#FFE7A5",
+    textColor: "#FFD427",
+  },
+  {
+    day: 3,
+    type: "Conference",
+    price: "Free",
+    description: "Full day of workshop in web, mobile, cloud, Design",
+    button: {
+      text: "Register Now",
+      link: "#register-now-link",
+    },
+    background: "#C3ECF6",
+    textColor: "#57CAFF",
+  },
+];
+
+const Schedule: React.FC = () => {
+  return (
+    <div className="grid lg:grid-cols-3 gap-10">
+      {schedule.map((item) => (
+        <ScheduleCard key={item.day} scheduleItem={item} />
+      ))}
+    </div>
+  );
+};
+
+export default Schedule;

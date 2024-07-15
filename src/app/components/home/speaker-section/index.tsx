@@ -8,7 +8,7 @@ import speakers from "@/speakers";
 export default function SpeakerSection() {
   return (
     <section className="bg-[#F0F0F0] py-10 lg:py-20">
-      <div className="px-10 lg:px-20 container mx-auto">
+      <div className="px-4 lg:px-20 container mx-auto">
         <SectionTitle title="Our speakers" size="lg" />
 
         <div className="grid lg:grid-cols-3 gap-10 mt-10">
