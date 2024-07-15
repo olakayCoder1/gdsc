@@ -7,7 +7,7 @@ import EventRecapSection from "./components/home/event-recap/EventRecap";
 import SpeakerSection from "./components/home/speaker-section";
 import SectionTitle from "./components/section-title";
 
-import sponsor1 from "/public/sponsor-1.png";
+import sponsor1 from "/public/sponsors/sponsor-1.png";
 import venue from "/public/venue.png";
 
 import CommunityPartners from "./components/home/community-partners";
@@ -105,15 +105,7 @@ export default function Home() {
 
       <CommunityPartners />
 
-      <section className="bg-[#F0F0F0] py-10 lg:py-20">
-        <div className="px-4 lg:px-20 container mx-auto">
-          <SectionTitle title="Schedule" size="lg" />
-
-          <div className="mt-10">
-            <Schedule />
-          </div>
-        </div>
-      </section>
+      <Schedule />
     </>
   );
 }

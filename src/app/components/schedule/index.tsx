@@ -1,5 +1,6 @@
 import React from "react";
 import ScheduleCard from "./ScheduleCard";
+import SectionTitle from "../section-title";
 
 const schedule = [
   {
@@ -42,11 +43,19 @@ const schedule = [
 
 const Schedule: React.FC = () => {
   return (
-    <div className="grid lg:grid-cols-3 gap-10">
-      {schedule.map((item) => (
-        <ScheduleCard key={item.day} scheduleItem={item} />
-      ))}
-    </div>
+    <section className="bg-[#F0F0F0] py-10 lg:py-20">
+      <div className="px-4 lg:px-20 container mx-auto">
+        <SectionTitle title="Schedule" size="lg" />
+
+        <div className="mt-10">
+          <div className="grid lg:grid-cols-3 gap-10">
+            {schedule.map((item) => (
+              <ScheduleCard key={item.day} scheduleItem={item} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
