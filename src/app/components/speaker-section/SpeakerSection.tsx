@@ -41,9 +41,9 @@ export default function SpeakerSection() {
                                   alt={""}
                                   className="h-full w-full contain-content"
                               />
-                              <div>
+                              <div className='flex flex-row flex-nowrap'>
                                   <h1 className="font-semibold text-lg">Speaker</h1>
-                                  <GdgIconset fontSize={1} />
+                                  <GdgIconset fontSize={16} gap={10} showTitle={false} />
                               </div>
                               <p>
                                   
