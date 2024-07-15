@@ -1,4 +1,4 @@
-import speakers from "@/data/speakers";
+import { speakers } from "@/data";
 import DateAndLocation from "@component/date-and-location/DateAndLocation";
 import SpeakersCard from "@component/speakers-card";
 

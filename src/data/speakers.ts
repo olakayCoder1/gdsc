@@ -12,7 +12,7 @@ import stephen from "/public/speakers/stephen.png";
 import temi from "/public/speakers/temi.png";
 import victoria from "/public/speakers/victoria.png";
 
-const speakers: Speaker[] = [
+export const speakers: Speaker[] = [
   {
     image: samson,
     name: "Samson Goddy",
@@ -98,5 +98,3 @@ const speakers: Speaker[] = [
     day: "conference",
   },
 ];
-
-export default speakers;

@@ -1,13 +1,9 @@
 "use client";
 
 import { cn } from "@/lib/util";
-import Image, { StaticImageData } from "next/image";
+import { RecapItem } from "@/types";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
-
-export type RecapItem = {
-  name: string;
-  src: string | StaticImageData;
-};
 
 export const InfiniteMovingCards = ({
   items,
@@ -25,11 +21,10 @@ export const InfiniteMovingCards = ({
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
 
-  useEffect(() => {
-    addAnimation();
-  }, []); //TODO: effect hook
+  useEffect(addAnimation, [addAnimation]);
 
   const [start, setStart] = useState(false);
+  
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);

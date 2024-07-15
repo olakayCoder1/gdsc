@@ -1,10 +1,14 @@
 "use client";
 import ThemeProvider from "@/lib/providers/themeProvider";
 import Footer from "./components/footer";
-import NavMenu, { NavMenuProps } from "./components/menu/NavMenu";
+import NavMenu from "./components/menu/NavMenu";
 import { usePathname } from "next/navigation";
 
-export function Providers({ children }: { children: React.ReactNode }) {
+interface ProvidersProp {
+  children: React.ReactNode
+}
+
+export function Providers({ children }: ProvidersProp) {
   const pathname = usePathname();
 
   const path = pathname === "/" ? "home" : pathname.replace(/\//ig, '');
