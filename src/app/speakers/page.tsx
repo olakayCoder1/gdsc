@@ -23,7 +23,7 @@ import stephen from "../../../public/speakers/stephen.png";
 import temi from "../../../public/speakers/temi.png";
 import victoria from "../../../public/speakers/victoria.png";
 
-const speakers = [
+export const speakers = [
   {
     image: samson,
     name: "Samson Goddy",
