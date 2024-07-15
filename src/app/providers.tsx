@@ -7,9 +7,7 @@ import { usePathname } from "next/navigation";
 export function Providers({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
-  console.log(pathname);
-
-  const path = pathname === "/" ? "home" : pathname;
+  const path = pathname === "/" ? "home" : pathname.replace(/\//ig, '');
 
   return (
     <ThemeProvider>
