@@ -1,5 +1,5 @@
 import { speakers } from "@/data";
-import DateAndLocation from "@component/date-and-location/DateAndLocation";
+import DateAndLocation from "@component/date-and-location";
 import SpeakersCard from "@component/speakers-card";
 
 import devfestFrame from "@public/devfest-lanyard.png";
@@ -12,7 +12,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 export default function SpeakersPage() {
   return (
-    <div className="px-10 lg:px-20 container mx-auto">
+    <div className="px-4 lg:px-20 container mx-auto">
       <section className="lg:w-[800px] mx-auto pt-10">
         <h1 className="text-wrap text-center mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-[74px]">
           Our Speakers
