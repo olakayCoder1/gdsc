@@ -1,5 +1,4 @@
 import React from "react";
-import NavMenu from "../components/menu/NavMenu";
 
 export default function SponsorsPage() {
   return (
