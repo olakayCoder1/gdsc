@@ -34,8 +34,8 @@ export default function NavMenu({ currentPath = "home" }: NavMenuProps) {
                 <li
                   key={link.path}
                   className={clsx({
-                    "text-devfest-markee lg:text-[#4285F4]":
-                      currentPath.toLowerCase() === link.path.toLowerCase(),
+                    "text-devfest-active border-b-2 border-devfest-active":
+                      currentPath.toLowerCase() === link.title.toLowerCase(),
                   })}
                 >
                   <Link href={link.path}>{link.title}</Link>
