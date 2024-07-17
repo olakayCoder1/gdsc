@@ -7,16 +7,16 @@ import EventRecapSection from "./components/home/event-recap/EventRecap";
 import SpeakerSection from "./components/home/speaker-section";
 import SectionTitle from "./components/section-title";
 
-import sponsor1 from "/public/sponsors/sponsor-1.png";
-import venue from "/public/venue.png";
+import sponsor1 from "@public/sponsors/sponsor-1.png";
+import venue from "@public/venue.png";
 
 import CommunityPartners from "./components/home/community-partners";
 import HomeHero from "./components/home/home-hero";
-import partner1 from "/public/partners/partner-1.png";
+import partner1 from "@public/partners/partner-1.png";
 import {
   default as partner2,
   default as partner3,
-} from "/public/partners/partner-3.png";
+} from "@public/partners/partner-3.png";
 import Schedule from "./components/schedule";
 
 const sponsors = [sponsor1];

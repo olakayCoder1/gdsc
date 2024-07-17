@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-import logo from "/public/gdg-ilorin-logo.svg";
-import lanyard from "/public/icon/footer-lanyard.svg";
+import logo from "@public/gdg-ilorin-logo.svg";
+import lanyard from "@public/icon/footer-lanyard.svg";
 
-import twitter from "/public/icon/twitter.svg";
-import ig from "/public/icon/ig.svg";
-import fb from "/public/icon/fb.svg";
-import linkedin from "/public/icon/linkedin.svg";
+import twitter from "@public/icon/twitter.svg";
+import ig from "@public/icon/ig.svg";
+import fb from "@public/icon/fb.svg";
+import linkedin from "@public/icon/linkedin.svg";
 import Link from "next/link";
 
 const socials = [
