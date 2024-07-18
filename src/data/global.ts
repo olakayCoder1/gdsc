@@ -39,7 +39,7 @@ export const menuLinks: MenuItem[] = [
     },
     {
         title: "Team",
-        path: "/team",
+        path: "https://gdg.community.dev/gdg-ilorin/",
     },
 ];
 
