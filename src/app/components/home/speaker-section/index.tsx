@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 import SectionTitle from "@component/section-title";
 import SpeakersCard from "@component/speakers-card";
-import { speakers } from "@/data";
+import { ctaLinks, speakers } from "@/data";
 
 export default function SpeakerSection() {
   return (
@@ -19,6 +19,9 @@ export default function SpeakerSection() {
 
         <div className="mt-10 flex items-center gap-4 justify-end">
           <Button
+            as={Link}
+            href={ctaLinks.speak.link}
+            target="_blank"
             variant="outline"
             borderRadius={50}
             px={10}

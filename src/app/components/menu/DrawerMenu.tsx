@@ -18,7 +18,7 @@ import React, { useRef } from 'react'
 import { RiMenu3Line } from 'react-icons/ri'
 import MenuLinks from './MenuLinks'
 import { NavMenuProps } from './NavMenu'
-import { menuLinks } from '@/data'
+import { ctaLinks, menuLinks } from '@/data'
 import clsx from 'clsx'
 import Link from 'next/link'
 import { BsArrowUpRight } from 'react-icons/bs'
@@ -85,6 +85,9 @@ export default function DrawerMenu({ currentPath }: NavMenuProps) {
 
                     <DrawerFooter>
                         <Button
+                            as={Link}
+                            href={ctaLinks.register.link}
+                            target="_blank"
                             borderRadius={50}
                             px={10}
                             py={8}

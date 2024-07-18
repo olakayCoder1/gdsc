@@ -1,4 +1,4 @@
-import { menuLinks } from '@/data';
+import { ctaLinks, menuLinks } from '@/data';
 import React from 'react'
 import { NavMenuProps } from './NavMenu';
 import clsx from 'clsx';
@@ -27,6 +27,9 @@ export default function MenuLinks({ currentPath }: NavMenuProps) {
               })}
           </ul>
           <Button
+              as={Link}
+              href={ctaLinks.register.link}
+              target="_blank"
               borderRadius={50}
               px={10}
               py={8}

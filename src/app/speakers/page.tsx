@@ -1,4 +1,4 @@
-import { speakers } from "@/data";
+import { ctaLinks, speakers } from "@/data";
 import DateAndLocation from "@component/date-and-location";
 import SpeakersCard from "@component/speakers-card";
 
@@ -9,6 +9,7 @@ import plus from "@public/plus.png";
 import { Button } from "@chakra-ui/react";
 import Image from "next/image";
 import { BsArrowUpRight } from "react-icons/bs";
+import Link from "next/link";
 
 export default function SpeakersPage() {
   return (
@@ -55,6 +56,9 @@ export default function SpeakersPage() {
 
               <div className="flex justify-center mt-4">
                 <Button
+                  as={Link}
+                  href={ctaLinks.speak.link}
+                  target="_blank"
                   borderRadius={50}
                   px={10}
                   py={8}

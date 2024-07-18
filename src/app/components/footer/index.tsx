@@ -1,33 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
-import logo from "/public/gdg-ilorin-logo.svg";
-import lanyard from "/public/icon/footer-lanyard.svg";
+import logo from "@public/gdg-ilorin-logo.svg";
+import lanyard from "@public/icon/footer-lanyard.svg";
 
-import twitter from "/public/icon/twitter.svg";
-import ig from "/public/icon/ig.svg";
-import fb from "/public/icon/fb.svg";
-import linkedin from "/public/icon/linkedin.svg";
 import Link from "next/link";
-
-const socials = [
-  {
-    icon: twitter,
-    link: "https://x.com/gdgIlorin",
-  },
-  {
-    icon: ig,
-    link: "",
-  },
-  {
-    icon: fb,
-    link: "",
-  },
-  {
-    icon: linkedin,
-    link: "",
-  },
-];
+import { socialLinks } from "@/data";
 
 const Footer = () => {
   return (
@@ -39,7 +17,7 @@ const Footer = () => {
       />
       <Image src={lanyard} alt="lanyard" className="w-[300px]" />
       <div className="flex items-center gap-6">
-        {socials.map((social, index) => (
+        {socialLinks.map((social, index) => (
           <Link
             key={index}
             className="bg-white rounded-full hover:bg-[#F9AB00] transition"

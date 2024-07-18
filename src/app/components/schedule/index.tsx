@@ -1,6 +1,7 @@
 import React from "react";
 import ScheduleCard from "./ScheduleCard";
 import SectionTitle from "../section-title";
+import { ctaLinks } from "@/data";
 
 const schedule = [
   {
@@ -10,7 +11,7 @@ const schedule = [
     description: "Full day of workshop in web, mobile, cloud, Design",
     button: {
       text: "Register Now",
-      link: "#register-now-link",
+      link: ctaLinks.register.link,
     },
     background: "#F8D8D8",
     textColor: "#FF7DAF",
@@ -22,7 +23,7 @@ const schedule = [
     description: "Full day of workshop in web, mobile, cloud, Design",
     button: {
       text: "Buy Ticket",
-      link: "#buy-ticket-link",
+      link: ctaLinks.ticket.link
     },
     background: "#FFE7A5",
     textColor: "#FFD427",
@@ -34,7 +35,7 @@ const schedule = [
     description: "Full day of workshop in web, mobile, cloud, Design",
     button: {
       text: "Register Now",
-      link: "#register-now-link",
+      link: ctaLinks.register.link,
     },
     background: "#C3ECF6",
     textColor: "#57CAFF",

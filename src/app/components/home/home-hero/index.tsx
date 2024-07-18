@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import ConfettiContainer from "@component/confetti/ConfettiContainer";
+import { ctaLinks } from "@/data";
 
 const HomeHero = () => {
   return (
@@ -23,12 +24,20 @@ const HomeHero = () => {
         </p>
 
         <div className="flex flex-col lg:flex-row justify-between gap-5 px-10 lg:px-10 mt-5">
-          <Button as={Link} href={"#"} borderRadius={50} px={10} py={8}>
+          <Button
+            as={Link}
+            href={ctaLinks.register.link}
+            target="_blank"
+            borderRadius={50}
+            px={10}
+            py={8}
+          >
             Register Now <BsArrowUpRight />
           </Button>
           <Button
-            href={"#"}
             as={Link}
+            href={ctaLinks.speak.link}
+            target="_blank"
             variant={"outline-black"}
             borderRadius={50}
             px={10}
