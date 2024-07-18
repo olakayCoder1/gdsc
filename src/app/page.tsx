@@ -7,17 +7,17 @@ import EventRecapSection from "./components/home/event-recap/EventRecap";
 import SpeakerSection from "./components/home/speaker-section";
 import SectionTitle from "./components/section-title";
 
-import sponsor1 from "/public/sponsors/sponsor-1.png";
-import venue from "/public/venue.png";
+import sponsor1 from "@public/sponsors/sponsor-1.png";
+import venue from "@public/venue.png";
 
 import CommunityPartners from "./components/home/community-partners";
 import HomeHero from "./components/home/home-hero";
-import partner1 from "/public/partners/partner-1.png";
-import {
-  default as partner2,
-  default as partner3,
-} from "/public/partners/partner-3.png";
+import partner1 from "@public/partners/partner-1.png";
+import partner2 from "@public/partners/partner-2.png";
+import partner3 from "@public/partners/partner-3.png";
 import Schedule from "./components/schedule";
+import Link from "next/link";
+import { ctaLinks } from "@/data";
 
 const sponsors = [sponsor1];
 const partners = [partner1, partner2, partner3];
@@ -46,6 +46,9 @@ export default function Home() {
 
           <div className="mt-10 flex justify-center">
             <Button
+              as={Link}
+              href={ctaLinks.register.link}
+              target="_blank"
               borderRadius={50}
               px={10}
               py={8}
@@ -69,6 +72,9 @@ export default function Home() {
 
           <div className="mt-10 flex justify-end">
             <Button
+              as={Link}
+              href={ctaLinks.sponsor.link}
+              target="_blank"
               borderRadius={50}
               px={10}
               py={8}
@@ -92,6 +98,9 @@ export default function Home() {
 
           <div className="mt-10 flex justify-end">
             <Button
+              as={Link}
+              href={ctaLinks.partner.link}
+              target="_blank"
               borderRadius={50}
               px={10}
               py={8}

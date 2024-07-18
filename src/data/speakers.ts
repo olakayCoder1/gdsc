@@ -1,16 +1,16 @@
 import { Speaker } from "@/types";
-import ayotomide from "/public/speakers/ayotomide.png";
-import elizabeth from "/public/speakers/elizabeth.png";
-import goodness from "/public/speakers/goodness.png";
-import idris from "/public/speakers/idris.png";
-import jamiu from "/public/speakers/jamiu.png";
-import john from "/public/speakers/john.png";
-import kamaldeen from "/public/speakers/kamaldeen.png";
-import kolapo from "/public/speakers/kolapo.png";
-import samson from "/public/speakers/samson.png";
-import stephen from "/public/speakers/stephen.png";
-import temi from "/public/speakers/temi.png";
-import victoria from "/public/speakers/victoria.png";
+import ayotomide from "@public/speakers/ayotomide.png";
+import elizabeth from "@public/speakers/elizabeth.png";
+import goodness from "@public/speakers/goodness.png";
+import idris from "@public/speakers/idris.png";
+import jamiu from "@public/speakers/jamiu.png";
+import john from "@public/speakers/john.png";
+import kamaldeen from "@public/speakers/kamaldeen.png";
+import kolapo from "@public/speakers/kolapo.png";
+import samson from "@public/speakers/samson.png";
+import stephen from "@public/speakers/stephen.png";
+import temi from "@public/speakers/temi.png";
+import victoria from "@public/speakers/victoria.png";
 
 export const speakers: Speaker[] = [
   {

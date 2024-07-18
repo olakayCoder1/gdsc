@@ -1,3 +1,3 @@
 export * from "./speakers";
-export * from "./menu";
 export * from "./event";
+export * from "./global";
