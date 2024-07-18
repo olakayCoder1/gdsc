@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "@chakra-ui/react";
 import { BsArrowUpRight } from "react-icons/bs";
-import lanyard from "/public/icon/lanyard-white-bg.svg";
+import lanyard from "@public/icon/lanyard-white-bg.svg";
 
 type ScheduleItem = {
   day: number;
