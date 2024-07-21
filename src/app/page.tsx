@@ -36,7 +36,7 @@ export default function Home() {
           <SectionTitle title="Venue" size="lg" />
 
           <div className="mt-10">
-            <h2 className="text-wrap text-center mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900">
+            <h2 className="text-wrap text-center mb-6 text-2xl lg:text-4xl font-extrabold tracking-tight leading-none text-gray-900">
               Diamond Arena ( Diamond Park ), <br className="hidden lg:block" />{" "}
               Ilorin, Kwara State.
             </h2>
