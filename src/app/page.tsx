@@ -15,8 +15,9 @@ import HomeHero from "./components/home/home-hero";
 import partner1 from "@public/partners/partner-1.png";
 import partner2 from "@public/partners/partner-2.png";
 import partner3 from "@public/partners/partner-3.png";
-
 import Schedule from "./components/schedule";
+import Link from "next/link";
+import { ctaLinks } from "@/data";
 
 const sponsors = [sponsor1];
 const partners = [partner1, partner2, partner3];
@@ -35,7 +36,7 @@ export default function Home() {
           <SectionTitle title="Venue" size="lg" />
 
           <div className="mt-10">
-            <h2 className="text-wrap text-center mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900">
+            <h2 className="text-wrap text-center mb-6 text-2xl lg:text-4xl font-extrabold tracking-tight leading-none text-gray-900">
               Diamond Arena ( Diamond Park ), <br className="hidden lg:block" />{" "}
               Ilorin, Kwara State.
             </h2>
@@ -45,6 +46,9 @@ export default function Home() {
 
           <div className="mt-10 flex justify-center">
             <Button
+              as={Link}
+              href={ctaLinks.register.link}
+              target="_blank"
               borderRadius={50}
               px={10}
               py={8}
@@ -68,6 +72,9 @@ export default function Home() {
 
           <div className="mt-10 flex justify-end">
             <Button
+              as={Link}
+              href={ctaLinks.sponsor.link}
+              target="_blank"
               borderRadius={50}
               px={10}
               py={8}
@@ -91,6 +98,9 @@ export default function Home() {
 
           <div className="mt-10 flex justify-end">
             <Button
+              as={Link}
+              href={ctaLinks.partner.link}
+              target="_blank"
               borderRadius={50}
               px={10}
               py={8}

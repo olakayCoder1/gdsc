@@ -38,4 +38,10 @@ next-env.d.ts
 
 # remove firebase debug log
 firebase-debug.log
+<<<<<<< HEAD
 .firebase/
+=======
+.firebase
+# Local Netlify folder
+.netlify
+>>>>>>> b1dfcc46c7f797aa4d2af91ca89e650c3bbc3526

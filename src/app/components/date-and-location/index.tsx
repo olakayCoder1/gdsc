@@ -4,6 +4,8 @@ import layer from "@public/icon/dates_lanyard.svg";
 import Image from "next/image";
 import { Button } from "@chakra-ui/react";
 import { BsArrowUpRight } from "react-icons/bs";
+import Link from "next/link";
+import { ctaLinks } from "@/data";
 
 const DateAndLocation = () => {
   return (
@@ -17,6 +19,9 @@ const DateAndLocation = () => {
         <h2 className="font-bold text-4xl">October 17 - 19</h2>
 
         <Button
+          as={Link}
+          href={ctaLinks.register.link}
+          target="_blank"
           borderRadius={50}
           px={10}
           py={8}

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
 
-import GdgLogo from "@public/gdg-logo.svg"
-import GdgLogoThumbnailImage from "@public/sponsors/sponsor-1.png"
+import GdgLogo from "@public/gdg-logo.svg";
+import GdgLogoThumbnailImage from "@public/sponsors/sponsor-1.png";
 
 const appName = process.env.NEXT_PUBLIC_APP_NAME ?? "DevFest Ilorin 2024";
 const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "DevFest Ilorin 2024";
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: GdgLogoThumbnailImage.src,
-        alt: imageAlt
+        alt: imageAlt,
       },
     ],
   },
@@ -63,13 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* fallbac favicon */}
-        <link
-          rel="icon"
-          href={GdgLogo.src}
-          type="image/png"
-          sizes="32x32"
-        />
+        <link rel="icon" href={GdgLogo.src} type="image/png" sizes="32x32" />
       </head>
       <body className="font-sans">
         <Providers>{children}</Providers>
