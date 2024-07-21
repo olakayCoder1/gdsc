@@ -13,10 +13,9 @@ import venue from "@public/venue.png";
 import CommunityPartners from "./components/home/community-partners";
 import HomeHero from "./components/home/home-hero";
 import partner1 from "@public/partners/partner-1.png";
-import {
-  default as partner2,
-  default as partner3,
-} from "@public/partners/partner-3.png";
+import partner2 from "@public/partners/partner-2.png";
+import partner3 from "@public/partners/partner-3.png";
+
 import Schedule from "./components/schedule";
 
 const sponsors = [sponsor1];

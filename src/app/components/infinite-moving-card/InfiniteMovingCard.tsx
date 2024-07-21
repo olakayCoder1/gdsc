@@ -9,7 +9,7 @@ export const InfiniteMovingCards = ({
   items,
   direction = "left",
   speed = "fast",
-  pauseOnHover = true,
+  pauseOnHover = false,
   className,
   render,
 }: {
@@ -81,7 +81,7 @@ export const InfiniteMovingCards = ({
         ref={scrollerRef}
         className={cn(
           "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll ",
+          start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
@@ -93,9 +93,7 @@ export const InfiniteMovingCards = ({
             <Image
               src={item.src}
               alt={`recap-image${idx}`}
-              className={`"h-full contain-content" ${
-                render ? "w-[200px]" : "w-full"
-              }`}
+              className={`h-full ${render ? "w-[200px]" : "w-full"}`}
             />
           </li>
         ))}
