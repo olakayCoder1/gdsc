@@ -11,6 +11,7 @@ import samson from "@public/speakers/samson.png";
 import stephen from "@public/speakers/stephen.png";
 import temi from "@public/speakers/temi.png";
 import victoria from "@public/speakers/victoria.png";
+import elvis from "@public/speakers/elvis.png";
 
 export const speakers: Speaker[] = [
   {
@@ -73,6 +74,13 @@ export const speakers: Speaker[] = [
     image: kolapo,
     name: "Kolapo Imam",
     role: "Product Evangelist",
+    speakingType: "speaker",
+    day: "conference",
+  },
+  {
+    image: elvis,
+    name: "Elvis Obi",
+    role: "Product Designer WNDR",
     speakingType: "speaker",
     day: "conference",
   },
