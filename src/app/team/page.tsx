@@ -15,7 +15,7 @@ export default function TeamPage() {
 
         <p className="text-wrap text-center text-[18px] text-primary-gray font-bold">
           Organisers and volunteers Dedicated. Innovative. Passionate. Discover
-          the driving force behind Ilorin's largest tech event.
+          the driving force behind Ilorin&apos;s largest tech event.
         </p>
 
         <DateAndLocation />

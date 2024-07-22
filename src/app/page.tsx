@@ -75,6 +75,7 @@ export default function Home() {
                 href={sponsor.websiteLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                key={index}
               >
                 <Image src={sponsor.img} key={index} alt={`sponsor-${index}`} />
               </Link>
