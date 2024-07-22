@@ -19,7 +19,12 @@ import Schedule from "./components/schedule";
 import Link from "next/link";
 import { ctaLinks } from "@/data";
 
-const sponsors = [sponsor1];
+const sponsors = [
+  {
+    img: sponsor1,
+    websiteLink: "https://startuplist.africa/",
+  },
+];
 const partners = [partner1, partner2, partner3];
 
 export default function Home() {
@@ -66,7 +71,13 @@ export default function Home() {
 
           <div className="grid lg:grid-cols-3 gap-10 mt-10">
             {sponsors.map((sponsor, index) => (
-              <Image src={sponsor} key={index} alt={`sponsor-${index}`} />
+              <Link
+                href={sponsor.websiteLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={sponsor.img} key={index} alt={`sponsor-${index}`} />
+              </Link>
             ))}
           </div>
 

@@ -29,8 +29,15 @@ export default function SponsorsPage() {
       <section className="py-10 lg:py-20">
         <Image src={devfestFrame} alt="devfest-frame" />
 
-        <div className="mt-10 flex items-center justify-center">
-          <Image alt="sponsor" src={sponsor1} className="lg:w-[50%]" />
+        <div className="mt-10 flex items-center justify-center w-full">
+          <Link
+            href="https://startuplist.africa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center"
+          >
+            <Image alt="sponsor" src={sponsor1} className="lg:w-[50%]" />
+          </Link>
         </div>
 
         <div className="mt-6 flex items-center justify-center">

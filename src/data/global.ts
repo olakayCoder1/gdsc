@@ -24,22 +24,22 @@ export const socialLinks: SocialLinks[] = [
 ];
 
 export const menuLinks: MenuItem[] = [
-    {
-        title: "Speakers",
-        path: "/speakers",
-    },
-    {
-        title: "Schedule",
-        path: "/schedule",
-    },
-    {
-        title: "Sponsors",
-        path: "/sponsors",
-    },
-    {
-        title: "Team",
-        path: "https://gdg.community.dev/gdg-ilorin/",
-    },
+  {
+    title: "Speakers",
+    path: "/speakers",
+  },
+  {
+    title: "Schedule",
+    path: "/schedule",
+  },
+  {
+    title: "Sponsors",
+    path: "/sponsors",
+  },
+  {
+    title: "Team",
+    path: "/team",
+  },
 ];
 
 export const ctaLinks: Record<string, CtaLinks> = {
