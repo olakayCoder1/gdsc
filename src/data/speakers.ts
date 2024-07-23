@@ -12,6 +12,7 @@ import stephen from "@public/speakers/stephen.png";
 import temi from "@public/speakers/temi.png";
 import victoria from "@public/speakers/victoria.png";
 import elvis from "@public/speakers/elvis.png";
+import ozezuna from "@public/speakers/ozezuna.png";
 
 export const speakers: Speaker[] = [
   {
@@ -88,6 +89,13 @@ export const speakers: Speaker[] = [
     image: ayotomide,
     name: "Ayotomide (Czar)",
     role: "Flutter Developer GDE",
+    speakingType: "speaker",
+    day: "conference",
+  },
+  {
+    image: ozezuna,
+    name: "Ozenua Oluwatobi",
+    role: "Creaitive Designer",
     speakingType: "speaker",
     day: "conference",
   },
