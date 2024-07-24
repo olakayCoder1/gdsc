@@ -7,6 +7,7 @@ import sponsor1 from "@public/sponsors/sponsor-1.png";
 import { Button } from "@chakra-ui/react";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
+import { ctaLinks } from "@/data";
 
 export default function SponsorsPage() {
   return (
@@ -43,7 +44,7 @@ export default function SponsorsPage() {
         <div className="mt-6 flex items-center justify-center">
           <Button
             as={Link}
-            href=""
+            href={ctaLinks.sponsor.link}
             borderRadius={50}
             px={10}
             py={8}
