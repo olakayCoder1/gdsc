@@ -3,7 +3,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 import GdgLogo from "@public/gdg-logo.svg";
-import GdgLogoThumbnailImage from "@public/sponsors/sponsor-1.png";
+import GdgLogoThumbnailImage from "@public/devfest-social-meta.svg";
 
 const appName = process.env.NEXT_PUBLIC_APP_NAME ?? "DevFest Ilorin 2024";
 const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://devfestilorin.com/";
