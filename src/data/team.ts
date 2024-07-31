@@ -16,8 +16,10 @@ import aliyyah from "@public/team/aliyyah.png";
 import micheal from "@public/team/micheal.png";
 import faith from "@public/team/faith.png";
 import dejolas from "@public/team/dejolas.png";
-import ibrahim from "@public/team/ibrahim.png";
 import favour from "@public/team/favour.png";
+import timi from "@public/team/timi.png";
+import ibrahim from "@public/team/ibrahim.png";
+import platinum from "@public/team/platinum.png";
 
 export const team: Team[] = [
   {
@@ -89,7 +91,15 @@ export const team: Team[] = [
     name: "Favour",
   },
   {
+    image: timi,
+    name: "Timi",
+  },
+  {
     image: ibrahim,
-    name: "Ibrahim",
+    name: "Naasir",
+  },
+  {
+    image: platinum,
+    name: "Platinum",
   },
 ];

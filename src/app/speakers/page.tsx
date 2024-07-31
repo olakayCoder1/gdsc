@@ -39,7 +39,7 @@ export default function SpeakersPage() {
               and
             </div>
 
-            <div className="flex items-center justify-center py-20">
+            <div className="flex items-center justify-center py-20 h-[195px]">
               <Image src={plus} alt="plus" className="w-[80px]" />
             </div>
 
