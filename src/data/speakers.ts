@@ -13,6 +13,9 @@ import temi from "@public/speakers/temi.png";
 import victoria from "@public/speakers/victoria.png";
 import elvis from "@public/speakers/elvis.png";
 import ozezuna from "@public/speakers/ozezuna.png";
+import dara from "@public/speakers/dara.png";
+import adams from "@public/speakers/adams.png";
+import ahmed from "@public/speakers/ahmed.png";
 
 export const speakers: Speaker[] = [
   {
@@ -110,6 +113,27 @@ export const speakers: Speaker[] = [
     image: stephen,
     name: "Stephen Paul",
     role: "Seasonal Director Startup Grind",
+    speakingType: "speaker",
+    day: "conference",
+  },
+  {
+    image: dara,
+    name: "Dára Sọ́balójú",
+    role: "Product Designer",
+    speakingType: "speaker",
+    day: "conference",
+  },
+  {
+    image: adams,
+    name: "Abdulhakeem Adams",
+    role: "Visionary & Co-maker Sidebridge.io",
+    speakingType: "speaker",
+    day: "conference",
+  },
+  {
+    image: ahmed,
+    name: "Ahmed Olanrewaju",
+    role: "Software Engineering Lead Koins MFB",
     speakingType: "speaker",
     day: "conference",
   },
