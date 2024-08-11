@@ -1,6 +1,6 @@
 import React from "react";
-import DateAndLocation from "../components/date-and-location";
-import Schedule from "../components/schedule";
+import DateAndLocation from "@component/date-and-location";
+import Schedule from "@component/schedule";
 
 export default function SchedulePage() {
   return (

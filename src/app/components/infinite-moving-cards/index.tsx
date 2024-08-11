@@ -11,14 +11,14 @@ export const InfiniteMovingCards = ({
   speed = "fast",
   pauseOnHover = false,
   className,
-  render,
+  custom,
 }: {
   items: RecapItem[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
-  render?: boolean;
+  custom?: boolean;
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
@@ -80,7 +80,7 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex min-w-full shrink-0 py-4 w-max flex-nowrap items-center gap-8",
+          "flex shrink-0 py-4 w-full flex-nowrap items-center gap-8",
           start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
@@ -93,7 +93,9 @@ export const InfiniteMovingCards = ({
             <Image
               src={item.src}
               alt={`recap-image${idx}`}
-              className={`${render ? "w-[100px]" : "h-full w-full"}`}
+              className={`${
+                custom ? "h-[32px] w-[auto] object-fill" : "h-full w-full"
+              }`}
               unoptimized
             />
           </li>

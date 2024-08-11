@@ -7,37 +7,20 @@ import EventRecap from "./components/home/event-recap";
 import SpeakerSection from "./components/home/speaker-section";
 import SectionTitle from "./components/section-title";
 
-import sponsor1 from "@public/sponsors/sponsor-1.png";
-import sponsor2 from "@public/sponsors/sponsor-2.png";
-
 import sunset from "@public/icons/icon-sunset.svg";
-
 import mainVenue from "@public/venues/main-venue.png";
 import workshopVenue from "@public/venues/workshop-venue.png";
 import privateNetwork from "@public/venues/private-network.png";
 
 import CommunityPartners from "./components/home/community-partners";
 import HomeHero from "./components/home/home-hero";
-import partner1 from "@public/partners/partner-1.png";
-import partner2 from "@public/partners/partner-2.png";
-import partner3 from "@public/partners/partner-3.png";
-import partner4 from "@public/partners/partner-4.png";
+import { communityPartners, sponsors } from "@/data";
 
 import Schedule from "./components/schedule";
 import Link from "next/link";
 import { ctaLinks } from "@/data";
 
-const sponsors = [
-  {
-    img: sponsor1,
-    websiteLink: "https://startuplist.africa/",
-  },
-  {
-    img: sponsor2,
-    websiteLink: "https://malhub.org/",
-  },
-];
-const partners = [partner1, partner2, partner3, partner4];
+const partners = communityPartners.slice(0, 4);
 
 export default function Home() {
   return (
@@ -88,7 +71,7 @@ export default function Home() {
             py={8}
             className="!bg-[#FF7DAF] !text-white hover:opacity-80 flex items-center gap-2"
           >
-            Register Now
+            Buy Ticket
             <Image src={sunset} alt="sunset" className="w-[20px]" />
           </Button>
         </div>
@@ -101,7 +84,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 gap-10 mt-10">
             {sponsors.map((sponsor, index) => (
               <Link
-                href={sponsor.websiteLink}
+                href={sponsor.website}
                 target="_blank"
                 rel="noopener noreferrer"
                 key={index}
@@ -132,7 +115,7 @@ export default function Home() {
 
           <div className="grid lg:grid-cols-4 gap-10 mt-10">
             {partners.map((partner, index) => (
-              <Image src={partner} key={index} alt={`sponsor-${index}`} />
+              <Image src={partner.src} key={index} alt={`sponsor-${index}`} />
             ))}
           </div>
 
