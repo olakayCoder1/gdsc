@@ -1,6 +1,6 @@
 export interface IConfig {
     appEnv: 'development' | 'staging' | 'production';
-    nodeEnv: string | undefined;
-    appName: string | undefined;
-    appUrl: string | undefined;
+    nodeEnv: string;
+    appName: string;
+    appUrl: string;
 }

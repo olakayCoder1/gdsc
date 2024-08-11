@@ -4,16 +4,19 @@ import { Providers } from "./providers";
 
 import GdgLogo from "@public/gdg-logo.svg";
 import GdgLogoThumbnailImage from "@public/devfest-social-meta.svg";
+import config from "@/config";
 
-const appName = process.env.NEXT_PUBLIC_APP_NAME ?? "DevFest Ilorin 2024";
-const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://devfestilorin.com/";
+console.log(config.appName);
+
+const appName = config.appName;
+const appUrl = config.appUrl;
 const appMetaTitle = `${appName} - The Biggest Tech Conference In North Central`;
 const imageAlt = "Google Developer Group Ilorin";
 const appMetaDescription =
   "📢 The official DevFest Ilorin 2024 📢 Mark your calendars for October 17th - 19th, 2024. Don’t miss out on three incredible days of innovation, networking, Exclusive hangout and learning. Get your FREE TICKET now: https://bit.ly/devfestilorin24 #devfestilorin24 #DevFest2024 #devfest";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(appUrl ?? "https://devfestilorin.com/"),
+  metadataBase: new URL(appUrl),
   title: appMetaTitle,
   description: appMetaDescription,
   authors: {
