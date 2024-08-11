@@ -1,5 +1,5 @@
 import React from "react";
-import { InfiniteMovingCards } from "@component/infinite-moving-card/InfiniteMovingCard";
+import { InfiniteMovingCards } from "@/app/components/infinite-moving-cards";
 import SectionTitle from "@component/section-title";
 import { eventRecapShots } from "@/data";
 
@@ -14,7 +14,7 @@ export default function EventRecap() {
         <InfiniteMovingCards
           items={eventRecapShots}
           direction="right"
-          speed="slow"
+          speed="fast"
         />
       </div>
     </section>
