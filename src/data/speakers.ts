@@ -141,7 +141,7 @@ export const speakers: Speaker[] = [
   {
     image: ahmed,
     name: "Ahmed Olanrewaju",
-    role: "Software Engineering Lead Koins MFB",
+    role: "Software Product Engineer",
     speakingType: "speaker",
     day: "conference",
   },
