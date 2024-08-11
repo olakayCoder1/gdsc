@@ -16,6 +16,7 @@ import ozezuna from "@public/speakers/ozezuna.png";
 import dara from "@public/speakers/dara.png";
 import adams from "@public/speakers/adams.png";
 import ahmed from "@public/speakers/ahmed.png";
+import olamide from "@public/speakers/olamide.png";
 
 export const speakers: Speaker[] = [
   {
@@ -33,9 +34,16 @@ export const speakers: Speaker[] = [
     day: "conference",
   },
   {
+    image: olamide,
+    name: "Olamide Ilori",
+    role: "Frontend lead Prospa",
+    speakingType: "speaker",
+    day: "conference",
+  },
+  {
     image: kamaldeen,
     name: "Kamaldeen Yusuf",
-    role: "Managing Director Mubhub",
+    role: "Managing Director Malhub",
     speakingType: "speaker",
     day: "workshop",
   },

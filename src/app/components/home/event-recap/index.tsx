@@ -1,11 +1,9 @@
 import React from "react";
-import {
-  InfiniteMovingCards,
-} from "@component/infinite-moving-card/InfiniteMovingCard";
+import { InfiniteMovingCards } from "@component/infinite-moving-card/InfiniteMovingCard";
 import SectionTitle from "@component/section-title";
 import { eventRecapShots } from "@/data";
 
-export default function EventRecapSection() {
+export default function EventRecap() {
   return (
     <section className="bg-devfest-markee py-10 space-y-10">
       <div className="px-4 lg:px-20 container mx-auto">
