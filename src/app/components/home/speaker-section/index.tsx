@@ -4,15 +4,22 @@ import { BsArrowUpRight } from "react-icons/bs";
 import SectionTitle from "@component/section-title";
 import SpeakersCard from "@component/speakers-card";
 import { ctaLinks, speakers } from "@/data";
+import { Speaker } from "@/types";
 
 export default function SpeakerSection() {
+  const featuredSpeakers = [
+    speakers.find((speaker) => speaker.name === "Samson Goddy"),
+    speakers.find((speaker) => speaker.name === "Elizabeth Ali"),
+    speakers.find((speaker) => speaker.name === "Idris Ayoola"),
+  ] as Speaker[];
+
   return (
     <section className="bg-[#F0F0F0] py-10 lg:py-20">
       <div className="px-4 lg:px-20 container mx-auto">
         <SectionTitle title="Our speakers" size="lg" />
 
         <div className="grid lg:grid-cols-3 gap-10 mt-10">
-          {speakers.slice(0, 3).map((speaker, index) => (
+          {featuredSpeakers.slice(0, 3).map((speaker, index) => (
             <SpeakersCard {...speaker} key={index} />
           ))}
         </div>

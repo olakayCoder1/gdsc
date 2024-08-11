@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "@component/section-title";
-import { InfiniteMovingCards } from "@component/infinite-moving-card/InfiniteMovingCard";
+import { InfiniteMovingCards } from "@/app/components/infinite-moving-cards";
 
 import part1 from "@public/community-partners/partner-1.png";
 import part2 from "@public/community-partners/partner-2.png";
@@ -13,6 +13,7 @@ import part8 from "@public/community-partners/partner-8.png";
 import part9 from "@public/community-partners/partner-9.png";
 import part10 from "@public/community-partners/partner-10.png";
 import part11 from "@public/community-partners/partner-11.png";
+import part12 from "@public/community-partners/partner-12.png";
 
 const communityPartners = [
   {
@@ -48,6 +49,10 @@ const communityPartners = [
     src: part8,
   },
   {
+    name: "Partner 12",
+    src: part12,
+  },
+  {
     name: "Partner 9",
     src: part9,
   },
@@ -72,8 +77,8 @@ const CommunityPartners = () => {
         <InfiniteMovingCards
           items={communityPartners}
           direction="right"
-          speed="slow"
-          render
+          speed="fast"
+          custom
         />
       </div>
     </section>
