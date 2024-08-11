@@ -3,7 +3,7 @@ import DateAndLocation from "@component/date-and-location";
 import SpeakersCard from "@component/speakers-card";
 
 import devfestFrame from "@public/devfest-lanyard.png";
-import lanyard from "@public/icon/lanyard-white-bg.svg";
+import lanyard from "@public/icons/lanyard-white-bg.svg";
 import plus from "@public/plus.png";
 
 import { Button } from "@chakra-ui/react";
@@ -60,10 +60,9 @@ export default function SpeakersPage() {
                   href={ctaLinks.speak.link}
                   target="_blank"
                   borderRadius={50}
-                  px={10}
                   py={8}
                   display={{ base: "none", lg: "flex" }}
-                  className="!bg-primary-body !text-white hover:opacity-80"
+                  className="!bg-primary-body !text-white hover:opacity-80 flex items-center gap-2"
                 >
                   Apply to speak <BsArrowUpRight />
                 </Button>

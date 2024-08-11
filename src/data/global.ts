@@ -1,7 +1,7 @@
-import twitter from "@public/icon/twitter.svg";
-import ig from "@public/icon/ig.svg";
-import fb from "@public/icon/fb.svg";
-import linkedin from "@public/icon/linkedin.svg";
+import twitter from "@public/icons/twitter.svg";
+import ig from "@public/icons/ig.svg";
+import fb from "@public/icons/fb.svg";
+import linkedin from "@public/icons/linkedin.svg";
 import { CtaLinks, SocialLinks, MenuItem } from "@/types";
 
 export const socialLinks: SocialLinks[] = [

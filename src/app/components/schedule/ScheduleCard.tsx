@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "@chakra-ui/react";
 import { BsArrowUpRight } from "react-icons/bs";
-import lanyard from "@public/icon/lanyard-white-bg.svg";
+import lanyard from "@public/icons/lanyard-white-bg.svg";
 
 type ScheduleItem = {
   day: number;
@@ -62,7 +62,7 @@ const ScheduleCard: React.FC<ScheduleCardProps> = ({ scheduleItem }) => {
         borderRadius={50}
         px={8}
         py={8}
-        className={`!text-white hover:opacity-80 mt-4 ${
+        className={`!text-white hover:opacity-80 mt-4 flex items-center gap-2 ${
           button.text === "Buy Ticket" ? "!bg-[#EA4335]" : "!bg-[#136FDE]"
         }`}
       >

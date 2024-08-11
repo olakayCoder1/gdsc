@@ -1,6 +1,6 @@
 import React from "react";
 
-import layer from "@public/icon/dates_lanyard.svg";
+import layer from "@public/icons/dates_lanyard.svg";
 import Image from "next/image";
 import { Button } from "@chakra-ui/react";
 import { BsArrowUpRight } from "react-icons/bs";
@@ -23,9 +23,8 @@ const DateAndLocation = () => {
           href={ctaLinks.register.link}
           target="_blank"
           borderRadius={50}
-          px={10}
           py={8}
-          className="!bg-white !text-button hover:opacity-80"
+          className="!bg-white !text-button hover:opacity-80 flex items-center gap-2"
         >
           Register Now <BsArrowUpRight />
         </Button>
