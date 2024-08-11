@@ -1,20 +1,12 @@
 import React from "react";
 import devfestFrame from "@public/devfest-lanyard.png";
-import DateAndLocation from "../components/date-and-location";
+import DateAndLocation from "@component/date-and-location";
 import Image from "next/image";
 
 import { Button } from "@chakra-ui/react";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
-import { ctaLinks } from "@/data";
-
-import sponsor1 from "@public/sponsors/sponsor-1.png";
-import sponsor2 from "@public/sponsors/sponsor-2.png";
-
-const sponsors = [
-  { img: sponsor1, type: "platinum", website: "https://startuplist.africa" },
-  { img: sponsor2, type: "gold", website: "https://malhub.org" },
-];
+import { ctaLinks, sponsors } from "@/data";
 
 export default function SponsorsPage() {
   const renderSponsors = (type: string) => {

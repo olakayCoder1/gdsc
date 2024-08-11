@@ -13,3 +13,8 @@ export type SocialLinks = {
     icon: string | StaticImageData;
     link: string;
 }
+
+export interface ImageMeta {
+    name: string;
+    src: string | StaticImageData;
+}
