@@ -10,7 +10,7 @@ type TeamCardProps = {
 const TeamCard: React.FC<TeamCardProps> = ({ image, name }) => {
   return (
     <aside className="border-4 border-black rounded-xl relative">
-      <Image src={image} alt={name} className="rounded-t-lg w-full" />
+      <Image src={image} alt={name} className="rounded-t-lg w-full -mt-[1px]" />
 
       <div className="p-4 bg-white overflow-hidden rounded-b-xl">
         <div className="flex items-center justify-between">
