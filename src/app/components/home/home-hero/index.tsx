@@ -27,8 +27,8 @@ const HomeHero = () => {
             href={ctaLinks.register.link}
             target="_blank"
             borderRadius={50}
-            px={10}
             py={8}
+            className="flex items-center gap-2"
           >
             Register Now <BsArrowUpRight />
           </Button>
@@ -38,7 +38,6 @@ const HomeHero = () => {
             target="_blank"
             variant={"outline-black"}
             borderRadius={50}
-            px={10}
             py={8}
           >
             Apply to Speak

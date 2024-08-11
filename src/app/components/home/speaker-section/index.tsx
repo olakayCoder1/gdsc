@@ -17,14 +17,13 @@ export default function SpeakerSection() {
           ))}
         </div>
 
-        <div className="mt-10 flex items-center gap-4 justify-end">
+        <div className="mt-10 flex items-center gap-4 justify-center lg:justify-end">
           <Button
             as={Link}
             href={ctaLinks.speak.link}
             target="_blank"
             variant="outline"
             borderRadius={50}
-            px={10}
             py={8}
             className="border !border-primary-body !text-primary-body hover:opacity-80"
           >
@@ -35,9 +34,8 @@ export default function SpeakerSection() {
             as={Link}
             href="/speakers"
             borderRadius={50}
-            px={10}
             py={8}
-            className="!bg-primary-body !text-white hover:opacity-80"
+            className="!bg-primary-body !text-white hover:opacity-80 flex items-center gap-2"
           >
             View All <BsArrowUpRight />
           </Button>

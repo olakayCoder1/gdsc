@@ -3,13 +3,36 @@ import devfestFrame from "@public/devfest-lanyard.png";
 import DateAndLocation from "../components/date-and-location";
 import Image from "next/image";
 
-import sponsor1 from "@public/sponsors/sponsor-1.png";
 import { Button } from "@chakra-ui/react";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 import { ctaLinks } from "@/data";
 
+import sponsor1 from "@public/sponsors/sponsor-1.png";
+import sponsor2 from "@public/sponsors/sponsor-2.png";
+
+const sponsors = [
+  { img: sponsor1, type: "platinum", website: "https://startuplist.africa" },
+  { img: sponsor2, type: "gold", website: "https://malhub.org" },
+];
+
 export default function SponsorsPage() {
+  const renderSponsors = (type: string) => {
+    return sponsors
+      .filter((sponsor) => sponsor.type === type)
+      .map((sponsor, index) => (
+        <Link
+          key={index}
+          href={sponsor.website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className=""
+        >
+          <Image alt="sponsor" src={sponsor.img} className="" />
+        </Link>
+      ));
+  };
+
   return (
     <div className="px-4 lg:px-20 container mx-auto">
       <section className="lg:w-[800px] mx-auto pt-10">
@@ -30,15 +53,24 @@ export default function SponsorsPage() {
       <section className="py-10 lg:py-20">
         <Image src={devfestFrame} alt="devfest-frame" />
 
-        <div className="mt-10 flex items-center justify-center w-full">
-          <Link
-            href="https://startuplist.africa"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center"
-          >
-            <Image alt="sponsor" src={sponsor1} className="lg:w-[50%]" />
-          </Link>
+        <div className="space-y-10 mt-10">
+          <div>
+            <div className="p-2 rounded-full w-fit border-2 border-black text-primary-body font-semibold text-lg capitalize bg-[#FF7DAF]">
+              Platinum Sponsors
+            </div>
+            <div className="mt-4 grid lg:grid-cols-2">
+              {renderSponsors("platinum")}
+            </div>
+          </div>
+
+          <div>
+            <div className="p-2 rounded-full w-fit border-2 border-black text-primary-body font-semibold text-lg capitalize bg-[#FF7DAF]">
+              Gold Sponsors
+            </div>
+            <div className="mt-4 grid lg:grid-cols-3">
+              {renderSponsors("gold")}
+            </div>
+          </div>
         </div>
 
         <div className="mt-6 flex items-center justify-center">
@@ -46,9 +78,8 @@ export default function SponsorsPage() {
             as={Link}
             href={ctaLinks.sponsor.link}
             borderRadius={50}
-            px={10}
             py={8}
-            className="!bg-primary-body !text-white hover:opacity-80"
+            className="!bg-primary-body !text-white hover:opacity-80 flex items-center gap-2"
           >
             Sponsor Us <BsArrowUpRight />
           </Button>

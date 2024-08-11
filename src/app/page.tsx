@@ -3,18 +3,26 @@
 import { Button } from "@chakra-ui/react";
 import Image from "next/image";
 import { BsArrowUpRight } from "react-icons/bs";
-import EventRecapSection from "./components/home/event-recap/EventRecap";
+import EventRecap from "./components/home/event-recap";
 import SpeakerSection from "./components/home/speaker-section";
 import SectionTitle from "./components/section-title";
 
 import sponsor1 from "@public/sponsors/sponsor-1.png";
-import venue from "@public/venue.png";
+import sponsor2 from "@public/sponsors/sponsor-2.png";
+
+import sunset from "@public/icons/icon-sunset.svg";
+
+import mainVenue from "@public/venues/main-venue.png";
+import workshopVenue from "@public/venues/workshop-venue.png";
+import privateNetwork from "@public/venues/private-network.png";
 
 import CommunityPartners from "./components/home/community-partners";
 import HomeHero from "./components/home/home-hero";
 import partner1 from "@public/partners/partner-1.png";
 import partner2 from "@public/partners/partner-2.png";
 import partner3 from "@public/partners/partner-3.png";
+import partner4 from "@public/partners/partner-4.png";
+
 import Schedule from "./components/schedule";
 import Link from "next/link";
 import { ctaLinks } from "@/data";
@@ -24,44 +32,65 @@ const sponsors = [
     img: sponsor1,
     websiteLink: "https://startuplist.africa/",
   },
+  {
+    img: sponsor2,
+    websiteLink: "https://malhub.org/",
+  },
 ];
-const partners = [partner1, partner2, partner3];
+const partners = [partner1, partner2, partner3, partner4];
 
 export default function Home() {
   return (
     <>
       <HomeHero />
 
-      <EventRecapSection />
+      <EventRecap />
 
       <SpeakerSection />
 
       <section className="bg-[#C3ECF6] py-10 lg:py-20">
         <div className="px-4 lg:px-20 container mx-auto">
-          <SectionTitle title="Venue" size="lg" />
+          <SectionTitle title="Venues" size="lg" />
 
-          <div className="mt-10">
-            <h2 className="text-wrap text-center mb-6 text-2xl lg:text-4xl font-extrabold tracking-tight leading-none text-gray-900">
-              Diamond Arena ( Diamond Park ), <br className="hidden lg:block" />{" "}
-              Ilorin, Kwara State.
-            </h2>
+          <div className="mt-10 grid lg:grid-cols-3 gap-6 lg:gap-10">
+            <aside className="lg:col-span-2">
+              <Image
+                src={mainVenue}
+                alt="conference-day-venue"
+                className="w-full h-full flex flex-1"
+              />
+            </aside>
 
-            <Image src={venue} alt="venue" />
+            <aside className="flex flex-col gap-6">
+              <Image src={workshopVenue} alt="workshop-venue" />
+              <Image src={privateNetwork} alt="private-network" />
+            </aside>
           </div>
+        </div>
 
-          <div className="mt-10 flex justify-center">
-            <Button
-              as={Link}
-              href={ctaLinks.register.link}
-              target="_blank"
-              borderRadius={50}
-              px={10}
-              py={8}
-              className="!bg-[#33A852] !text-white hover:opacity-80"
-            >
-              Register Now <BsArrowUpRight />
-            </Button>
-          </div>
+        <div className="flex items-center justify-center gap-4 mt-10">
+          <Button
+            as={Link}
+            href={ctaLinks.register.link}
+            target="_blank"
+            borderRadius={50}
+            py={8}
+            className="!bg-[#33A852] !text-white hover:opacity-80 flex items-center gap-2"
+          >
+            Register Now <BsArrowUpRight />
+          </Button>
+
+          <Button
+            as={Link}
+            href={ctaLinks.ticket.link}
+            target="_blank"
+            borderRadius={50}
+            py={8}
+            className="!bg-[#FF7DAF] !text-white hover:opacity-80 flex items-center gap-2"
+          >
+            Register Now
+            <Image src={sunset} alt="sunset" className="w-[20px]" />
+          </Button>
         </div>
       </section>
 
@@ -88,9 +117,8 @@ export default function Home() {
               href={ctaLinks.sponsor.link}
               target="_blank"
               borderRadius={50}
-              px={10}
               py={8}
-              className="!bg-primary-body !text-white hover:opacity-80"
+              className="!bg-primary-body !text-white hover:opacity-80 flex items-center gap-2"
             >
               Sponsor Us <BsArrowUpRight />
             </Button>
@@ -102,7 +130,7 @@ export default function Home() {
         <div className="px-4 lg:px-20 container mx-auto">
           <SectionTitle title="Partners" size="lg" />
 
-          <div className="grid lg:grid-cols-3 gap-10 mt-10">
+          <div className="grid lg:grid-cols-4 gap-10 mt-10">
             {partners.map((partner, index) => (
               <Image src={partner} key={index} alt={`sponsor-${index}`} />
             ))}
@@ -114,9 +142,8 @@ export default function Home() {
               href={ctaLinks.partner.link}
               target="_blank"
               borderRadius={50}
-              px={10}
               py={8}
-              className="!bg-primary-body !text-white hover:opacity-80"
+              className="!bg-primary-body !text-white hover:opacity-80 flex items-center gap-2"
             >
               Partner with Us <BsArrowUpRight />
             </Button>
