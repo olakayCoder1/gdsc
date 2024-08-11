@@ -71,7 +71,7 @@ export const speakers: Speaker[] = [
   {
     image: john,
     name: "John Oba",
-    role: "Co-founder Startup list, Technical lead Ngcampus",
+    role: "Cofounder Startuplist Africa | Tech Lead NiyoGroup.",
     speakingType: "speaker",
     day: "conference",
   },
