@@ -6,8 +6,6 @@ import GdgLogo from "@public/gdg-logo.svg";
 import GdgLogoThumbnailImage from "@public/devfest-social-meta.svg";
 import config from "@/config";
 
-console.log(config.appName);
-
 const appName = config.appName;
 const appUrl = config.appUrl;
 const appMetaTitle = `${appName} - The Biggest Tech Conference In North Central`;
