@@ -29,7 +29,7 @@ export const speakers: Speaker[] = [
   {
     image: elizabeth,
     name: "Elizabeth Ali",
-    role: "Founder DesignJet.io",
+    role: "Founder DesignerUp",
     speakingType: "speaker",
     day: "conference",
   },
@@ -64,7 +64,7 @@ export const speakers: Speaker[] = [
   {
     image: jamiu,
     name: "Jamiu Okanlawon",
-    role: "Flutter Engineer Creatflor",
+    role: "Flutter Engineer OneRoof",
     speakingType: "speaker",
     day: "conference",
   },
@@ -113,7 +113,7 @@ export const speakers: Speaker[] = [
   {
     image: goodness,
     name: "Goodness Adebayo",
-    role: "UX Designer/UX Designer Ahavaelijah",
+    role: "UX Designer Ahavaplan",
     speakingType: "panelist",
     day: "conference",
   },
