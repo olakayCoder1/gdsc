@@ -111,9 +111,18 @@ export default function Home() {
         <div className="px-4 lg:px-20 container mx-auto">
           <SectionTitle title="Partners" size="lg" />
 
-          <div className="grid lg:grid-cols-4 gap-10 mt-10">
+          <div className="flex items-center justify-between flex-wrap gap-6 mt-10">
             {partners.map((partner, index) => (
-              <Image src={partner.src} key={index} alt={`sponsor-${index}`} />
+              <Image
+                src={partner.src}
+                key={index}
+                alt={`sponsor-${index}`}
+                className={
+                  index === 5
+                    ? "w-[50px] lg:w-[80px]"
+                    : "w-[110px] lg:w-[180px]"
+                }
+              />
             ))}
           </div>
 
