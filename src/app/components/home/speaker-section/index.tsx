@@ -27,14 +27,14 @@ export default function SpeakerSection() {
         <div className="mt-10 flex items-center gap-4 justify-center lg:justify-end">
           <Button
             as={Link}
-            href={ctaLinks.speak.link}
+            href={ctaLinks.ticket.link}
             target="_blank"
             variant="outline"
             borderRadius={50}
             py={8}
             className="border !border-primary-body !text-primary-body hover:opacity-80"
           >
-            Apply to speak
+            Buy Ticket
           </Button>
 
           <Button
