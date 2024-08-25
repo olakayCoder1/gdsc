@@ -34,7 +34,7 @@ export default function SpeakersPage() {
             <SpeakersCard {...speaker} key={index} />
           ))}
 
-          <aside className="border-4 border-black rounded-xl relative bg-white">
+          {/* <aside className="border-4 border-black rounded-xl relative bg-white">
             <div className="bg-[#57CAFF] p-2 rounded-full w-[70px] text-center absolute border-2 border-black top-2 left-2 text-primary-body">
               and
             </div>
@@ -68,7 +68,7 @@ export default function SpeakersPage() {
                 </Button>
               </div>
             </div>
-          </aside>
+          </aside> */}
         </div>
       </section>
 

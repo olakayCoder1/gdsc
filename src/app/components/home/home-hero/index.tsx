@@ -32,7 +32,7 @@ const HomeHero = () => {
           >
             Register Now <BsArrowUpRight />
           </Button>
-          <Button
+          {/* <Button
             as={Link}
             href={ctaLinks.speak.link}
             target="_blank"
@@ -41,7 +41,7 @@ const HomeHero = () => {
             py={8}
           >
             Apply to Speak
-          </Button>
+          </Button> */}
         </div>
       </div>
       <ConfettiContainer />
