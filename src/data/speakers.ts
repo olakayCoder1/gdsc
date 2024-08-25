@@ -28,7 +28,7 @@ export const speakers: Speaker[] = [
   },
   {
     image: elizabeth,
-    name: "Elizabeth Ali",
+    name: "Elizabeth Alli",
     role: "Founder DesignerUp",
     speakingType: "speaker",
     day: "conference",
@@ -49,7 +49,7 @@ export const speakers: Speaker[] = [
   },
   {
     image: idris,
-    name: "Idris Ayoola",
+    name: "Idris Olubisi",
     role: "Founder Web3Afrika",
     speakingType: "speaker",
     day: "conference",
