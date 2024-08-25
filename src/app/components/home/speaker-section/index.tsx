@@ -9,8 +9,8 @@ import { Speaker } from "@/types";
 export default function SpeakerSection() {
   const featuredSpeakers = [
     speakers.find((speaker) => speaker.name === "Samson Goddy"),
-    speakers.find((speaker) => speaker.name === "Elizabeth Ali"),
-    speakers.find((speaker) => speaker.name === "Idris Ayoola"),
+    speakers.find((speaker) => speaker.name === "Elizabeth Alli"),
+    speakers.find((speaker) => speaker.name === "Idris Olubisi"),
   ] as Speaker[];
 
   return (
