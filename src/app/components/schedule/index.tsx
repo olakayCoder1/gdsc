@@ -23,7 +23,7 @@ const schedule = [
     description: "Full day of workshop in web, mobile, cloud, Design",
     button: {
       text: "Buy Ticket",
-      link: ctaLinks.ticket.link
+      link: ctaLinks.ticket.link,
     },
     background: "#FFE7A5",
     textColor: "#FFD427",
@@ -32,7 +32,7 @@ const schedule = [
     day: 3,
     type: "Conference",
     price: "Free",
-    description: "Full day of workshop in web, mobile, cloud, Design",
+    description: "Full day of conference in web, mobile, cloud, Design",
     button: {
       text: "Register Now",
       link: ctaLinks.register.link,
