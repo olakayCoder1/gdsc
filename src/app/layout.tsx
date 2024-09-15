@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
 
-import GdgLogo from "@public/gdg-logo.svg";
-import GdgLogoThumbnailImage from "@public/devfest-social-meta.svg";
+import GdgLogo from "@public/gdg-logo.png";
 import config from "@/config";
 
 import thumbnail from "@public/devfest-social-meta.png";
@@ -30,7 +29,7 @@ export const metadata: Metadata = {
     description: appMetaDescription,
     images: [
       {
-        url: `${appUrl}/devfest-social-meta.png` || thumbnail.src,
+        url: `${appUrl}devfest-social-meta.png` || thumbnail.src,
         alt: imageAlt,
       },
     ],
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
     description: appMetaDescription,
     images: [
       {
-        url: GdgLogoThumbnailImage.src,
+        url: `${appUrl}devfest-social-meta.png` || thumbnail.src,
         alt: imageAlt,
       },
     ],
@@ -52,7 +51,7 @@ export const metadata: Metadata = {
   },
   icons: [
     {
-      url: GdgLogo.src,
+      url: `${appUrl}gdg-logo.png` || GdgLogo.src,
       type: "image/png",
       sizes: "32x32",
     },
