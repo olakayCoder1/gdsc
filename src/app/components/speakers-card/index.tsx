@@ -6,7 +6,6 @@ type SpeakersCardProps = {
   image: StaticImageData;
   name: string;
   role: string;
-  speakingType: string;
   day: string;
 };
 
@@ -14,14 +13,17 @@ const SpeakersCard: React.FC<SpeakersCardProps> = ({
   image,
   name,
   role,
-  speakingType,
   day,
 }) => {
   return (
     <aside className="border-4 border-black rounded-xl relative overflow-hidden">
       <div
-        className={`p-2 rounded-full w-fit absolute border-2 border-black top-2 left-2 text-primary-body capitalize ${
-          day === "workshop" ? "bg-[#5CDB6D]" : "bg-[#57CAFF]"
+        className={`p-2 px-4 rounded-full w-fit absolute border-2 border-black top-2 left-2 text-primary-body capitalize ${
+          day === "workshop"
+            ? "bg-[#5CDB6D]"
+            : day === "panelist"
+            ? "bg-[#FFE7A5]"
+            : "bg-[#57CAFF]"
         }`}
       >
         {day}
@@ -30,7 +32,7 @@ const SpeakersCard: React.FC<SpeakersCardProps> = ({
 
       <div className="p-4 bg-white rounded-b-xl h-full overflow-hidden">
         <div className="flex items-center justify-between">
-          <p className="text-button opacity-50 uppercase">{speakingType}</p>
+          <p className="text-button opacity-50 uppercase">SPEAKER</p>
           <Image src={lanyard} alt="lanyard" className="w-[70%]" />
         </div>
 
