@@ -6,6 +6,8 @@ import GdgLogo from "@public/gdg-logo.svg";
 import GdgLogoThumbnailImage from "@public/devfest-social-meta.svg";
 import config from "@/config";
 
+import thumbnail from "@public/devfest-social-meta.png";
+
 const appName = config.appName;
 const appUrl = config.appUrl;
 const appMetaTitle = `${appName} - The Biggest Tech Conference In North Central`;
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
     description: appMetaDescription,
     images: [
       {
-        url: GdgLogoThumbnailImage.src,
+        url: `${appUrl}/devfest-social-meta.png` || thumbnail.src,
         alt: imageAlt,
       },
     ],
