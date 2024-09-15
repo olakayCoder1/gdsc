@@ -38,6 +38,12 @@ import etine from "@public/speakers/etine.png";
 import habeeb from "@public/speakers/habeeb.png";
 import afolayan from "@public/speakers/afolayan.png";
 import taiye from "@public/speakers/taiye.png";
+import joshua from "@public/speakers/joshua.png";
+import alaran from "@public/speakers/alaran.png";
+import gabriel from "@public/speakers/gabriel.png";
+import tosin from "@public/speakers/tosin.png";
+import patrick from "@public/speakers/patrick.png";
+import areous from "@public/speakers/areous.png";
 
 export const speakers: Speaker[] = [
   {
@@ -181,7 +187,7 @@ export const speakers: Speaker[] = [
   {
     image: daniel,
     name: "Daniel Olowoniyi",
-    role: "Frontend Engineer",
+    role: "Software Engineer Alveum",
     day: "workshop",
   },
   {
@@ -272,6 +278,42 @@ export const speakers: Speaker[] = [
     image: taiye,
     name: "Abubakar Taiye",
     role: "Product Manager Prunedge",
+    day: "conference",
+  },
+  {
+    image: joshua,
+    name: "Joshua Olajide",
+    role: "Frontend Engineering Lead Resilience17",
+    day: "conference",
+  },
+  {
+    image: alaran,
+    name: "Alaran Khaerat",
+    role: "Content Creator Malhub",
+    day: "panelist",
+  },
+  {
+    image: gabriel,
+    name: "Gabriel Inyamah",
+    role: "Product Designer Andela",
+    day: "conference",
+  },
+  {
+    image: tosin,
+    name: "Tosin Yusuf",
+    role: "Frontend Engineer  Niyo Group",
+    day: "panelist",
+  },
+  {
+    image: patrick,
+    name: "Patrick Ojeh",
+    role: "Senior Frontend Engineer INITS",
+    day: "conference",
+  },
+  {
+    image: areous,
+    name: "Areous Ahmad",
+    role: "Product Designer Niyo Group",
     day: "conference",
   },
 ];
