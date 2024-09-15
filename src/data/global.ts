@@ -65,7 +65,7 @@ export const ctaLinks: Record<string, CtaLinks> = {
   },
   ticket: {
     title: "⁠Buy Ticket",
-    link: "https://tix.africa/devfestilr",
+    link: "https://tix.africa/devfest-ilorin-2024-day-2",
     isExternal: true,
   },
 };
