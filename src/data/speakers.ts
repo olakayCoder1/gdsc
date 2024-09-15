@@ -1,4 +1,5 @@
 import { Speaker } from "@/types";
+
 import ayotomide from "@public/speakers/ayotomide.png";
 import elizabeth from "@public/speakers/elizabeth.png";
 import goodness from "@public/speakers/goodness.png";
