@@ -36,7 +36,7 @@ const SpeakersCard: React.FC<SpeakersCardProps> = ({
           <Image src={lanyard} alt="lanyard" className="w-[70%]" />
         </div>
 
-        <h2 className="text-3xl font-bold mt-4 text-black">{name}</h2>
+        <h2 className="text-[1.6rem] font-bold mt-4 text-black">{name}</h2>
         <p className="font-light text-[14px]">{role}</p>
       </div>
     </aside>
