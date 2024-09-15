@@ -23,6 +23,21 @@ import olusegun from "@public/speakers/olusegun.png";
 import adigbole from "@public/speakers/adigbole.png";
 import johnson from "@public/speakers/johnson.png";
 import daniel from "@public/speakers/daniel.png";
+import tomiwa from "@public/speakers/tomiwa.png";
+import oluwaseyi from "@public/speakers/oluwaseyi.png";
+import collins from "@public/speakers/collins.png";
+import aliyu from "@public/speakers/aliyu.png";
+import mayowa from "@public/speakers/mayowa.png";
+import khalid from "@public/speakers/khalid.png";
+import azubuko from "@public/speakers/azubuko.png";
+import alimi from "@public/speakers/alimi.png";
+import samuel from "@public/speakers/samuel.png";
+import shalom from "@public/speakers/shalom.png";
+import abada from "@public/speakers/abada.png";
+import etine from "@public/speakers/etine.png";
+import habeeb from "@public/speakers/habeeb.png";
+import afolayan from "@public/speakers/afolayan.png";
+import taiye from "@public/speakers/taiye.png";
 
 export const speakers: Speaker[] = [
   {
@@ -168,5 +183,95 @@ export const speakers: Speaker[] = [
     name: "Daniel Olowoniyi",
     role: "Frontend Engineer",
     day: "workshop",
+  },
+  {
+    image: tomiwa,
+    name: "Tomiwa Idowu",
+    role: "Flutter Developer",
+    day: "workshop",
+  },
+  {
+    image: oluwaseyi,
+    name: "Oluwaseyi Ajadi",
+    role: "Quality Assurance Engineer & Penetration Tester",
+    day: "workshop",
+  },
+  {
+    image: collins,
+    name: "Collins Donye",
+    role: "Design Manager Rvysion",
+    day: "conference",
+  },
+  {
+    image: aliyu,
+    name: "Aliyu Rahmat",
+    role: "Social Innovator",
+    day: "panelist",
+  },
+  {
+    image: mayowa,
+    name: "Mayowa Bello",
+    role: "Software Engineer Swept",
+    day: "workshop",
+  },
+  {
+    image: khalid,
+    name: "Khalid Sulyman",
+    role: "UX engineer Tedbree",
+    day: "workshop",
+  },
+  {
+    image: azubuko,
+    name: "Uchechukwu Azubuko",
+    role: "Lead Frontend Engineer OneLiquidity",
+    day: "conference",
+  },
+  {
+    image: alimi,
+    name: "Qudirah Alimi",
+    role: "Machine Learning Engineer Arebak LLC",
+    day: "conference",
+  },
+  {
+    image: samuel,
+    name: "Samuel Afolabi",
+    role: "Cybersecurity Consultant",
+    day: "conference",
+  },
+  {
+    image: shalom,
+    name: "Shalom Bamigboye",
+    role: "CEO Entobo Technologies Limited",
+    day: "workshop",
+  },
+  {
+    image: abada,
+    name: "Samuel Abada",
+    role: "Lead mobile engineer Shuttlers Mobility",
+    day: "workshop",
+  },
+  {
+    image: etine,
+    name: "Etiene Essenoh",
+    role: "Software Engineer Sawport Inc Ltd",
+    day: "conference",
+  },
+  {
+    image: habeeb,
+    name: "Habeeb Azeez",
+    role: "Product Designer Moniepoint",
+    day: "conference",
+  },
+  {
+    image: afolayan,
+    name: "Afolayan Stephen",
+    role: "Community Advocate",
+    day: "conference",
+  },
+  {
+    image: taiye,
+    name: "Abubakar Taiye",
+    role: "Product Manager Prunedge",
+    day: "conference",
   },
 ];
