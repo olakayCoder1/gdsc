@@ -1,3 +1,5 @@
+"use client";
+
 import { ctaLinks, speakers } from "@/data";
 import DateAndLocation from "@component/date-and-location";
 import SpeakersCard from "@component/speakers-card";
@@ -10,8 +12,18 @@ import { Button } from "@chakra-ui/react";
 import Image from "next/image";
 import { BsArrowUpRight } from "react-icons/bs";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function SpeakersPage() {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const categories = ["All", "Conference", "Workshop", "Panelist"];
+
+  const filteredSpeakers = speakers.filter((speaker) => {
+    if (selectedCategory === "All") return true;
+    return speaker.day.toLowerCase() === selectedCategory.toLowerCase();
+  });
+
   return (
     <div className="px-4 lg:px-20 container mx-auto">
       <section className="lg:w-[800px] mx-auto pt-10">
@@ -29,10 +41,30 @@ export default function SpeakersPage() {
       </section>
 
       <section className="py-10 lg:py-20">
-        <div className="grid lg:grid-cols-3 gap-10">
-          {speakers.map((speaker, index) => (
-            <SpeakersCard {...speaker} key={index} />
+        <div className="flex flex-wrap gap-4 justify-center pt-6 pb-10">
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={`p-2 px-4 rounded-full ${
+                selectedCategory === category
+                  ? "bg-black text-white"
+                  : "bg-[#CACACA] text-[#1E1E1E] hover:opacity-80"
+              }`}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </button>
           ))}
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-10">
+          {filteredSpeakers.length > 0 ? (
+            filteredSpeakers.map((speaker, index) => (
+              <SpeakersCard {...speaker} key={index} />
+            ))
+          ) : (
+            <p className="text-center col-span-3">No speakers found.</p>
+          )}
 
           {/* <aside className="border-4 border-black rounded-xl relative bg-white">
             <div className="bg-[#57CAFF] p-2 rounded-full w-[70px] text-center absolute border-2 border-black top-2 left-2 text-primary-body">
@@ -72,9 +104,33 @@ export default function SpeakersPage() {
         </div>
       </section>
 
-      <section className="pb-10 lg:pb-20">
+      <section className="">
         <Image src={devfestFrame} alt="devfest-frame" />
       </section>
+
+      <div className="flex items-center justify-center gap-4 py-20">
+        <Button
+          as={Link}
+          href={ctaLinks.register.link}
+          target="_blank"
+          borderRadius={50}
+          py={8}
+          className="!bg-[#33A852] !text-white hover:opacity-80 flex items-center gap-2"
+        >
+          Register Now <BsArrowUpRight />
+        </Button>
+
+        <Button
+          as={Link}
+          href="/schedule"
+          borderRadius={50}
+          py={8}
+          className="!bg-[#2763E9] !text-white hover:opacity-80 flex items-center gap-2"
+        >
+          View Agenda
+          <BsArrowUpRight />
+        </Button>
+      </div>
     </div>
   );
 }

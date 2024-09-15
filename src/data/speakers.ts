@@ -17,132 +17,156 @@ import dara from "@public/speakers/dara.png";
 import adams from "@public/speakers/adams.png";
 import ahmed from "@public/speakers/ahmed.png";
 import olamide from "@public/speakers/olamide.png";
+import adeola from "@public/speakers/adeola.png";
+import precious from "@public/speakers/precious.png";
+import olusegun from "@public/speakers/olusegun.png";
+import adigbole from "@public/speakers/adigbole.png";
+import johnson from "@public/speakers/johnson.png";
+import daniel from "@public/speakers/daniel.png";
 
 export const speakers: Speaker[] = [
   {
     image: samson,
     name: "Samson Goddy",
     role: "Co-Founder OSCA",
-    speakingType: "speaker",
     day: "conference",
   },
   {
     image: elizabeth,
     name: "Elizabeth Alli",
     role: "Founder DesignerUp",
-    speakingType: "speaker",
     day: "conference",
   },
   {
     image: olamide,
     name: "Olamide Ilori",
     role: "Frontend lead Prospa",
-    speakingType: "speaker",
     day: "conference",
   },
   {
     image: kamaldeen,
     name: "Kamaldeen Yusuf",
     role: "Managing Director Malhub",
-    speakingType: "speaker",
     day: "workshop",
   },
   {
     image: idris,
     name: "Idris Olubisi",
     role: "Founder Web3Afrika",
-    speakingType: "speaker",
     day: "conference",
   },
   {
     image: victoria,
     name: "Victoria Abiodun",
     role: "Web3 IRL SuperTeam",
-    speakingType: "speaker",
     day: "conference",
   },
   {
     image: jamiu,
     name: "Jamiu Okanlawon",
     role: "Flutter Engineer OneRoof",
-    speakingType: "speaker",
     day: "conference",
   },
   {
     image: john,
     name: "John Oba",
     role: "Co-founder Startup list, Technical lead Niyogroup",
-    speakingType: "speaker",
     day: "conference",
   },
   {
     image: temi,
     name: "Temi Kolawole",
     role: "Managing Director Innovation Hub",
-    speakingType: "panelist",
-    day: "conference",
+    day: "panelist",
   },
   {
     image: kolapo,
     name: "Kolapo Imam",
     role: "Product Evangelist",
-    speakingType: "speaker",
+    day: "conference",
+  },
+  {
+    image: adeola,
+    name: "Olaleye Adeola",
+    role: "COO Consode",
     day: "conference",
   },
   {
     image: elvis,
     name: "Elvis Obi",
     role: "Product Designer WNDR",
-    speakingType: "speaker",
     day: "conference",
   },
   {
     image: ayotomide,
     name: "Ayotomide (Czar)",
     role: "Flutter Developer GDE",
-    speakingType: "speaker",
     day: "conference",
   },
   {
     image: ozezuna,
     name: "Ozenua Oluwatobi",
     role: "Creaitive Designer",
-    speakingType: "speaker",
     day: "conference",
   },
   {
     image: goodness,
     name: "Goodness Adebayo",
     role: "UX Designer Ahavaplan",
-    speakingType: "panelist",
-    day: "conference",
+    day: "panelist",
   },
   {
     image: stephen,
     name: "Stephen Paul",
     role: "Seasonal Director Startup Grind",
-    speakingType: "speaker",
     day: "conference",
   },
   {
     image: dara,
     name: "Dára Sọ́balójú",
     role: "Product Designer",
-    speakingType: "speaker",
     day: "conference",
   },
   {
     image: adams,
     name: "Abdulhakeem Adams",
     role: "Visionary & Co-maker Sidebridge.io",
-    speakingType: "speaker",
+    day: "conference",
+  },
+  {
+    image: precious,
+    name: "Omogoye Precious",
+    role: "UX/UI Designer HireMe",
     day: "conference",
   },
   {
     image: ahmed,
     name: "Ahmed Olanrewaju",
     role: "Software Product Engineer",
-    speakingType: "speaker",
     day: "conference",
+  },
+  {
+    image: olusegun,
+    name: "Olusegun Joe-Alabi",
+    role: "Snr Backend Developer Green Africa Airlines",
+    day: "conference",
+  },
+  {
+    image: adigbole,
+    name: "Adigbole Osisioni",
+    role: "Snr Product Designer Gigmile",
+    day: "workshop",
+  },
+  {
+    image: johnson,
+    name: "Aduragbemi Johnson",
+    role: "Marketing and Public Relation GDG Adoekiti",
+    day: "conference",
+  },
+  {
+    image: daniel,
+    name: "Daniel Olowoniyi",
+    role: "Frontend Engineer",
+    day: "workshop",
   },
 ];
