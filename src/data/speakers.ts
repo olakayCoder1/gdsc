@@ -165,7 +165,7 @@ export const speakers: Speaker[] = [
     image: ahmed,
     name: "Ahmed Olanrewaju",
     role: "Software Product Engineer",
-    day: "conference",
+    day: "workshop",
   },
   {
     image: olusegun,
@@ -237,7 +237,7 @@ export const speakers: Speaker[] = [
     image: alimi,
     name: "Qudirah Alimi",
     role: "Machine Learning Engineer Arebak LLC",
-    day: "conference",
+    day: "workshop",
   },
   {
     image: samuel,
@@ -279,7 +279,7 @@ export const speakers: Speaker[] = [
     image: taiye,
     name: "Abubakar Taiye",
     role: "Product Manager Prunedge",
-    day: "conference",
+    day: "panelist",
   },
   {
     image: joshua,
@@ -309,7 +309,7 @@ export const speakers: Speaker[] = [
     image: patrick,
     name: "Patrick Ojeh",
     role: "Senior Frontend Engineer INITS",
-    day: "conference",
+    day: "workshop",
   },
   {
     image: areous,
