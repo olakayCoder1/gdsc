@@ -27,9 +27,9 @@ const CropImage: React.FC<CropImageProps> = ({ onCroppedImage }) => {
       const file = e.target.files[0];
       const reader = new FileReader();
       reader.onload = () => {
-        // setSrc(reader.result as string);
-        setImage(reader.result as string);
-        // setCroppedImageUrl(null);
+        setImage(reader.result as string); // Set new image
+        setHideCropper(false); // Ensure cropper shows again
+        setImgUrl(null); // Reset previous cropped image
       };
       reader.readAsDataURL(file);
     }
@@ -59,6 +59,9 @@ const CropImage: React.FC<CropImageProps> = ({ onCroppedImage }) => {
 
   return (
     <div>
+      <label htmlFor="photo" className="text-[#111827] font-medium">
+        Photo
+      </label>
       <input
         style={{ display: "none" }}
         ref={inputRef}
@@ -100,7 +103,7 @@ const CropImage: React.FC<CropImageProps> = ({ onCroppedImage }) => {
           {!imgUrl ? (
             <div className="flex flex-col gap-2 justify-center items-center">
               <Image src={UploaderIcon} alt="icon" width={35} height={35} />
-              <div className="text-center font-semibold">
+              <div className="text-center">
                 Drag and drop to upload or <br />
                 <span className="text-[#34a853]">browse</span>
               </div>
