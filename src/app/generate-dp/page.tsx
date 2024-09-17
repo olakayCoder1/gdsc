@@ -1,45 +1,132 @@
 "use client";
-
-import { useRef, useState } from "react";
-import DateAndLocation from "../components/date-and-location";
-import CropImage from "../components/crop-image";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@chakra-ui/react";
+import CropImage from "../components/crop-image";
+import DateAndLocation from "../components/date-and-location";
+
+import blueImage from "@public/dp/blue.jpg";
+import yellowImage from "@public/dp/yellow.jpg";
+import redImage from "@public/dp/red.jpg";
+import greenImage from "@public/dp/green.jpg";
 
 const colors = [
-  { name: "Blue", value: "blue" },
-  { name: "Yellow", value: "yellow" },
-  { name: "Pink", value: "pink" },
-  { name: "Green", value: "green" },
+  { name: "Blue", value: "blue", image: blueImage.src },
+  { name: "Yellow", value: "yellow", image: yellowImage.src },
+  { name: "Red", value: "red", image: redImage.src },
+  { name: "Green", value: "green", image: greenImage.src },
 ];
 
 export default function GenerateDpPage() {
-  const inputRef = useRef<HTMLInputElement | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [name, setName] = useState("");
-  const [selectedColor, setSelectedColor] = useState("");
-  const [profilePicture, setProfilePicture] = useState<string | null>("");
+  const [selectedColor, setSelectedColor] = useState("blue");
+  const [profilePicture, setProfilePicture] = useState<string | null>(null);
   const [isPreview, setIsPreview] = useState<boolean>(false);
 
-  const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedColor(event.target.value);
-  };
+  const [textX, setTextX] = useState(250);
+  const [textY, setTextY] = useState(470);
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      const file = e.target.files[0];
-      const reader = new FileReader();
-      reader.onload = () => {
-        setProfilePicture(reader.result as string);
-      };
-      reader.readAsDataURL(file);
+  const handleSubmit = () => {
+    if (canvasRef.current && profilePicture && selectedColor) {
+      const canvas = canvasRef.current;
+      const ctx = canvas.getContext("2d");
+
+      if (ctx) {
+        const dpr = window.devicePixelRatio || 1;
+        const width = 500;
+        const height = 500;
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+        canvas.style.width = `${width}px`;
+        canvas.style.height = `${height}px`;
+        ctx.scale(dpr, dpr);
+
+        ctx.clearRect(0, 0, width, height);
+
+        const backgroundImage = new Image();
+        backgroundImage.src =
+          colors.find((color) => color.value === selectedColor)?.image || "";
+
+        backgroundImage.onload = () => {
+          ctx.drawImage(backgroundImage, 0, 0, width, height);
+
+          const profileImage = new Image();
+          profileImage.src = profilePicture;
+
+          profileImage.onload = () => {
+            const cornerRadius = 10;
+
+            const profilePicX = 55;
+            const profilePicY = 127;
+
+            const profilePicWidth = 185;
+            const profilePicHeight = 203;
+
+            const x = profilePicX;
+            const y = profilePicY;
+
+            ctx.save();
+            ctx.beginPath();
+            ctx.moveTo(x + cornerRadius, y);
+            ctx.lineTo(x + profilePicWidth - cornerRadius, y);
+            ctx.arc(
+              x + profilePicWidth - cornerRadius,
+              y + cornerRadius,
+              cornerRadius,
+              -Math.PI / 2,
+              0
+            );
+            ctx.lineTo(
+              x + profilePicWidth,
+              y + profilePicHeight - cornerRadius
+            );
+            ctx.arc(
+              x + profilePicWidth - cornerRadius,
+              y + profilePicHeight - cornerRadius,
+              cornerRadius,
+              0,
+              Math.PI / 2
+            );
+            ctx.lineTo(x + cornerRadius, y + profilePicHeight);
+            ctx.arc(
+              x + cornerRadius,
+              y + profilePicHeight - cornerRadius,
+              cornerRadius,
+              Math.PI / 2,
+              Math.PI
+            );
+            ctx.lineTo(x, y + cornerRadius);
+            ctx.arc(
+              x + cornerRadius,
+              y + cornerRadius,
+              cornerRadius,
+              Math.PI,
+              -Math.PI / 2
+            );
+            ctx.closePath();
+            ctx.clip();
+            ctx.drawImage(
+              profileImage,
+              x,
+              y,
+              profilePicWidth,
+              profilePicHeight
+            );
+            ctx.restore();
+
+            // Draw the name
+            ctx.font = "bold 24px Arial";
+            ctx.fillStyle = "white";
+            ctx.textAlign = "center";
+            ctx.fillText(name, textX, textY);
+          };
+        };
+      }
     }
   };
 
-  const handleSubmit = () => {
-    setIsPreview(!isPreview);
-  };
-
-  const getCroppedImage = (cropped_img: string) => {
-    setProfilePicture(cropped_img);
+  const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedColor(event.target.value);
   };
 
   return (
@@ -48,7 +135,6 @@ export default function GenerateDpPage() {
         <h1 className="text-wrap text-center mb-4 text-5xl lg:text-7xl font-extrabold tracking-tight leading-none text-gray-900">
           Pepper demmm!🥳
         </h1>
-
         <p className="text-wrap text-center text-[18px] text-primary-gray font-bold">
           Generate and share your unique Devfest Ilorin 2024 DP
         </p>
@@ -57,7 +143,7 @@ export default function GenerateDpPage() {
       </section>
 
       <section className="py-10 lg:py-20">
-        <div className="w-[500px] mx-auto">
+        <div className="grid grid-cols-2 gap-10">
           <form noValidate className="space-y-8">
             <input
               className="p-4 rounded-lg w-full outline-none"
@@ -69,9 +155,9 @@ export default function GenerateDpPage() {
               onChange={(e) => setName(e.target.value)}
             />
 
-            <CropImage onCroppedImage={getCroppedImage} />
+            <CropImage onCroppedImage={setProfilePicture} />
 
-            <div className="dp_gen_page__customize_form_group">
+            <div>
               <label className="text-[#999999]">Select preferred color</label>
 
               <div className="flex items-center justify-between">
@@ -105,12 +191,22 @@ export default function GenerateDpPage() {
               borderRadius={50}
               py={8}
               type="button"
-              disabled={!name || !selectedColor || !profilePicture}
-              className="!bg-primary-body !text-white hover:opacity-80 w-full"
+              className="!bg-primary-body !text-white hover:opacity-80 w-full disabled:!bg-gray-400"
             >
               Generate
             </Button>
           </form>
+
+          <div className="dp-preview">
+            <canvas
+              ref={canvasRef}
+              style={{
+                border: "2px solid #ccc",
+                width: "500px",
+                height: "500px",
+              }}
+            ></canvas>
+          </div>
         </div>
       </section>
     </div>
