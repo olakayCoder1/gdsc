@@ -8,12 +8,12 @@ interface DpFormProps {
   selectedColor: string;
   setSelectedColor: (color: string) => void;
   // onSubmit: () => void;
+  // profilePicture: string | null;
   colors: {
     name: string;
     value: string;
     image: string;
   }[];
-  // profilePicture: string | null;
 }
 
 export default function DpForm({
@@ -23,9 +23,9 @@ export default function DpForm({
   selectedColor,
   setSelectedColor,
   // onSubmit,
+  // profilePicture,
   colors,
-}: // profilePicture,
-DpFormProps) {
+}: DpFormProps) {
   const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedColor(event.target.value);
   };

@@ -69,7 +69,7 @@ export const speakers: Speaker[] = [
     image: kamaldeen,
     name: "Kamaldeen Yusuf",
     role: "Managing Director Malhub",
-    day: "workshop",
+    day: "conference",
   },
   {
     image: idris,

@@ -29,9 +29,12 @@ export default function GenerateDpPage() {
       const ctx = canvas.getContext("2d");
 
       if (ctx) {
+        const containerWidth =
+          window.innerWidth < 500 ? window.innerWidth * 0.9 : 500;
         const dpr = window.devicePixelRatio || 1;
-        const width = 500;
-        const height = 500;
+        const width = containerWidth;
+        const height = width;
+
         canvas.width = width * dpr;
         canvas.height = height * dpr;
         canvas.style.width = `${width}px`;
@@ -53,10 +56,10 @@ export default function GenerateDpPage() {
 
             profileImage.onload = () => {
               const cornerRadius = 10;
-              const profilePicX = 55;
-              const profilePicY = 132;
-              const profilePicWidth = 184.8;
-              const profilePicHeight = 175.8;
+              const profilePicX = 55.5;
+              const profilePicY = 134;
+              const profilePicWidth = 184.5;
+              const profilePicHeight = 171;
 
               const imgWidth = profileImage.width;
               const imgHeight = profileImage.height;
@@ -149,12 +152,10 @@ export default function GenerateDpPage() {
             setProfilePicture={setProfilePicture}
             selectedColor={selectedColor}
             setSelectedColor={setSelectedColor}
-            // onSubmit={handleSubmit}
             colors={colors}
-            // profilePicture={profilePicture}
           />
 
-          <div className="flex justify-end">
+          <div className="flex justify-center lg:justify-end">
             <DpCanvas
               name={name}
               profilePicture={profilePicture}

@@ -26,11 +26,7 @@ export default function DpCanvas({
     <div className="dp-preview">
       <canvas
         ref={canvasRef}
-        className="bg-white p-3"
-        style={{
-          width: "500px",
-          height: "500px",
-        }}
+        className="bg-white p-3 lg:w-[500px] lg:h-[500px]"
       ></canvas>
 
       {name && profilePicture && (
@@ -40,7 +36,7 @@ export default function DpCanvas({
             borderRadius={50}
             py={8}
             className="!bg-primary-body !text-white hover:opacity-80 flex items-center gap-2"
-            isDisabled={!profilePicture}
+            isDisabled={!profilePicture && name.trim() !== ""}
           >
             Download DP <BsDownload />
           </Button>
