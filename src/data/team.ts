@@ -7,10 +7,10 @@ import adeola from "@public/team/adeola.png";
 import moh from "@public/team/moh.png";
 import mubby from "@public/team/mubby.png";
 import twenty4 from "@public/team/24.png";
-import starlight from "@public/team/starlight.png";
+// import starlight from "@public/team/starlight.png";
 import daniel from "@public/team/daniel.png";
 import anjola from "@public/team/anjola.png";
-import pop from "@public/team/pop.png";
+// import pop from "@public/team/pop.png";
 import sulyman from "@public/team/sulyman.png";
 import aliyyah from "@public/team/aliyyah.png";
 import micheal from "@public/team/micheal.png";
@@ -50,10 +50,10 @@ export const team: Team[] = [
     image: twenty4,
     name: "24",
   },
-  {
-    image: starlight,
-    name: "Starlight",
-  },
+  // {
+  //   image: starlight,
+  //   name: "Starlight",
+  // },
   {
     image: daniel,
     name: "Daniel",
@@ -62,10 +62,10 @@ export const team: Team[] = [
     image: anjola,
     name: "Anjola",
   },
-  {
-    image: pop,
-    name: "Pop",
-  },
+  // {
+  //   image: pop,
+  //   name: "Pop",
+  // },
   {
     image: sulyman,
     name: "Sulyman",
