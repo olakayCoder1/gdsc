@@ -69,7 +69,7 @@ export const speakers: Speaker[] = [
     image: kamaldeen,
     name: "Kamaldeen Yusuf",
     role: "Managing Director Malhub",
-    day: "workshop",
+    day: "conference",
   },
   {
     image: idris,
@@ -111,7 +111,7 @@ export const speakers: Speaker[] = [
     image: adeola,
     name: "Olaleye Adeola",
     role: "COO Consode",
-    day: "conference",
+    day: "workshop",
   },
   {
     image: elvis,
@@ -125,12 +125,12 @@ export const speakers: Speaker[] = [
     role: "Flutter Developer GDE",
     day: "conference",
   },
-  {
-    image: ozezuna,
-    name: "Ozenua Oluwatobi",
-    role: "Creaitive Designer",
-    day: "conference",
-  },
+  // {
+  //   image: ozezuna,
+  //   name: "Ozenua Oluwatobi",
+  //   role: "Creaitive Designer",
+  //   day: "conference",
+  // },
   {
     image: goodness,
     name: "Goodness Adebayo",
@@ -261,7 +261,7 @@ export const speakers: Speaker[] = [
     image: etine,
     name: "Etiene Essenoh",
     role: "Software Engineer Sawport Inc Ltd",
-    day: "conference",
+    day: "panelist",
   },
   {
     image: habeeb,
@@ -285,7 +285,7 @@ export const speakers: Speaker[] = [
     image: joshua,
     name: "Joshua Olajide",
     role: "Frontend Engineering Lead Resilience17",
-    day: "conference",
+    day: "workshop",
   },
   {
     image: alaran,
