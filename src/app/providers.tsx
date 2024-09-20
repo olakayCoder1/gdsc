@@ -4,16 +4,13 @@ import Footer from "./components/footer";
 import NavMenu from "./components/menu/NavMenu";
 import { usePathname } from "next/navigation";
 import { ReactLenis, useLenis } from "lenis/react";
+import GenerateDPPill from "./components/generate-dp-pill";
 
 interface ProvidersProp {
   children: React.ReactNode;
 }
 
 export function Providers({ children }: ProvidersProp) {
-  const lenis = useLenis(({ scroll }) => {
-    // called every scroll
-  });
-
   const pathname = usePathname();
 
   const path = pathname === "/" ? "home" : pathname.replace(/\//gi, "");
@@ -27,6 +24,7 @@ export function Providers({ children }: ProvidersProp) {
       <NavMenu currentPath={path as any} />
       <main>{children}</main>
       <Footer />
+      {/* {pathname !== "/generate-dp" && <GenerateDPPill />} */}
       <ReactLenis />
     </ThemeProvider>
   );
