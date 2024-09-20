@@ -18,25 +18,22 @@ const colors = [
 
 export default function GenerateDpPage() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const containerRef = useRef<HTMLDivElement | null>(null);
-
   const [name, setName] = useState("");
   const [selectedColor, setSelectedColor] = useState("blue");
   const [profilePicture, setProfilePicture] = useState<string | null>(null);
 
   const generate = useCallback(() => {
-    if (canvasRef.current && containerRef.current && selectedColor) {
+    if (canvasRef.current && selectedColor) {
       const canvas = canvasRef.current;
-      const container = containerRef.current;
       const ctx = canvas.getContext("2d");
 
       if (ctx) {
-        // Get container dimensions
-        const containerWidth = container.clientWidth;
+        const containerWidth = canvas.clientWidth;
+        const containerHeight = canvas.clientHeight;
         const dpr = window.devicePixelRatio || 1;
+
         const width = containerWidth;
         const height = width;
-
         canvas.width = width * dpr;
         canvas.height = height * dpr;
         canvas.style.width = `${width}px`;
@@ -58,10 +55,12 @@ export default function GenerateDpPage() {
 
             profileImage.onload = () => {
               const cornerRadius = 10;
-              const profilePicX = width * 0.185; // Adjusted based on canvas size
-              const profilePicY = height * 0.45;
-              const profilePicWidth = width * 0.63;
-              const profilePicHeight = height * 0.57;
+
+              const profilePicX = width * 0.11;
+              const profilePicY = height * 0.256;
+
+              const profilePicWidth = width * 0.37;
+              const profilePicHeight = height * 0.365;
 
               const imgWidth = profileImage.width;
               const imgHeight = profileImage.height;
@@ -118,10 +117,10 @@ export default function GenerateDpPage() {
             };
           }
 
-          const textX = width / 2;
-          const textY = height - 50;
+          const textX = width / 3.4;
+          const textY = height * 0.75;
 
-          ctx.font = "bold 22px Google Sans";
+          ctx.font = `${Math.floor(width * 0.05)}px Google Sans`;
           ctx.fillStyle = "black";
           ctx.textAlign = "center";
           ctx.fillText(name, textX, textY);
@@ -133,7 +132,6 @@ export default function GenerateDpPage() {
   useEffect(() => {
     generate();
 
-    // Resize canvas when the window size changes
     const handleResize = () => {
       generate();
     };
@@ -145,8 +143,8 @@ export default function GenerateDpPage() {
   }, [generate]);
 
   return (
-    <div className="px-4 lg:px-20 container mx-auto" ref={containerRef}>
-      {/* <section className="lg:w-[800px] mx-auto pt-10">
+    <div className="px-4 lg:px-20 container mx-auto">
+      <section className="lg:w-[800px] mx-auto pt-10">
         <h1 className="text-wrap text-center mb-4 text-5xl lg:text-7xl font-extrabold tracking-tight leading-none text-gray-900">
           Show demmm!🥳
         </h1>
@@ -175,7 +173,7 @@ export default function GenerateDpPage() {
             />
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
