@@ -171,7 +171,7 @@ export const speakers: Speaker[] = [
     image: olusegun,
     name: "Olusegun Joe-Alabi",
     role: "Snr Backend Developer Green Africa Airlines",
-    day: "conference",
+    day: "workshop",
   },
   {
     image: adigbole,
@@ -302,7 +302,7 @@ export const speakers: Speaker[] = [
   {
     image: tosin,
     name: "Tosin Yusuf",
-    role: "Frontend Engineer  Niyo Group",
+    role: "Frontend Engineer Niyo Labs",
     day: "panelist",
   },
   {
@@ -314,7 +314,7 @@ export const speakers: Speaker[] = [
   {
     image: areous,
     name: "Areous Ahmad",
-    role: "Product Designer Niyo Group",
+    role: "Lead GDG Ilorin",
     day: "conference",
   },
 ];
