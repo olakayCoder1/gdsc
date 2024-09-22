@@ -29,7 +29,6 @@ export default function GenerateDpPage() {
 
       if (ctx) {
         const containerWidth = canvas.clientWidth;
-        const containerHeight = canvas.clientHeight;
         const dpr = window.devicePixelRatio || 1;
 
         const width = containerWidth;
@@ -54,8 +53,6 @@ export default function GenerateDpPage() {
             profileImage.src = profilePicture;
 
             profileImage.onload = () => {
-              const cornerRadius = 10;
-
               const profilePicX = width * 0.11;
               const profilePicY = height * 0.256;
 
@@ -74,6 +71,9 @@ export default function GenerateDpPage() {
 
               const x = profilePicX + (profilePicWidth - scaledWidth) / 2;
               const y = profilePicY + (profilePicHeight - scaledHeight) / 2;
+
+              const cornerRadius =
+                Math.min(profilePicWidth, profilePicHeight) * 0.07;
 
               ctx.save();
               ctx.beginPath();
