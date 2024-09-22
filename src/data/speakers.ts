@@ -44,6 +44,7 @@ import alaran from "@public/speakers/alaran.png";
 import gabriel from "@public/speakers/gabriel.png";
 import tosin from "@public/speakers/tosin.png";
 import patrick from "@public/speakers/patrick.png";
+import sulyman from "@public/speakers/sulyman.png";
 import areous from "@public/speakers/areous.png";
 
 export const speakers: Speaker[] = [
@@ -243,7 +244,7 @@ export const speakers: Speaker[] = [
     image: samuel,
     name: "Samuel Afolabi",
     role: "Cybersecurity Consultant",
-    day: "conference",
+    day: "panelist",
   },
   {
     image: shalom,
@@ -309,6 +310,12 @@ export const speakers: Speaker[] = [
     image: patrick,
     name: "Patrick Ojeh",
     role: "Senior Frontend Engineer INITS",
+    day: "workshop",
+  },
+  {
+    image: sulyman,
+    name: "Kamldeen Sulyman",
+    role: "Brand Ambassadors Quicknode",
     day: "workshop",
   },
   {
