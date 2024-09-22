@@ -50,7 +50,7 @@ export default function SponsorsPage() {
             <div className="p-2 rounded-full w-fit border-2 border-black text-primary-body font-semibold text-lg capitalize bg-[#FF7DAF]">
               Platinum Sponsors
             </div>
-            <div className="mt-4 grid lg:grid-cols-2">
+            <div className="mt-4 grid lg:grid-cols-2 gap-10">
               {renderSponsors("platinum")}
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function SponsorsPage() {
             <div className="p-2 rounded-full w-fit border-2 border-black text-primary-body font-semibold text-lg capitalize bg-[#FF7DAF]">
               Gold Sponsors
             </div>
-            <div className="mt-4 grid lg:grid-cols-3">
+            <div className="mt-4 grid lg:grid-cols-3 gap-10">
               {renderSponsors("gold")}
             </div>
           </div>
