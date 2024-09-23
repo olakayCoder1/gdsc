@@ -16,7 +16,7 @@ const SpeakersCard: React.FC<SpeakersCardProps> = ({
   day,
 }) => {
   return (
-    <aside className="border-4 border-black rounded-xl relative overflow-hidden">
+    <aside className="border-4 border-black bg-black rounded-xl relative overflow-hidden">
       <div
         className={`p-2 px-4 rounded-full w-fit absolute border-2 border-black top-2 left-2 text-primary-body capitalize ${
           day === "workshop"
