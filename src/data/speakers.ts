@@ -13,7 +13,7 @@ import stephen from "@public/speakers/stephen.png";
 import temi from "@public/speakers/temi.png";
 import victoria from "@public/speakers/victoria.png";
 import elvis from "@public/speakers/elvis.png";
-import ozezuna from "@public/speakers/ozezuna.png";
+import ozenua from "@public/speakers/ozenua.png";
 import dara from "@public/speakers/dara.png";
 import adams from "@public/speakers/adams.png";
 import ahmed from "@public/speakers/ahmed.png";
@@ -48,12 +48,12 @@ import sulyman from "@public/speakers/sulyman.png";
 import areous from "@public/speakers/areous.png";
 
 export const speakers: Speaker[] = [
-  {
-    image: samson,
-    name: "Samson Goddy",
-    role: "Co-Founder OSCA",
-    day: "conference",
-  },
+  // {
+  //   image: samson,
+  //   name: "Samson Goddy",
+  //   role: "Co-Founder OSCA",
+  //   day: "conference",
+  // },
   {
     image: elizabeth,
     name: "Elizabeth Alli",
@@ -72,12 +72,12 @@ export const speakers: Speaker[] = [
     role: "Managing Director Malhub",
     day: "conference",
   },
-  {
-    image: idris,
-    name: "Idris Olubisi",
-    role: "Founder Web3Afrika",
-    day: "conference",
-  },
+  // {
+  //   image: idris,
+  //   name: "Idris Olubisi",
+  //   role: "Founder Web3Afrika",
+  //   day: "conference",
+  // },
   {
     image: victoria,
     name: "Victoria Abiodun",
@@ -127,7 +127,7 @@ export const speakers: Speaker[] = [
     day: "conference",
   },
   // {
-  //   image: ozezuna,
+  //   image: ozenua,
   //   name: "Ozenua Oluwatobi",
   //   role: "Creaitive Designer",
   //   day: "conference",
@@ -314,7 +314,7 @@ export const speakers: Speaker[] = [
   },
   {
     image: sulyman,
-    name: "Kamldeen Sulyman",
+    name: "Kamaldeen Sulyman",
     role: "Brand Ambassadors Quicknode",
     day: "workshop",
   },
