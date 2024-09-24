@@ -144,7 +144,7 @@ export default function GenerateDpPage() {
 
   return (
     <div className="px-4 lg:px-20 container mx-auto">
-      <section className="lg:w-[800px] mx-auto pt-10">
+      {/* <section className="lg:w-[800px] mx-auto pt-10">
         <h1 className="text-wrap text-center mb-4 text-5xl lg:text-7xl font-extrabold tracking-tight leading-none text-gray-900">
           Show demmm!🥳
         </h1>
@@ -152,9 +152,9 @@ export default function GenerateDpPage() {
           Generate and share your unique Devfest Ilorin 2024 DP
         </p>
         <DateAndLocation />
-      </section>
+      </section> */}
 
-      <section className="py-10 lg:py-20">
+      {/* <section className="py-10 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-10">
           <DpForm
             name={name}
@@ -173,7 +173,7 @@ export default function GenerateDpPage() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
