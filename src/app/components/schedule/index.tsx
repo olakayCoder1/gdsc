@@ -11,7 +11,7 @@ const schedule = [
     description: "Full day of workshop in web, mobile, cloud, Design",
     button: {
       text: "Register Now",
-      link: ctaLinks.register.link,
+      link: ctaLinks.workshop.link,
     },
     background: "#F8D8D8",
     textColor: "#FF7DAF",

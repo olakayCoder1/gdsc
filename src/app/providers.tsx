@@ -24,7 +24,7 @@ export function Providers({ children }: ProvidersProp) {
       <NavMenu currentPath={path as any} />
       <main>{children}</main>
       <Footer />
-      {/* {pathname !== "/generate-dp" && <GenerateDPPill />} */}
+      {/* {pathname !== "/get-dp" && <GenerateDPPill />} */}
       <ReactLenis />
     </ThemeProvider>
   );

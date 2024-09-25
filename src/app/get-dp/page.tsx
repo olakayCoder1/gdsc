@@ -16,7 +16,7 @@ const colors = [
   { name: "Green", value: "green", image: greenImage.src },
 ];
 
-export default function GenerateDpPage() {
+export default function GetDpPage() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [name, setName] = useState("");
   const [selectedColor, setSelectedColor] = useState("blue");
