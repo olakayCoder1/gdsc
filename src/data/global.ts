@@ -43,6 +43,11 @@ export const menuLinks: MenuItem[] = [
 ];
 
 export const ctaLinks: Record<string, CtaLinks> = {
+  workshop: {
+    title: "Workshop",
+    link: "https://lu.ma/1qw8z31s",
+    isExternal: true,
+  },
   register: {
     title: "R⁠egister",
     link: "https://bit.ly/devfestilorin24",
