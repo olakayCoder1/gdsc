@@ -24,6 +24,10 @@ export const socialLinks: SocialLinks[] = [
 ];
 
 export const menuLinks: MenuItem[] = [
+  // {
+  //   title: "Get DP",
+  //   path: "/get-dp",
+  // },
   {
     title: "Speakers",
     path: "/speakers",
