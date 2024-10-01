@@ -5,8 +5,8 @@ import DateAndLocation from "@component/date-and-location";
 import SpeakersCard from "@component/speakers-card";
 
 import devfestFrame from "@public/devfest-lanyard.png";
-import lanyard from "@public/icons/lanyard-white-bg.svg";
-import plus from "@public/plus.png";
+// import lanyard from "@public/icons/lanyard-white-bg.svg";
+// import plus from "@public/plus.png";
 
 import { Button } from "@chakra-ui/react";
 import Image from "next/image";
@@ -26,12 +26,12 @@ export default function SpeakersPage() {
 
   return (
     <div className="px-4 lg:px-20 container mx-auto">
-      <section className="lg:w-[800px] mx-auto pt-10">
+      <section className="lg:w-[1100px] mx-auto pt-10">
         <h1 className="text-wrap text-center mb-4 text-5xl lg:text-7xl font-extrabold tracking-tight leading-none text-gray-900">
           Our Speakers
         </h1>
 
-        <p className="text-wrap text-center text-[18px] text-primary-gray font-bold">
+        <p className="text-wrap text-center text-[18px] text-primary-gray font-bold lg:w-[900px] mx-auto">
           Join us at DevFest Ilorin 2024 from October 17 to 19 for 3 days of
           inspiring talks, interactive workshops, and unparalleled networking
           opportunities.{" "}
