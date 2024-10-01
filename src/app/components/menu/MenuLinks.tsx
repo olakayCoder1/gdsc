@@ -7,6 +7,10 @@ import { Button } from "@chakra-ui/react";
 import { BsArrowUpRight } from "react-icons/bs";
 
 export default function MenuLinks({ currentPath }: NavMenuProps) {
+  const normalizedPath = currentPath.startsWith("/")
+    ? currentPath
+    : `/${currentPath}`;
+
   return (
     <div className="flex flex-row gap-5 px-5 lg:w-auto lg:h-auto lg:bg-transparent lg:relative lg:items-center lg:gap-10">
       <ul className="flex flex-row items-center gap-10 font-medium overflow-x-auto">
@@ -16,7 +20,7 @@ export default function MenuLinks({ currentPath }: NavMenuProps) {
               key={link.path}
               className={clsx({
                 "text-devfest-active border-b-2 border-devfest-active":
-                  currentPath.toLowerCase() === link.title.toLowerCase(),
+                  normalizedPath.toLowerCase() === link.path.toLowerCase(),
               })}
             >
               <Link href={link.path}>{link.title}</Link>
@@ -31,7 +35,7 @@ export default function MenuLinks({ currentPath }: NavMenuProps) {
         borderRadius={50}
         py={8}
         display={{ base: "none", lg: "flex" }}
-        className="flex items-center gap-2"
+        className="flex items-center gap-2 !font-bold"
       >
         Register Now <BsArrowUpRight />
       </Button>

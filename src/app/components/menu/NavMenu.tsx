@@ -6,7 +6,13 @@ import DrawerMenu from "./DrawerMenu";
 import MenuLinks from "./MenuLinks";
 
 export interface NavMenuProps {
-  currentPath: "home" | "speakers" | "schedule" | "sponsors" | "team";
+  currentPath:
+    | "home"
+    | "speakers"
+    | "schedule"
+    | "sponsors"
+    | "team"
+    | "get-dp";
 }
 
 export default function NavMenu({ currentPath = "home" }: NavMenuProps) {
@@ -17,8 +23,8 @@ export default function NavMenu({ currentPath = "home" }: NavMenuProps) {
           <Link href={"/"}>
             <Image
               src={DevFestLogo}
-              alt={"devfest logo"}
-              className="h-[32px] lg:h-[48px] w-auto contain-content"
+              alt="devfest ilorin logo"
+              className="h-[39px] lg:h-[48px] w-auto contain-content"
             />
           </Link>
           <DrawerMenu currentPath={currentPath} />

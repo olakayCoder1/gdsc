@@ -8,12 +8,12 @@ import TeamCard from "@component/team-card";
 export default function TeamPage() {
   return (
     <div className="px-4 lg:px-20 container mx-auto">
-      <section className="lg:w-[800px] mx-auto pt-10">
+      <section className="lg:w-[1100px] mx-auto pt-10">
         <h1 className="text-wrap text-center mb-4 text-5xl lg:text-7xl font-extrabold tracking-tight leading-none text-gray-900">
           Our Team
         </h1>
 
-        <p className="text-wrap text-center text-[18px] text-primary-gray font-bold">
+        <p className="text-wrap text-center text-[18px] text-primary-gray font-bold lg:w-[900px] mx-auto">
           Organisers and volunteers Dedicated. Innovative. Passionate. Discover
           the driving force behind Ilorin&apos;s largest tech event.
         </p>

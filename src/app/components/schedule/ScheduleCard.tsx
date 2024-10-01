@@ -27,7 +27,7 @@ const ScheduleCard: React.FC<ScheduleCardProps> = ({ scheduleItem }) => {
 
   return (
     <aside
-      className="border-4 border-black rounded-[25px] p-4"
+      className="border-4 border-[#1E1E1E] rounded-[25px] p-4"
       style={{
         backgroundColor: background,
       }}
