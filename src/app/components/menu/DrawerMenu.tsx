@@ -16,7 +16,6 @@ import {
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { RiMenu3Line } from "react-icons/ri";
-import MenuLinks from "./MenuLinks";
 import { NavMenuProps } from "./NavMenu";
 import { ctaLinks, menuLinks } from "@/data";
 import clsx from "clsx";
