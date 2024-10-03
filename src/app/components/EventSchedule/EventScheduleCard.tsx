@@ -124,7 +124,7 @@ export const PanelEventScheduleCard: React.FC<PanelEventScheduleCardProps> = ({
                 key={index}
                 src={img}
                 alt="speaker"
-                className="w-[30px] h-[30px] rounded-full bg-[#D9D9D9]"
+                className="w-[30px] h-[30px] rounded-full bg-[#D9D9D9] object-cover"
               />
             ))}
           </div>
