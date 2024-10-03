@@ -1,11 +1,22 @@
-import areous from "@public/schedule/areous.png";
-import kamal from "@public/schedule/kamal.png";
-import kolapo from "@public/schedule/kolapo.png";
-import elizabeth from "@public/schedule/elizabeth.png";
-import adams from "@public/schedule/adams.png";
-import precious from "@public/schedule/precious.png";
-import victoria from "@public/schedule/victoria.png";
-import dara from "@public/schedule/dara.png";
+import areous from "@public/speakers/areous.png";
+import kamaldeen from "@public/speakers/kamaldeen.png";
+import kolapo from "@public/speakers/kolapo.png";
+import elizabeth from "@public/speakers/elizabeth.png";
+import adams from "@public/speakers/adams.png";
+import precious from "@public/speakers/precious.png";
+import victoria from "@public/speakers/victoria.png";
+import dara from "@public/speakers/dara.png";
+import jamiu from "@public/speakers/jamiu.png";
+import collins from "@public/speakers/collins.png";
+import elvis from "@public/speakers/elvis.png";
+import ayotomide from "@public/speakers/ayotomide.png";
+import olamide from "@public/speakers/olamide.png";
+import azubuko from "@public/speakers/azubuko.png";
+import johnson from "@public/speakers/johnson.png";
+import afolayan from "@public/speakers/afolayan.png";
+import habeeb from "@public/speakers/habeeb.png";
+import gabriel from "@public/speakers/gabriel.png";
+import stephen from "@public/speakers/stephen.png";
 
 export const schedule = [
   {
@@ -37,7 +48,7 @@ export const schedule = [
     duration: "15 minutes",
     session: "Session",
     speaker: "Kamaldeen Kehinde",
-    img: kamal,
+    img: kamaldeen,
   },
   {
     title:
@@ -46,7 +57,7 @@ export const schedule = [
     duration: "15 minutes",
     session: "Session",
     speaker: "Jamiu Okanlawon",
-    // img: jamiu_okanlawon,
+    img: jamiu,
   },
   {
     title: "Building World-Class Competency the Smart Way",
@@ -105,5 +116,97 @@ export const schedule = [
     session: "Session",
     speaker: "Omogoye Precious Deborah",
     img: precious,
+  },
+];
+
+export const scheduleTwo = [
+  {
+    title:
+      "Untapped Potentials: Why Designers and Developers Need to Build Side Projects",
+    time: "12:40 PM - 12:55 PM",
+    duration: "15 minutes",
+    session: "Session",
+    speaker: "Collins Donye",
+    img: collins,
+  },
+  {
+    title: "Accessibility in Design: The Cost of Its Negligence",
+    time: "12:55 PM - 1:10 PM",
+    duration: "15 minutes",
+    session: "Session",
+    speaker: "Elvis Obi",
+    img: elvis,
+  },
+  {
+    title: "Flutter & Geometry: Foundations of Geometry in Flutter",
+    time: "1:25 PM - 1:40 PM",
+    duration: "15 minutes",
+    session: "Session",
+    speaker: "Ayotomide Babalola (Czar)",
+    img: ayotomide,
+  },
+  {
+    title:
+      "From Good to Great: Unlocking Peak Performance in a Startup Environment",
+    time: "1:40 PM - 1:55 PM",
+    duration: "15 minutes",
+    session: "Session",
+    speaker: "Olamide Ilori",
+    img: olamide,
+  },
+];
+
+export const scheduleThree = [
+  {
+    title: "Mastering Accessibility: Prevent, Catch, and Fix",
+    time: "2:30 PM - 2:45 PM",
+    duration: "15 minutes",
+    session: "Session",
+    speaker: "Uchechukwu Azubuko",
+    img: azubuko,
+  },
+];
+
+export const scheduleFour = [
+  {
+    title: "Leveraging Social Media as a Tech Professional",
+    time: "3:15 PM - 3:20 PM",
+    duration: "5 minutes",
+    session: "Lightning Talk",
+    speaker: "Aduragbemi Johnson",
+    img: johnson,
+  },
+  {
+    title: "Exploring Community with the planter's lens",
+    time: "3:20 PM - 3:30 PM",
+    duration: "10 minutes",
+    session: "Session",
+    speaker: "Afolayan Stephen",
+    img: stephen,
+  },
+  {
+    title:
+      "Transitioning from Junior to Mid-Level Designer: Key Skills and Mindset Shifts",
+    time: "3:30 PM - 3:40 PM",
+    duration: "10 minutes",
+    session: "Session",
+    speaker: "Habeeb Azeez",
+    img: habeeb,
+  },
+  {
+    title: "Inclusive Design Thinking",
+    time: "3:40 PM - 3:55 PM",
+    duration: "15 minutes",
+    session: "Session",
+    speaker: "Gabriel Inyamah",
+    img: gabriel,
+  },
+  {
+    title: "Challenging the Social Perception around Self Promotion",
+    time: "3:55 PM - 4:05 PM",
+    duration: "10 minutes",
+    session: "Session",
+    speaker: "Stephen Edache Paul",
+    img: stephen,
   },
 ];

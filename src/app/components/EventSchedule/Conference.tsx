@@ -6,9 +6,25 @@ import lanyard from "@public/icons/lanyard-white-bg.svg";
 import { ctaLinks } from "@/data";
 import {
   LongEventScheduleCard,
+  PanelEventScheduleCard,
   ShortEventScheduleCard,
 } from "./EventScheduleCard";
-import { schedule } from "@/data/schedule";
+import {
+  schedule,
+  scheduleFour,
+  scheduleThree,
+  scheduleTwo,
+} from "@/data/schedule";
+
+import aliyu from "@public/speakers/aliyu.png";
+import tosin from "@public/speakers/tosin.png";
+import alaran from "@public/speakers/alaran.png";
+import etiene from "@public/speakers/etiene.png";
+
+import taiye from "@public/speakers/taiye.png";
+import samuel from "@public/speakers/samuel.png";
+import goodness from "@public/speakers/goodness.png";
+import temi from "@public/speakers/temi.png";
 
 const Conference: React.FC = () => {
   return (
@@ -26,6 +42,57 @@ const Conference: React.FC = () => {
           title="Tea-Break & Games"
           time="11:55 AM - 12:10 PM"
           className="lg:col-span-2"
+        />
+        <PanelEventScheduleCard
+          session="Panel Discussion"
+          title="AI, Ethics, and the Future of Work"
+          imgs={[aliyu, tosin, alaran, etiene]}
+          time="12:10 PM - 12:40 PM"
+          duration="30 minutes"
+          speakers={[
+            "Aliyu Ramat",
+            "Tosin Yusuf",
+            "Alaran Khaerat",
+            "Etienne Essenoh",
+          ]}
+        />
+        {scheduleTwo.map((schedule, index) => (
+          <ShortEventScheduleCard key={index} {...schedule} />
+        ))}
+        <LongEventScheduleCard title="Break" time="" className="" />
+        <LongEventScheduleCard
+          title="Family Group Photo"
+          time="1:55 PM - 2:10 PM"
+          className="lg:col-span-2"
+        />
+        <LongEventScheduleCard
+          title="Lunch Break & Games"
+          time="2:10 AM - 2:30 PM"
+          className="lg:col-span-2"
+        />
+        {scheduleThree.map((schedule, index) => (
+          <ShortEventScheduleCard key={index} {...schedule} />
+        ))}
+        <PanelEventScheduleCard
+          session="Panel Discussion"
+          title="Building Tech Solutions for African Challenges"
+          imgs={[taiye, samuel, goodness, temi]}
+          time="2:45 PM - 3:15 PM"
+          duration="30 minutes"
+          speakers={[
+            "Abubakar Taiye Hassanat",
+            "Samuel Afolabi",
+            "Goodness Adebayo",
+            "Temi Kolawole",
+          ]}
+        />
+        {scheduleFour.map((schedule, index) => (
+          <ShortEventScheduleCard key={index} {...schedule} />
+        ))}
+        <LongEventScheduleCard
+          title="Closing Remarks & Gifts"
+          time="4:05 PM- 4:20 PM"
+          className=""
         />
       </div>
 
