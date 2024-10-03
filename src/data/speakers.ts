@@ -35,7 +35,7 @@ import alimi from "@public/speakers/alimi.png";
 import samuel from "@public/speakers/samuel.png";
 import shalom from "@public/speakers/shalom.png";
 import abada from "@public/speakers/abada.png";
-import etine from "@public/speakers/etine.png";
+import etiene from "@public/speakers/etiene.png";
 import habeeb from "@public/speakers/habeeb.png";
 import afolayan from "@public/speakers/afolayan.png";
 import taiye from "@public/speakers/taiye.png";
@@ -259,7 +259,7 @@ export const speakers: Speaker[] = [
     day: "workshop",
   },
   {
-    image: etine,
+    image: etiene,
     name: "Etiene Essenoh",
     role: "Software Engineer Sawport Inc Ltd",
     day: "panelist",
