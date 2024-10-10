@@ -222,12 +222,12 @@ export const speakers: Speaker[] = [
     role: "Software Engineer Swept",
     day: "workshop",
   },
-  {
-    image: khalid,
-    name: "Khalid Sulyman",
-    role: "UX engineer Tedbree",
-    day: "workshop",
-  },
+  // {
+  //   image: khalid,
+  //   name: "Khalid Sulyman",
+  //   role: "UX engineer Tedbree",
+  //   day: "workshop",
+  // },
   {
     image: azubuko,
     name: "Uchechukwu Azubuko",
