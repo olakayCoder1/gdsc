@@ -32,7 +32,7 @@ const HomeHero = () => {
             py={8}
             className="flex items-center gap-2 !font-bold w-full"
           >
-            Register conference (Day 3 Main) <BsArrowUpRight />
+            Register for conference (Day 3 Main) <BsArrowUpRight />
           </Button>
 
           <Button

@@ -19,7 +19,7 @@ const DateAndLocation = () => {
         <div className="space-y-2">
           <h2 className="font-bold text-3xl">October 17</h2>
           <p className="text-lg font-semibold">
-            Ilorin Innovation Hub, Ilorin, Kwara State.
+            MALhub, 1 Ilofa Rd, GRA, Ilorin, Kwara State.
           </p>
         </div>
 
