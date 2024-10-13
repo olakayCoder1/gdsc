@@ -46,6 +46,10 @@ import tosin from "@public/speakers/tosin.png";
 import patrick from "@public/speakers/patrick.png";
 import sulyman from "@public/speakers/sulyman.png";
 import areous from "@public/speakers/areous.png";
+import imam from "@public/speakers/imam.png";
+import theophilus from "@public/speakers/theophilus.png";
+import olasupo from "@public/speakers/olasupo.png";
+import folasayo from "@public/speakers/folasayo.png";
 
 export const speakers: Speaker[] = [
   // {
@@ -323,5 +327,29 @@ export const speakers: Speaker[] = [
     name: "Areous Ahmad",
     role: "Lead GDG Ilorin",
     day: "conference",
+  },
+  {
+    image: imam,
+    name: "Imam Abubakar",
+    role: "Founder and Tech Lead Sqaleup Inc.",
+    day: "conference",
+  },
+  {
+    image: theophilus,
+    name: "Theophilus Ukuyoma",
+    role: "CTO Entobo Technologies LLC",
+    day: "conference",
+  },
+  {
+    image: olasupo,
+    name: "Olasupo Funke",
+    role: "Technical Writer",
+    day: "workshop",
+  },
+  {
+    image: folasayo,
+    name: "Folasayo Olayemi",
+    role: "Developer Advocate Seerbit",
+    day: "workshop",
   },
 ];
