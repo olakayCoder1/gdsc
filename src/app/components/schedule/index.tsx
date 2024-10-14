@@ -4,18 +4,18 @@ import SectionTitle from "../section-title";
 import { ctaLinks } from "@/data";
 
 const schedule = [
-  {
-    day: 1,
-    type: "Workshop",
-    price: "Free",
-    description: "Full day of workshop in web, mobile, cloud, Design",
-    button: {
-      text: "Register Now",
-      link: ctaLinks.workshop.link,
-    },
-    background: "#F8D8D8",
-    textColor: "#FF7DAF",
-  },
+  // {
+  //   day: 1,
+  //   type: "Workshop",
+  //   price: "Free",
+  //   description: "Full day of workshop in web, mobile, cloud, Design",
+  //   button: {
+  //     text: "Register Now",
+  //     link: ctaLinks.workshop.link,
+  //   },
+  //   background: "#F8D8D8",
+  //   textColor: "#FF7DAF",
+  // },
   {
     day: 2,
     type: "Private Network",
@@ -49,7 +49,7 @@ const Schedule: React.FC = () => {
         <SectionTitle title="Schedule" size="lg" />
 
         <div className="mt-10">
-          <div className="grid lg:grid-cols-3 gap-10">
+          <div className="grid lg:grid-cols-2 gap-10">
             {schedule.map((item) => (
               <ScheduleCard key={item.day} scheduleItem={item} />
             ))}
