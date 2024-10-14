@@ -7,10 +7,12 @@ import Workshop from "../components/EventSchedule/Workshop";
 import SectionTitle from "../components/section-title";
 
 export default function SchedulePage() {
-  const [selectedCategory, setSelectedCategory] = useState("Day 1 (Workshop)");
+  const [selectedCategory, setSelectedCategory] = useState(
+    "Day 2 (Private Network)"
+  );
 
   const categories = [
-    "Day 1 (Workshop)",
+    // "Day 1 (Workshop)",
     "Day 2 (Private Network)",
     "Day 3 (Conference Day)",
   ];

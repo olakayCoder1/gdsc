@@ -35,7 +35,7 @@ const HomeHero = () => {
             Register for conference (Day 3 Main) <BsArrowUpRight />
           </Button>
 
-          <Button
+          {/* <Button
             as={Link}
             href={ctaLinks.workshop.link}
             target="_blank"
@@ -44,7 +44,7 @@ const HomeHero = () => {
             className="!bg-[#33A852] !text-white hover:opacity-80 flex items-center gap-2 !font-bold w-full"
           >
             Register for workshop (Day 1) <BsArrowUpRight />
-          </Button>
+          </Button> */}
         </div>
       </div>
       <ConfettiContainer />
