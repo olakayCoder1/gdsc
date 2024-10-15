@@ -18,7 +18,7 @@ export default function SponsorsPage() {
           href={sponsor.website}
           target="_blank"
           rel="noopener noreferrer"
-          className=""
+          className="border-4 border-[#1E1E1E] p-4 rounded-xl flex items-center bg-[#F0F0F0]"
         >
           <Image alt="sponsor" src={sponsor.img} className="" />
         </Link>
