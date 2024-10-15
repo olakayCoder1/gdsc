@@ -7,7 +7,7 @@ import EventRecap from "./components/home/event-recap";
 import SpeakerSection from "./components/home/speaker-section";
 import SectionTitle from "./components/section-title";
 
-import sunset from "@public/icons/icon-sunset.svg";
+// import sunset from "@public/icons/icon-sunset.svg";
 import mainVenue from "@public/venues/main-venue.png";
 import privateNetwork from "@public/venues/private-network.png";
 import workshopVenue from "@public/venues/workshop-venue.png";
@@ -61,7 +61,7 @@ export default function Home() {
             Register Now <BsArrowUpRight />
           </Button>
 
-          <Button
+          {/* <Button
             as={Link}
             href={ctaLinks.ticket.link}
             target="_blank"
@@ -71,7 +71,7 @@ export default function Home() {
           >
             Buy Ticket
             <Image src={sunset} alt="sunset" className="w-[20px]" />
-          </Button>
+          </Button> */}
         </div>
       </section>
 
@@ -79,13 +79,14 @@ export default function Home() {
         <div className="px-4 lg:px-20 container mx-auto">
           <SectionTitle title="Sponsors" size="lg" />
 
-          <div className="grid lg:grid-cols-3 gap-10 mt-10">
-            {sponsors.map((sponsor, index) => (
+          <div className="grid lg:grid-cols-4 gap-10 mt-10">
+            {sponsors.slice(0, 4).map((sponsor, index) => (
               <Link
                 href={sponsor.website}
                 target="_blank"
                 rel="noopener noreferrer"
                 key={index}
+                className="border-4 border-[#1E1E1E] p-4 rounded-xl flex items-center bg-[#F0F0F0]"
               >
                 <Image src={sponsor.img} key={index} alt={`sponsor-${index}`} />
               </Link>
