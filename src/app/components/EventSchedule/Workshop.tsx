@@ -10,7 +10,11 @@ import {
   TrackEventScheduleCard,
   ShortEventScheduleCard,
 } from "./EventScheduleCard";
-import { engineeringSchedules, techAndAiSchedules } from "@/data/schedule";
+import {
+  engineeringOneSchedules,
+  designSchedules,
+  engineeringTwoSchedules,
+} from "@/data/schedule";
 
 const Workshop: React.FC = () => {
   return (
@@ -22,7 +26,7 @@ const Workshop: React.FC = () => {
           className="lg:col-span-2"
         />
         <IntroductionEventScheduleCard
-          time="9:00 AM - 9:30 AM"
+          time="9:00 AM - 9:15 AM"
           title="Introduction"
           className="lg:col-span-2"
         />
@@ -35,19 +39,27 @@ const Workshop: React.FC = () => {
           </span>
         </p>
         <TrackEventScheduleCard
-          title="Engineering Track & AI"
+          title="Engineering & AI Track I"
           bgColor="#32A852"
           className="lg:col-span-2"
         />
-        {engineeringSchedules.map((schedule, index) => (
+        {engineeringOneSchedules.map((schedule, index) => (
           <ShortEventScheduleCard key={index} {...schedule} />
         ))}
         <TrackEventScheduleCard
-          title="Tech & AI"
+          title="Engineering & AI Track II"
+          bgColor="#32A852"
+          className="lg:col-span-2"
+        />
+        {engineeringTwoSchedules.map((schedule, index) => (
+          <ShortEventScheduleCard key={index} {...schedule} />
+        ))}
+        <TrackEventScheduleCard
+          title="Design Track"
           bgColor="#136FDE"
           className="lg:col-span-2"
         />
-        {techAndAiSchedules.map((schedule, index) => (
+        {designSchedules.map((schedule, index) => (
           <ShortEventScheduleCard key={index} {...schedule} />
         ))}
         <LongEventScheduleCard
