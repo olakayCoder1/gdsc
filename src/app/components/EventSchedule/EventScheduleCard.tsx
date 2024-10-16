@@ -52,9 +52,9 @@ export const ShortEventScheduleCard: React.FC<ShortEventScheduleCardProps> = ({
       <div className="grid lg:grid-cols-2 lg:gap-10">
         <h1
           className={`text-2xl font-bold ${
-            session === "Engineering Track"
+            session === "Engineering"
               ? "text-[#32A852]"
-              : session === "Cybersecurity Track"
+              : session === "Cybersecurity"
               ? "text-[#EA4435]"
               : session === "AI/ML"
               ? "text-[#F8AB19]"
