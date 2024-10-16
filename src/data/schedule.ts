@@ -32,6 +32,7 @@ import joshua from "@public/speakers/joshua.png";
 import olasupo from "@public/speakers/olasupo.png";
 import folasayo from "@public/speakers/folasayo.png";
 import daniel from "@public/speakers/daniel.png";
+import abada from "@public/speakers/abada.png";
 
 export const schedule = [
   {
@@ -268,10 +269,10 @@ export const engineeringOneSchedules = [
     duration: "25 minutes",
     session: "Cybersecurity",
     speaker: "Samuel Abada",
-    img: samuel,
+    img: abada,
   },
   {
-    title: "State Restoration - Making The Dead State Live Again",
+    title: "Building an AI-POWERED chatbot with Gemini",
     time: "11:20 AM - 11:45 AM",
     duration: "25 minutes",
     session: "AI/ML",
