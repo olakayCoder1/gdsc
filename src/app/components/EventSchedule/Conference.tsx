@@ -67,7 +67,7 @@ const Conference: React.FC = () => {
         />
         <LongEventScheduleCard
           title="Lunch Break & Games"
-          time="2:10 AM - 2:30 PM"
+          time="2:10 PM - 2:30 PM"
           className="lg:col-span-2"
         />
         {scheduleThree.map((schedule, index) => (
@@ -91,7 +91,7 @@ const Conference: React.FC = () => {
         ))}
         <LongEventScheduleCard
           title="Closing Remarks & Gifts"
-          time="4:05 PM- 4:20 PM"
+          time="4:05 PM - 4:20 PM"
           className=""
         />
       </div>
