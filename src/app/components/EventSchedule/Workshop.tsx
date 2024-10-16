@@ -50,6 +50,16 @@ const Workshop: React.FC = () => {
         {techAndAiSchedules.map((schedule, index) => (
           <ShortEventScheduleCard key={index} {...schedule} />
         ))}
+        <LongEventScheduleCard
+          title="Tea-Break & Games"
+          time="2:00 PM - 2:30 PM"
+          className="lg:col-span-2"
+        />
+        <LongEventScheduleCard
+          title="Closing Remarks & Gifts"
+          time="2:30 PM - 3:00 PM"
+          className="lg:col-span-2"
+        />
       </div>
 
       <div
