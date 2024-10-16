@@ -17,6 +17,17 @@ import afolayan from "@public/speakers/afolayan.png";
 import habeeb from "@public/speakers/habeeb.png";
 import gabriel from "@public/speakers/gabriel.png";
 import stephen from "@public/speakers/stephen.png";
+import patrick from "@public/speakers/patrick.png";
+import adigbole from "@public/speakers/adigbole.png";
+import olusegun from "@public/speakers/olusegun.png";
+import mayowa from "@public/speakers/mayowa.png";
+import samuel from "@public/speakers/samuel.png";
+import shalom from "@public/speakers/shalom.png";
+import john from "@public/speakers/john.png";
+import quidirah from "@public/speakers/alimi.png";
+import tomiwa from "@public/speakers/tomiwa.png";
+import sulyman from "@public/speakers/sulyman.png";
+import oluwaseyi from "@public/speakers/oluwaseyi.png";
 
 export const schedule = [
   {
@@ -208,5 +219,102 @@ export const scheduleFour = [
     session: "Session",
     speaker: "Stephen Edache Paul",
     img: stephen,
+  },
+];
+
+export const engineeringSchedules = [
+  {
+    title:
+      "The power of microinteractions in enhancing user experience and engagement",
+    time: "10:00 AM - 10:40 AM",
+    duration: "40 minutes",
+    session: "Engineering Track",
+    speaker: "Patrick Ojeh",
+    img: patrick,
+  },
+  {
+    title: "Staying with the flow in the tech landscape",
+    time: "10:40 AM - 11:20 AM",
+    duration: "40 minutes",
+    session: "Engineering Track",
+    speaker: "Olusegun Joe-Alabi",
+    img: olusegun,
+  },
+  {
+    title: "Getting started with Hugging face",
+    time: "12:00 PM - 12:40 PM",
+    duration: "40 minutes",
+    session: "Cybersecurity Track",
+    speaker: "Mayowa Bello",
+    img: mayowa,
+  },
+  {
+    title:
+      "Building Intelligent Recommendation System using PGVector, and Google Gemini",
+    time: "10:40 AM - 11:20 AM",
+    duration: "40 minutes",
+    session: "AI/ML",
+    speaker: "John Oba",
+    img: john,
+  },
+  {
+    title: "State Restoration - Making The Dead State Live Again",
+    time: "12:40 PM - 1:20 PM",
+    duration: "40 minutes",
+    session: "Cybersecurity Track",
+    speaker: "Samuel Abada",
+    img: samuel,
+  },
+  {
+    title:
+      "Integrating Data Protection Best Practices into Software Development",
+    time: "1:20 PM - 2:00 PM",
+    duration: "40 minutes",
+    session: "Cybersecurity Track",
+    speaker: "Shalom Bamigboye",
+    img: shalom,
+  },
+];
+
+export const techAndAiSchedules = [
+  {
+    title: "Collaborating on Products with High Interdependence Among Teams",
+    time: "10:00 AM - 10:40 AM",
+    duration: "40 minutes",
+    session: "Design",
+    speaker: "Adigbole Osisioni",
+    img: adigbole,
+  },
+  {
+    title: "Now You See Me: A Day as a Tester",
+    time: "11:20 AM - 12:00 PM",
+    duration: "40 minutes",
+    session: "Cybersecurity Track",
+    speaker: "Oluwaseyi Ajadi",
+    img: oluwaseyi,
+  },
+  {
+    title: "Current State of AI: Genuine Intelligence or Advanced Algorithms?",
+    time: "11:20 AM - 12:00 PM",
+    duration: "40 minutes",
+    session: "AI/ML",
+    speaker: "Quidirah Alimi",
+    img: quidirah,
+  },
+  {
+    title: "Leveraging Gemini AI to Boost Your Flutter App's Capabilities",
+    time: "12:00 PM - 12:40 PM",
+    duration: "40 minutes",
+    session: "AI/ML",
+    speaker: "Tomiwa Idowu",
+    img: tomiwa,
+  },
+  {
+    title: "Quicknode Workshop",
+    time: "12:40 PM - 1:20 PM",
+    duration: "40 minutes",
+    session: "AI/ML",
+    speaker: "Kamaldeen Sulyman",
+    img: sulyman,
   },
 ];
