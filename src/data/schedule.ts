@@ -28,6 +28,10 @@ import quidirah from "@public/speakers/alimi.png";
 import tomiwa from "@public/speakers/tomiwa.png";
 import sulyman from "@public/speakers/sulyman.png";
 import oluwaseyi from "@public/speakers/oluwaseyi.png";
+import joshua from "@public/speakers/joshua.png";
+import olasupo from "@public/speakers/olasupo.png";
+import folasayo from "@public/speakers/folasayo.png";
+import daniel from "@public/speakers/daniel.png";
 
 export const schedule = [
   {
@@ -222,99 +226,144 @@ export const scheduleFour = [
   },
 ];
 
-export const engineeringSchedules = [
-  {
-    title:
-      "The power of microinteractions in enhancing user experience and engagement",
-    time: "10:00 AM - 10:40 AM",
-    duration: "40 minutes",
-    session: "Engineering Track",
-    speaker: "Patrick Ojeh",
-    img: patrick,
-  },
-  {
-    title: "Staying with the flow in the tech landscape",
-    time: "10:40 AM - 11:20 AM",
-    duration: "40 minutes",
-    session: "Engineering Track",
-    speaker: "Olusegun Joe-Alabi",
-    img: olusegun,
-  },
-  {
-    title: "Getting started with Hugging face",
-    time: "12:00 PM - 12:40 PM",
-    duration: "40 minutes",
-    session: "Cybersecurity Track",
-    speaker: "Mayowa Bello",
-    img: mayowa,
-  },
+export const engineeringOneSchedules = [
   {
     title:
       "Building Intelligent Recommendation System using PGVector, and Google Gemini",
-    time: "10:40 AM - 11:20 AM",
-    duration: "40 minutes",
-    session: "AI/ML",
+    time: "09:15 AM - 09:40 AM",
+    duration: "25 minutes",
+    session: "Engineering",
     speaker: "John Oba",
     img: john,
   },
   {
-    title: "State Restoration - Making The Dead State Live Again",
-    time: "12:40 PM - 1:20 PM",
-    duration: "40 minutes",
-    session: "Cybersecurity Track",
-    speaker: "Samuel Abada",
-    img: samuel,
-  },
-  {
     title:
-      "Integrating Data Protection Best Practices into Software Development",
-    time: "1:20 PM - 2:00 PM",
-    duration: "40 minutes",
-    session: "Cybersecurity Track",
-    speaker: "Shalom Bamigboye",
-    img: shalom,
-  },
-];
-
-export const techAndAiSchedules = [
-  {
-    title: "Collaborating on Products with High Interdependence Among Teams",
-    time: "10:00 AM - 10:40 AM",
-    duration: "40 minutes",
-    session: "Design",
-    speaker: "Adigbole Osisioni",
-    img: adigbole,
-  },
-  {
-    title: "Now You See Me: A Day as a Tester",
-    time: "11:20 AM - 12:00 PM",
-    duration: "40 minutes",
-    session: "Cybersecurity Track",
-    speaker: "Oluwaseyi Ajadi",
-    img: oluwaseyi,
+      "The power of microinteractions in enhancing user experience and engagement",
+    time: "09:40 AM - 10:05 AM",
+    duration: "25 minutes",
+    session: "Engineering",
+    speaker: "Patrick Ojeh",
+    img: patrick,
   },
   {
     title: "Current State of AI: Genuine Intelligence or Advanced Algorithms?",
-    time: "11:20 AM - 12:00 PM",
+    time: "10:05 AM - 10:30 PM",
     duration: "40 minutes",
     session: "AI/ML",
     speaker: "Quidirah Alimi",
     img: quidirah,
   },
   {
-    title: "Leveraging Gemini AI to Boost Your Flutter App's Capabilities",
-    time: "12:00 PM - 12:40 PM",
-    duration: "40 minutes",
+    title:
+      "Integrating Data Protection Best Practices into Software Development",
+    time: "10:30 PM - 10:55 AM",
+    duration: "25 minutes",
+    session: "Cybersecurity",
+    speaker: "Shalom Bamigboye",
+    img: shalom,
+  },
+  {
+    title: "State Restoration - Making The Dead State Live Again",
+    time: "10:55 PM - 11:20 AM",
+    duration: "25 minutes",
+    session: "Cybersecurity",
+    speaker: "Samuel Abada",
+    img: samuel,
+  },
+  {
+    title: "State Restoration - Making The Dead State Live Again",
+    time: "11:20 AM - 11:45 AM",
+    duration: "25 minutes",
     session: "AI/ML",
-    speaker: "Tomiwa Idowu",
-    img: tomiwa,
+    speaker: "Joshua Olajide",
+    img: joshua,
   },
   {
     title: "Quicknode Workshop",
-    time: "12:40 PM - 1:20 PM",
-    duration: "40 minutes",
-    session: "AI/ML",
+    time: "11:45 PM - 12:10 PM",
+    duration: "25 minutes",
+    session: "Engineering",
     speaker: "Kamaldeen Sulyman",
     img: sulyman,
+  },
+  {
+    title:
+      "The Open API Blueprint: Building developer-centric API documentation",
+    time: "12:10 PM - 12:35 PM",
+    duration: "25 minutes",
+    session: "Engineering",
+    speaker: "Olasupo Funke",
+    img: olasupo,
+  },
+  {
+    title: "Empowering Developers and Businesses with the SEERBIT Solutions",
+    time: "12:35 PM - 01:00 PM",
+    duration: "25 minutes",
+    session: "Engineering",
+    speaker: "Folasayo Olayemi",
+    img: folasayo,
+  },
+];
+
+export const engineeringTwoSchedules = [
+  {
+    title: "Staying with the flow in the tech landscape",
+    time: "09:15 AM - 09:40 AM",
+    duration: "25 minutes",
+    session: "Engineering",
+    speaker: "Olusegun Joe-Alabi",
+    img: olusegun,
+  },
+  {
+    title: "Getting started with Hugging face",
+    time: "09:40 AM - 10:05 PM",
+    duration: "25 minutes",
+    session: "AI/ML",
+    speaker: "Mayowa Bello",
+    img: mayowa,
+  },
+  {
+    title: "Now You See Me: A Day as a Tester",
+    time: "10:05 AM - 10:30 AM",
+    duration: "25 minutes",
+    session: "Cybersecurity",
+    speaker: "Oluwaseyi Ajadi",
+    img: oluwaseyi,
+  },
+  {
+    title:
+      "Introduction to React: A popular Javascript library for building user interfaces",
+    time: "10:30 AM - 10:55 AM",
+    duration: "25 minutes",
+    session: "Engineering",
+    speaker: "Daniel Olowoniyi",
+    img: daniel,
+  },
+  {
+    title: "Leveraging Gemini AI to Boost Your Flutter App's Capabilities",
+    time: "10:55 AM - 11:20 AM",
+    duration: "25 minutes",
+    session: "Engineering",
+    speaker: "Tomiwa Idowu",
+    img: tomiwa,
+  },
+];
+
+export const designSchedules = [
+  {
+    title: "The Future of UX/UI Design with AI Integration",
+    time: "09:15 AM - 09:55 AM",
+    duration: "40 minutes",
+    session: "Design",
+    speaker: "Omogoye Precious Deborah",
+    img: precious,
+  },
+  {
+    title: "Collaborating on Products with High Interdependence Among Teams",
+    time: "09:55 AM - 10:35 AM",
+    duration: "40 minutes",
+    session: "Design",
+    speaker: "Adigbole Osisioni",
+    img: adigbole,
   },
 ];
