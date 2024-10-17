@@ -317,7 +317,7 @@ export const engineeringTwoSchedules = [
   },
   {
     title: "Getting started with Hugging face",
-    time: "09:40 AM - 10:05 PM",
+    time: "09:40 AM - 10:05 AM",
     duration: "25 minutes",
     session: "AI/ML",
     speaker: "Mayowa Bello",
