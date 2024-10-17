@@ -30,14 +30,16 @@ const Workshop: React.FC = () => {
           title="Introduction"
           className="lg:col-span-2"
         />
-        <p className="text-[#EA4435] text-sm text-center col-span-2 flex items-center gap-2 justify-center italic">
-          <BsInfoCircle color="#EA4435" />
+        <div className="lg:col-span-2">
+          <p className="text-[#EA4435] text-sm lg:text-center flex lg:items-center gap-2 justify-center italic">
+            <BsInfoCircle color="#EA4435" />
 
-          <span>
-            All tracks would be going on simultaneously in different breakout
-            rooms.
-          </span>
-        </p>
+            <span>
+              All tracks would be going on simultaneously in different breakout
+              rooms.
+            </span>
+          </p>
+        </div>
         <TrackEventScheduleCard
           title="Engineering & AI Track I"
           bgColor="#32A852"
