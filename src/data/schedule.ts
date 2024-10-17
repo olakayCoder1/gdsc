@@ -257,7 +257,7 @@ export const engineeringOneSchedules = [
   {
     title:
       "Integrating Data Protection Best Practices into Software Development",
-    time: "10:30 PM - 10:55 AM",
+    time: "10:30 AM - 10:55 AM",
     duration: "25 minutes",
     session: "Cybersecurity",
     speaker: "Shalom Bamigboye",
@@ -265,7 +265,7 @@ export const engineeringOneSchedules = [
   },
   {
     title: "State Restoration - Making The Dead State Live Again",
-    time: "10:55 PM - 11:20 AM",
+    time: "10:55 AM - 11:20 AM",
     duration: "25 minutes",
     session: "Cybersecurity",
     speaker: "Samuel Abada",
@@ -281,7 +281,7 @@ export const engineeringOneSchedules = [
   },
   {
     title: "Quicknode Workshop",
-    time: "11:45 PM - 12:10 PM",
+    time: "11:45 AM - 12:10 PM",
     duration: "25 minutes",
     session: "Engineering",
     speaker: "Kamaldeen Sulyman",
@@ -317,7 +317,7 @@ export const engineeringTwoSchedules = [
   },
   {
     title: "Getting started with Hugging face",
-    time: "09:40 AM - 10:05 PM",
+    time: "09:40 AM - 10:05 AM",
     duration: "25 minutes",
     session: "AI/ML",
     speaker: "Mayowa Bello",
