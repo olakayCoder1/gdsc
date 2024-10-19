@@ -33,6 +33,8 @@ import olasupo from "@public/speakers/olasupo.png";
 import folasayo from "@public/speakers/folasayo.png";
 import daniel from "@public/speakers/daniel.png";
 import abada from "@public/speakers/abada.png";
+import theophilus from "@public/speakers/theophilus.png";
+import imam from "@public/speakers/imam.png";
 
 export const schedule = [
   {
@@ -76,17 +78,18 @@ export const schedule = [
     img: jamiu,
   },
   {
-    title: "Building World-Class Competency the Smart Way",
-    time: "10:20 AM - 10:35 AM",
-    duration: "15 minutes",
-    session: "Session",
-    speaker: "Kolapo Imam",
-    img: kolapo,
+    title:
+      "Building World-Class Competency the Smart Way, Transitioning from Junior to Mid-Level Designer: Key Skills and Mindset Shifts",
+    time: "10:20 AM - 10:40 AM",
+    duration: "20 minutes",
+    session: "1 v 1 Session",
+    speaker: "Kolapo Imam & Habeeb Azeez",
+    img: [kolapo, habeeb],
   },
   {
     title:
       "From Product to Community: How Solana is Empowering the Next Billion Users",
-    time: "10:35 AM - 10:50 AM",
+    time: "10:40 AM - 10:55 AM",
     duration: "15 minutes",
     session: "Session",
     speaker: "Victoria Abiodun",
@@ -94,15 +97,23 @@ export const schedule = [
   },
   {
     title: "Design Keynote",
-    time: "10:50 AM - 11:00 AM",
+    time: "10:55 AM - 11:05 AM",
     duration: "10 minutes",
     session: "Keynote",
     speaker: "Elizabeth Alli",
     img: elizabeth,
   },
   {
+    title: "Twitter Break",
+    time: "11:05 AM - 11:10 AM",
+    duration: "5 minutes",
+    session: "",
+    speaker: "",
+    // img: elizabeth,
+  },
+  {
     title: "Micro-Interactions: Elevating User Experience",
-    time: "11:00 AM - 11:15 AM",
+    time: "11:10 AM - 11:25 AM",
     duration: "15 minutes",
     session: "Session",
     speaker: "Dára Sobaloju",
@@ -110,28 +121,28 @@ export const schedule = [
   },
   {
     title: "African Tech Titans: Unleashing the Continent’s Digital Potential",
-    time: "11:15 AM - 11:25 AM",
+    time: "11:25 AM - 11:35 AM",
     duration: "10 minutes",
     session: "Keynote",
     speaker: "Imam Abubakar",
-    // img: imam_abubakar,
+    img: imam,
+  },
+  {
+    title: "The Future of UX/UI Design with AI Integration",
+    time: "11:35 AM - 11:40 AM",
+    duration: "5 minutes",
+    session: "Lightening Talk",
+    speaker: "Omogoye Deborah",
+    img: precious,
   },
   {
     title:
       "From Practice to Impact: How Real-Life Projects Can Boost Your Dev Career",
-    time: "11:25 AM - 11:40 AM",
-    duration: "15 minutes",
-    session: "Lightning Talk",
-    speaker: "Theophilus Ukuyoma",
-    // img: theophilus_ukuyoma,
-  },
-  {
-    title: "The Future of UX/UI Design with AI Integration",
     time: "11:40 AM - 11:55 AM",
     duration: "15 minutes",
     session: "Session",
-    speaker: "Omogoye Precious Deborah",
-    img: precious,
+    speaker: "Theophilus Ukuyoma",
+    img: theophilus,
   },
 ];
 
@@ -139,23 +150,15 @@ export const scheduleTwo = [
   {
     title:
       "Untapped Potentials: Why Designers and Developers Need to Build Side Projects",
-    time: "12:40 PM - 12:55 PM",
+    time: "12:35 PM - 12:50 PM",
     duration: "15 minutes",
     session: "Session",
     speaker: "Collins Donye",
     img: collins,
   },
   {
-    title: "Accessibility in Design: The Cost of Its Negligence",
-    time: "12:55 PM - 1:10 PM",
-    duration: "15 minutes",
-    session: "Session",
-    speaker: "Elvis Obi",
-    img: elvis,
-  },
-  {
     title: "Flutter & Geometry: Foundations of Geometry in Flutter",
-    time: "1:25 PM - 1:40 PM",
+    time: "12:50 PM - 1:05 PM",
     duration: "15 minutes",
     session: "Session",
     speaker: "Ayotomide Babalola (Czar)",
@@ -164,18 +167,26 @@ export const scheduleTwo = [
   {
     title:
       "From Good to Great: Unlocking Peak Performance in a Startup Environment",
-    time: "1:40 PM - 1:55 PM",
+    time: "1:05 PM - 1:20 PM",
     duration: "15 minutes",
     session: "Session",
     speaker: "Olamide Ilori",
     img: olamide,
+  },
+  {
+    title: "Startup List Africa",
+    time: "1:20 PM - 1:28 PM",
+    duration: "8 minutes",
+    session: "Lighting Talk",
+    speaker: "John Oba",
+    img: john,
   },
 ];
 
 export const scheduleThree = [
   {
     title: "Mastering Accessibility: Prevent, Catch, and Fix",
-    time: "2:30 PM - 2:45 PM",
+    time: "2:03 PM - 2:18 PM",
     duration: "15 minutes",
     session: "Session",
     speaker: "Uchechukwu Azubuko",
@@ -186,44 +197,35 @@ export const scheduleThree = [
 export const scheduleFour = [
   {
     title: "Leveraging Social Media as a Tech Professional",
-    time: "3:15 PM - 3:20 PM",
-    duration: "5 minutes",
+    time: "2:43 PM - 2:50 PM",
+    duration: "7 minutes",
     session: "Lightning Talk",
     speaker: "Aduragbemi Johnson",
     img: johnson,
   },
   {
     title: "Exploring Community with the planter's lens",
-    time: "3:20 PM - 3:30 PM",
+    time: "2:50 PM - 3:00 PM",
     duration: "10 minutes",
     session: "Session",
     speaker: "Afolayan Stephen",
-    img: stephen,
-  },
-  {
-    title:
-      "Transitioning from Junior to Mid-Level Designer: Key Skills and Mindset Shifts",
-    time: "3:30 PM - 3:40 PM",
-    duration: "10 minutes",
-    session: "Session",
-    speaker: "Habeeb Azeez",
-    img: habeeb,
-  },
-  {
-    title: "Inclusive Design Thinking",
-    time: "3:40 PM - 3:55 PM",
-    duration: "15 minutes",
-    session: "Session",
-    speaker: "Gabriel Inyamah",
-    img: gabriel,
+    img: afolayan,
   },
   {
     title: "Challenging the Social Perception around Self Promotion",
-    time: "3:55 PM - 4:05 PM",
+    time: "3:00 PM - 3:10 PM",
     duration: "10 minutes",
     session: "Session",
     speaker: "Stephen Edache Paul",
     img: stephen,
+  },
+  {
+    title: "Seerbit Session",
+    time: "3:10 PM - 3:15 PM",
+    duration: "15 minutes",
+    session: "Lightning talk",
+    speaker: "Folasayo Olayemi",
+    img: folasayo,
   },
 ];
 
