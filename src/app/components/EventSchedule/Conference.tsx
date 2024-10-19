@@ -47,8 +47,8 @@ const Conference: React.FC = () => {
           session="Panel Discussion"
           title="AI, Ethics, and the Future of Work"
           imgs={[aliyu, tosin, alaran, etiene]}
-          time="12:10 PM - 12:40 PM"
-          duration="30 minutes"
+          time="12:10 PM - 12:35 PM"
+          duration="25 minutes"
           speakers={[
             "Aliyu Ramat",
             "Tosin Yusuf",
@@ -59,15 +59,19 @@ const Conference: React.FC = () => {
         {scheduleTwo.map((schedule, index) => (
           <ShortEventScheduleCard key={index} {...schedule} />
         ))}
-        <LongEventScheduleCard title="Break" time="" className="" />
+        <LongEventScheduleCard
+          title="Break"
+          time=""
+          className="lg:col-span-2"
+        />
         <LongEventScheduleCard
           title="Family Group Photo"
-          time="1:55 PM - 2:10 PM"
+          time="1:28 PM - 1:43 PM"
           className="lg:col-span-2"
         />
         <LongEventScheduleCard
           title="Lunch Break & Games"
-          time="2:10 PM - 2:30 PM"
+          time="1:43 PM - 2:03 PM"
           className="lg:col-span-2"
         />
         {scheduleThree.map((schedule, index) => (
@@ -77,8 +81,8 @@ const Conference: React.FC = () => {
           session="Panel Discussion"
           title="Building Tech Solutions for African Challenges"
           imgs={[taiye, samuel, goodness, temi]}
-          time="2:45 PM - 3:15 PM"
-          duration="30 minutes"
+          time="2:18 PM - 2:43 PM"
+          duration="25 minutes"
           speakers={[
             "Abubakar Taiye Hassanat",
             "Samuel Afolabi",
@@ -91,8 +95,8 @@ const Conference: React.FC = () => {
         ))}
         <LongEventScheduleCard
           title="Closing Remarks & Gifts"
-          time="4:05 PM - 4:20 PM"
-          className=""
+          time=""
+          className="lg:col-span-2"
         />
       </div>
 

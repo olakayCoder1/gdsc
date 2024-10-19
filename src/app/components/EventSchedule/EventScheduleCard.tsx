@@ -36,7 +36,7 @@ type ShortEventScheduleCardProps = {
   duration: string;
   session?: string;
   speaker: string;
-  img?: any;
+  img?: any[] | any;
 };
 
 export const ShortEventScheduleCard: React.FC<ShortEventScheduleCardProps> = ({
@@ -77,8 +77,17 @@ export const ShortEventScheduleCard: React.FC<ShortEventScheduleCardProps> = ({
       <div className="grid lg:grid-cols-2 lg:gap-10 mt-6 lg:mt-2 text-[#5D5D5D]">
         <p className="mr-4">{title}</p>
 
-        <div className="flex items-center gap-1  mt-2 lg:mt-0">
-          {img ? (
+        <div className="flex items-center gap-1 mt-2 lg:mt-0">
+          {Array.isArray(img) ? (
+            img.map((imageSrc, index) => (
+              <Image
+                key={index}
+                src={imageSrc}
+                alt={speaker}
+                className="w-[30px] h-[30px] rounded-full bg-[#D9D9D9] object-cover"
+              />
+            ))
+          ) : img ? (
             <Image
               src={img}
               alt={speaker}
