@@ -46,6 +46,24 @@ export const menuLinks: MenuItem[] = [
   },
 ];
 
+export const newMenuLinks: MenuItem[] = [
+  {
+    title: "Photos",
+    path: "https://photos.app.goo.gl/Zua4uwAEqKVFiX6y8",
+    isExternal: true,
+  },
+  {
+    title: "Videos",
+    path: "/videos",
+    isExternal: true,
+  },
+  {
+    title: "Join community for 2025",
+    path: "https://gdg.community.dev/gdg-ilorin/",
+    isExternal: true,
+  },
+];
+
 export const ctaLinks: Record<string, CtaLinks> = {
   workshop: {
     title: "Workshop",
@@ -75,6 +93,21 @@ export const ctaLinks: Record<string, CtaLinks> = {
   ticket: {
     title: "⁠Buy Ticket",
     link: "https://tix.africa/devfest-ilorin-2024-day-2",
+    isExternal: true,
+  },
+  photosOne: {
+    title: "Photo for Day one",
+    link: "https://photos.app.goo.gl/unNrm6CrpUpqpJCk7",
+    isExternal: true,
+  },
+  photosTwo: {
+    title: "Photo for Day two",
+    link: "https://photos.app.goo.gl/FTAsGcq3AzuyczMFA",
+    isExternal: true,
+  },
+  photosThree: {
+    title: "Photo for Day three",
+    link: "https://photos.app.goo.gl/Zua4uwAEqKVFiX6y8",
     isExternal: true,
   },
 };

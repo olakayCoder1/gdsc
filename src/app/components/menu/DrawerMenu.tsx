@@ -17,14 +17,18 @@ import {
 import React, { useRef } from "react";
 import { RiMenu3Line } from "react-icons/ri";
 import { NavMenuProps } from "./NavMenu";
-import { ctaLinks, menuLinks } from "@/data";
+import { ctaLinks, menuLinks, newMenuLinks } from "@/data";
 import clsx from "clsx";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
+import { usePathname } from "next/navigation";
 
 export default function DrawerMenu({ currentPath }: NavMenuProps) {
+  const pathname = usePathname();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef(null);
+
+  const linksToRender = pathname === "/" ? newMenuLinks : menuLinks;
 
   return (
     <>
@@ -66,7 +70,7 @@ export default function DrawerMenu({ currentPath }: NavMenuProps) {
                   Home
                 </Link>
               </li>
-              {menuLinks.map((link) => {
+              {linksToRender.map((link) => {
                 return (
                   <li
                     key={link.path}
@@ -80,6 +84,7 @@ export default function DrawerMenu({ currentPath }: NavMenuProps) {
                       onClick={onClose}
                       passHref
                       prefetch={false}
+                      target={link.isExternal ? "_blank" : ""}
                     >
                       <Text>{link.title}</Text>
                     </Link>
