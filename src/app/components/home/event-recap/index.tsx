@@ -15,6 +15,7 @@ export default function EventRecap() {
           items={eventRecapShots}
           direction="right"
           speed="fast"
+          width80
         />
       </div>
     </section>
