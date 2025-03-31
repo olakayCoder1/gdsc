@@ -149,7 +149,7 @@ export default function GetDpPage() {
           Show demmm!🥳
         </h1>
         <p className="text-wrap text-center text-[18px] text-primary-gray font-bold lg:w-[900px] mx-auto">
-          Generate and share your unique Devfest Ilorin 2024 DP
+          Generate and share your unique BuildWithAl Ilorin 2025 DP
         </p>
         <DateAndLocation />
       </section>
