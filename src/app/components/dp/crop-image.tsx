@@ -102,7 +102,7 @@ const CropImage: React.FC<CropImageProps> = ({ onCroppedImage }) => {
         <div className="border-2 border-dashed rounded-lg p-1 h-full flex justify-center items-center">
           {!imgUrl ? (
             <div className="flex flex-col gap-2 justify-center items-center">
-              <Image src={UploaderIcon} alt="icon" width={35} height={35} />
+              <Image src={UploaderIcon} alt="icon" width={35} height={35}/>
               <div className="text-center">
                 Drag and drop to upload or <br />
                 <span className="text-[#34a853]">browse</span>

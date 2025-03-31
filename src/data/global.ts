@@ -28,18 +28,18 @@ export const menuLinks: MenuItem[] = [
     title: "Get DP",
     path: "/get-dp",
   },
-  {
-    title: "Speakers",
-    path: "/speakers",
-  },
-  {
-    title: "Schedule",
-    path: "/schedule",
-  },
-  {
-    title: "Sponsors",
-    path: "/sponsors",
-  },
+  // {
+  //   title: "Speakers",
+  //   path: "/speakers",
+  // },
+  // {
+  //   title: "Schedule",
+  //   path: "/schedule",
+  // },
+  // {
+  //   title: "Sponsors",
+  //   path: "/sponsors",
+  // },
   {
     title: "Team",
     path: "/team",
@@ -48,20 +48,25 @@ export const menuLinks: MenuItem[] = [
 
 export const newMenuLinks: MenuItem[] = [
   {
-    title: "Photos",
-    path: "https://photos.app.goo.gl/Zua4uwAEqKVFiX6y8",
-    isExternal: true,
+    title: "Get DP",
+    path: "/get-dp",
+    isExternal: false,
   },
   {
-    title: "Videos",
-    path: "/videos",
-    isExternal: true,
+    title: "Team",
+    path: "/team",
+    isExternal: false,
   },
-  {
-    title: "Join community for 2025",
-    path: "https://gdg.community.dev/gdg-ilorin/",
-    isExternal: true,
-  },
+  // {
+  //   title: "Videos",
+  //   path: "/videos",
+  //   isExternal: true,
+  // },
+  // {
+  //   title: "Join community for 2025",
+  //   path: "https://gdg.community.dev/gdg-ilorin/",
+  //   isExternal: true,
+  // },
 ];
 
 export const ctaLinks: Record<string, CtaLinks> = {
