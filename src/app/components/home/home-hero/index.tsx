@@ -32,20 +32,19 @@ const HomeHero = () => {
             py={8}
             className="flex items-center gap-2 !font-bold w-full"
           >
-            Register Now <BsArrowUpRight />
-            {/* for conference (Day 3 Main) */}
+            Register Now! <BsArrowUpRight />
           </Button>
 
-          {/* <Button
+          <Button
             as={Link}
-            href={ctaLinks.workshop.link}
+            href="/get-dp"
             target="_blank"
             borderRadius={50}
             py={8}
             className="!bg-[#33A852] !text-white hover:opacity-80 flex items-center gap-2 !font-bold w-full"
           >
-            Register for workshop (Day 1) <BsArrowUpRight />
-          </Button> */}
+            Generate DP! <BsArrowUpRight />
+          </Button>
         </div>
       </div>
       <ConfettiContainer />

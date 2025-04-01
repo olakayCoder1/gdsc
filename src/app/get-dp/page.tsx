@@ -8,7 +8,7 @@ import DpCanvas from "../components/dp/dp-canvas";
 // import yellowImage from "@public/dp/yellow.jpg";
 // import redImage from "@public/dp/red.jpg";
 // import greenImage from "@public/dp/green.jpg";
-import whiteImage from "@public/dp/gdsc.jpg";
+import whiteImage from "@public/dp/getdp.svg";
 
 const colors = [
   // { name: "Blue", value: "blue", image: blueImage.src },
@@ -33,45 +33,45 @@ export default function GetDpPage() {
         const containerWidth = canvas.clientWidth;
         const dpr = window.devicePixelRatio || 1;
 
-        const width = containerWidth;
-        const height = width;
-        canvas.width = width * dpr;
-        canvas.height = height * dpr;
-        canvas.style.width = `${width}px`;
-        canvas.style.height = `${height}px`;
+        // Ensure the canvas is square
+        const size = containerWidth; // Use width as the size for both width and height
+        canvas.width = size * dpr;
+        canvas.height = size * dpr;
+        canvas.style.width = `${size}px`;
+        canvas.style.height = `${size}px`;
         ctx.scale(dpr, dpr);
 
-        ctx.clearRect(0, 0, width, height);
+        ctx.clearRect(0, 0, size, size);
 
         const backgroundImage = new Image();
         backgroundImage.src =
           colors.find((color) => color.value === selectedColor)?.image || "";
 
         backgroundImage.onload = () => {
-          ctx.drawImage(backgroundImage, 0, 0, width, height);
+          ctx.drawImage(backgroundImage, 0, 0, size, size);
 
           if (profilePicture) {
             const profileImage = new Image();
             profileImage.src = profilePicture;
-          
+
             profileImage.onload = () => {
-              const profilePicX = width * 0.75;  // Center X position
-              const profilePicY = height * 0.34;  // Center Y position
-              const radius = width * 0.16;  // Circle radius (half of your 0.32 width)
-            
+              const profilePicX = size / 2; // Center X position
+              const profilePicY = size / 2; // Center Y position
+              const radius = size * 0.16; // Circle radius (adjust as needed)
+
               const imgWidth = profileImage.width;
               const imgHeight = profileImage.height;
-            
+
               const scale = Math.max(
                 (radius * 2) / imgWidth,
                 (radius * 2) / imgHeight
               );
               const scaledWidth = imgWidth * scale;
               const scaledHeight = imgHeight * scale;
-            
-              const x = profilePicX - scaledWidth / 2;  // Center the image
-              const y = profilePicY - scaledHeight / 2;  // Center the image
-            
+
+              const x = profilePicX - scaledWidth / 2; // Center the image
+              const y = profilePicY - scaledHeight / 2; // Center the image
+
               ctx.save();
               ctx.beginPath();
               ctx.arc(profilePicX, profilePicY, radius, 0, Math.PI * 2);
@@ -82,10 +82,10 @@ export default function GetDpPage() {
             };
           }
 
-          const textX = width * 0.75; // Center text below the profile picture
-          const textY = height * 0.58;    
+          const textX = size / 2; // Center text below the profile picture
+          const textY = size * 0.75;
 
-          ctx.font = `${Math.floor(width * 0.05)}px Google Sans`;
+          ctx.font = `${Math.floor(size * 0.05)}px Google Sans`;
           ctx.fillStyle = "black";
           ctx.textAlign = "center";
           ctx.fillText(name, textX, textY);

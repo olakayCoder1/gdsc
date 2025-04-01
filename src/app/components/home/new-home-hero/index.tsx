@@ -22,6 +22,16 @@ const NewHomeHero = () => {
             className="flex items-center gap-2 !font-bold w-full"
           >
             Add to your Calendar!  <BsArrowUpRight />
+          </Button>
+
+          <Button
+            as={Link}
+            href="/get-dp"
+            borderRadius={50}
+            py={8}
+            className="flex items-center gap-2 !font-bold w-full"
+          >
+            Generate DP!
           </Button>  
 
           <Button
