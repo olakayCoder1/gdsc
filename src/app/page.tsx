@@ -1,17 +1,19 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import EventRecap from "./components/home/event-recap";
-import NewHomeHero from "./components/home/new-home-hero";
-import SpeakerSection from "./components/home/speaker-section";
-import SectionTitle from "./components/section-title";
-import { partners, sponsors } from "@/data";
-import Link from "next/link";
+import Image from 'next/image';
+import EventRecap from './components/home/event-recap';
+import NewHomeHero from './components/home/new-home-hero';
+import SpeakerSection from './components/home/speaker-section';
+import SectionTitle from './components/section-title';
+import { partners, sponsors } from '@/data';
+import Link from 'next/link';
+import HeroSection from './components/hero/HeroSection';
 
 export default function Home() {
   return (
     <>
-      <NewHomeHero />
+      {/* <NewHomeHero /> */}
+      <HeroSection />
       <EventRecap />
       <SpeakerSection />
 
@@ -45,8 +47,8 @@ export default function Home() {
                 alt={`sponsor-${index}`}
                 className={
                   index === 5
-                    ? "w-[50px] lg:w-[80px]"
-                    : "w-[110px] lg:w-[180px]"
+                    ? 'w-[50px] lg:w-[80px]'
+                    : 'w-[110px] lg:w-[180px]'
                 }
               />
             ))}
