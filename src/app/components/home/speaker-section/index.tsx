@@ -55,7 +55,7 @@ export default function SpeakerSection() {
               py={8}
               className="!bg-primary-body !text-white hover:opacity-80 flex items-center gap-2"
             >
-              View 2024 speakers <BsArrowUpRight />
+              View Speakers <BsArrowUpRight />
             </Button>
           </div>
         ) : (
