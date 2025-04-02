@@ -34,7 +34,7 @@ export default function SponsorsPage() {
 
         <p className="text-wrap text-center text-[18px] text-primary-gray font-bold lg:w-[900px] mx-auto">
           We extend our heartfelt gratitude to our esteemed sponsors for their
-          invaluable support. Your partnership helps make DevFest Ilorin 2024 an
+          invaluable support. Your partnership helps make Build With AI 2025 an
           extraordinary event, fostering innovation and connecting the tech
           community. Thank you for being a crucial part of our journey!
         </p>

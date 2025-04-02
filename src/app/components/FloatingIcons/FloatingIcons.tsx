@@ -39,6 +39,8 @@ const FloatingIcons: React.FC = () => {
             <Image 
               src={icon.src}
               alt={icon.alt}
+              width={64} // Set a default width
+              height={64} // Set a default height
               className="w-16 h-16 md:w-24 md:h-24"
             />
           </div>

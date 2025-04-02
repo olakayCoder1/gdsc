@@ -7,7 +7,6 @@ import EventRecap from "../components/home/event-recap";
 import SpeakerSection from "../components/home/speaker-section";
 import SectionTitle from "../components/section-title";
 
-// import sunset from "@public/icons/icon-sunset.svg";
 import mainVenue from "@public/venues/main-venue.png";
 import privateNetwork from "@public/venues/private-network.png";
 import workshopVenue from "@public/venues/workshop-venue.png";
@@ -38,12 +37,15 @@ export default function Home() {
               <Image
                 src={mainVenue}
                 alt="conference-day-venue"
-                className="w-full h-full flex flex-1"
+                className="w-full h-full flex flex-1 rounded-xl" // Added rounded corners class
               />
             </aside>
 
             <aside className="flex flex-col gap-6">
-              <Image src={workshopVenue} alt="workshop-venue" />
+              <Image src={workshopVenue}
+               alt="workshop-venue"
+               className="rounded-xl" // Added rounded corners
+              />
               <Image src={privateNetwork} alt="private-network" />
             </aside>
           </div>
