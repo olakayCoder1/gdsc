@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const FloatingIcons: React.FC = () => {
@@ -35,7 +36,7 @@ const FloatingIcons: React.FC = () => {
             }}
             className={`absolute transition-all ease-in-out ${icon.className}`}
           >
-            <img
+            <Image 
               src={icon.src}
               alt={icon.alt}
               className="w-16 h-16 md:w-24 md:h-24"
