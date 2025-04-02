@@ -10,9 +10,9 @@ import thumbnail from "@public/devfest-social-meta.png";
 const appName = config.appName;
 const appUrl = config.appUrl;
 const appMetaTitle = `${appName} - The Biggest Tech Conference In North Central`;
-const imageAlt = "Google Developer Group Ilorin";
+const imageAlt = "GDG On Campus Unilorin";
 const appMetaDescription =
-  "📢 The official DevFest Ilorin 2024 📢 Mark your calendars for October 17th - 19th, 2024. Don’t miss out on three incredible days of innovation, networking, Exclusive hangout and learning. Get your FREE TICKET now: https://bit.ly/devfestilorin24 #devfestilorin24 #DevFest2024 #devfest";
+  "📢 Join us at Build With AI Unilorin from April 08 to 12 for 4 days of inspiring talks, interactive workshops, and unparalleled networking opportunities.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(appUrl),
