@@ -10,8 +10,8 @@ import Countdown from '../../Countdown/Countdown';
 import { ctaLinks } from "@/data";
 
 const NewHomeHeroNew = () => {
-  const eventDate = new Date();
-  eventDate.setDate(eventDate.getDate() + 1);
+  const eventDate =  new Date('April 8, 2025 00:00:00');
+  // eventDate.setDate(eventDate.getDate() + 1);
 
   const [showConfetti, setShowConfetti] = useState(false);
   const [countdownComplete, setCountdownComplete] = useState(false);
