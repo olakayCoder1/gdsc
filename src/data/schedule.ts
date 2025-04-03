@@ -8,6 +8,7 @@ import unclebigbay from "@public/speakers/unclebigbay.png";
 import abdulrasaq from "@public/speakers/abdulrasaq.jpeg";
 import lekan from "@public/speakers/lekan.jpg";
 
+
 export const schedule = [
   {
     title: "",
