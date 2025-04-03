@@ -18,7 +18,7 @@ const schedule = [
   },
   {
     day: 2,
-    type: "Worshop",
+    type: "Workshop",
     price: "Virtual",
     description: "Thursday, April 10, 2025 @ 4:30PM WAT",
     button: {
