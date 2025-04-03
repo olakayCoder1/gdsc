@@ -17,14 +17,8 @@ import {
 } from "@/data/schedule";
 
 import abdulrasaq from "@public/speakers/abdulrasaq.jpeg";
-import lekan from "@public/speakers/lekan.jpg";
 import darey from "@public/speakers/darey.png";
-import etiene from "@public/speakers/etiene.png";
 
-import taiye from "@public/speakers/taiye.png";
-import samuel from "@public/speakers/samuel.png";
-import goodness from "@public/speakers/goodness.png";
-import temi from "@public/speakers/temi.png";
 
 const Conference: React.FC = () => {
   return (
