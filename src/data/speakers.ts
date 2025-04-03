@@ -11,7 +11,7 @@ import darey from "@public/speakers/darey.png";
 import henry from "@public/speakers/henry.jpeg";
 import unclebigbay from "@public/speakers/unclebigbay.png";
 import abdulrasaq from "@public/speakers/abdulrasaq.jpeg";
-import lekan from "@public/speakers/lekan.jpg";
+// import lekan from "@public/speakers/lekan.jpg";
 
 export const speakers: Speaker[] = [
   {
@@ -75,12 +75,12 @@ export const speakers: Speaker[] = [
     role: "STEM Technician, Charterhouse Lagos",
     day: "workshop",
   },
-  {
-    image: lekan,
-    name: "Lekan Olaoye",
-    role: "Technical Team Lead, GDGoC Unilorin",
-    day: "breakout",
-  },
+  // {
+  //   image: lekan,
+  //   name: "Lekan Olaoye",
+  //   role: "Technical Team Lead, GDGoC Unilorin",
+  //   day: "breakout",
+  // },
   {
     image: abdulrasaq,
     name: "Abdulrasaq Mustapha ",
