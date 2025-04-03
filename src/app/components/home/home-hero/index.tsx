@@ -5,7 +5,6 @@ import { BsArrowUpRight } from "react-icons/bs";
 import ConfettiContainer from "@component/confetti/ConfettiContainer";
 import { ctaLinks } from "@/data";
 // import Image from "next/image";
-// import sunset from "@public/icons/icon-sunset.svg";
 
 const HomeHero = () => {
   return (

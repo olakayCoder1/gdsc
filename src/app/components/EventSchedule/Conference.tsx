@@ -16,9 +16,9 @@ import {
   scheduleTwo,
 } from "@/data/schedule";
 
-import aliyu from "@public/speakers/aliyu.png";
-import tosin from "@public/speakers/tosin.png";
-import alaran from "@public/speakers/alaran.png";
+import abdulrasaq from "@public/speakers/abdulrasaq.jpeg";
+import lekan from "@public/speakers/lekan.jpg";
+import darey from "@public/speakers/darey.png";
 import etiene from "@public/speakers/etiene.png";
 
 import taiye from "@public/speakers/taiye.png";
@@ -46,7 +46,7 @@ const Conference: React.FC = () => {
         <PanelEventScheduleCard
           session="Panel Discussion"
           title="AI, Ethics, and the Future of Work"
-          imgs={[aliyu, tosin, alaran, etiene]}
+          imgs={[abdulrasaq, darey]}
           time="12:10 PM - 12:35 PM"
           duration="25 minutes"
           speakers={[
@@ -80,7 +80,7 @@ const Conference: React.FC = () => {
         <PanelEventScheduleCard
           session="Panel Discussion"
           title="Building Tech Solutions for African Challenges"
-          imgs={[taiye, samuel, goodness, temi]}
+          imgs={[darey, abdulrasaq]}
           time="2:18 PM - 2:43 PM"
           duration="25 minutes"
           speakers={[
