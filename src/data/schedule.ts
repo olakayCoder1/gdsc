@@ -6,7 +6,7 @@ import darey from "@public/speakers/darey.png";
 import henry from "@public/speakers/henry.jpeg";
 import unclebigbay from "@public/speakers/unclebigbay.png";
 import abdulrasaq from "@public/speakers/abdulrasaq.jpeg";
-import lekan from "@public/speakers/lekan.jpg";
+// import lekan from "@public/speakers/lekan.jpg";
 
 
 export const schedule = [
@@ -17,14 +17,14 @@ export const schedule = [
     session: "Introduction",
     speaker: "Host",
   },
-  {
-    title: "Welcome by organizer",
-    time: "9:30 AM - 9:40 AM",
-    duration: "10 minutes",
-    session: "Welcome Remarks",
-    speaker: "Areous",
-    img: lekan,
-  },
+  // {
+  //   title: "Welcome by organizer",
+  //   time: "9:30 AM - 9:40 AM",
+  //   duration: "10 minutes",
+  //   session: "Welcome Remarks",
+  //   speaker: "Areous",
+  //   img: lekan,
+  // },
   {
     title: "Building a Resilient Career in Tech",
     time: "9:40 AM - 9:50 AM",
