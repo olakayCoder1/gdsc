@@ -6,8 +6,7 @@ import darey from "@public/speakers/darey.png";
 import henry from "@public/speakers/henry.jpeg";
 import unclebigbay from "@public/speakers/unclebigbay.png";
 import abdulrasaq from "@public/speakers/abdulrasaq.jpeg";
-// import lekan from "@public/speakers/lekan.jpg";
-
+import lekan from "@public/speakers/lekan.png";
 
 export const schedule = [
   {
@@ -17,14 +16,14 @@ export const schedule = [
     session: "Introduction",
     speaker: "Host",
   },
-  // {
-  //   title: "Welcome by organizer",
-  //   time: "9:30 AM - 9:40 AM",
-  //   duration: "10 minutes",
-  //   session: "Welcome Remarks",
-  //   speaker: "Areous",
-  //   img: lekan,
-  // },
+  {
+    title: "Welcome by organizer",
+    time: "9:30 AM - 9:40 AM",
+    duration: "10 minutes",
+    session: "Welcome Remarks",
+    speaker: "Areous",
+    img: lekan,
+  },
   {
     title: "Building a Resilient Career in Tech",
     time: "9:40 AM - 9:50 AM",
@@ -132,14 +131,14 @@ export const scheduleTwo = [
 ];
 
 export const scheduleThree = [
-  // {
-  //   title: "Mastering Accessibility: Prevent, Catch, and Fix",
-  //   time: "2:03 PM - 2:18 PM",
-  //   duration: "15 minutes",
-  //   session: "Session",
-  //   speaker: "Uchechukwu Azubuko",
-  //   img: lekan,
-  // },
+  {
+    title: "Mastering Accessibility: Prevent, Catch, and Fix",
+    time: "2:03 PM - 2:18 PM",
+    duration: "15 minutes",
+    session: "Session",
+    speaker: "Uchechukwu Azubuko",
+    img: lekan,
+  },
 ];
 
 export const scheduleFour = [
@@ -207,14 +206,14 @@ export const engineeringTwoSchedules = [
     speaker: "Olusegun Joe-Alabi",
     img: temi,
   },
-  // {
-  //   title: "Getting started with Hugging face",
-  //   time: "09:40 AM - 10:05 AM",
-  //   duration: "25 minutes",
-  //   session: "AI/ML",
-  //   speaker: "Mayowa Bello",
-  //   img: lekan,
-  // },
+  {
+    title: "Getting started with Hugging face",
+    time: "09:40 AM - 10:05 AM",
+    duration: "25 minutes",
+    session: "AI/ML",
+    speaker: "Mayowa Bello",
+    img: lekan,
+  },
   {
     title: "Now You See Me: A Day as a Tester",
     time: "10:05 AM - 10:30 AM",
