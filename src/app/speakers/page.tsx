@@ -17,7 +17,7 @@ import { useState } from "react";
 export default function SpeakersPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ["All", "Conference", "Workshop", "Panelist"];
+  const categories = ["All", "Virtual Speaker", "In-person"];
 
   const filteredSpeakers = speakers.filter((speaker) => {
     if (selectedCategory === "All") return true;
