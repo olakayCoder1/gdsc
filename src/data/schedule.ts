@@ -132,14 +132,14 @@ export const scheduleTwo = [
 ];
 
 export const scheduleThree = [
-  {
-    title: "Mastering Accessibility: Prevent, Catch, and Fix",
-    time: "2:03 PM - 2:18 PM",
-    duration: "15 minutes",
-    session: "Session",
-    speaker: "Uchechukwu Azubuko",
-    img: lekan,
-  },
+  // {
+  //   title: "Mastering Accessibility: Prevent, Catch, and Fix",
+  //   time: "2:03 PM - 2:18 PM",
+  //   duration: "15 minutes",
+  //   session: "Session",
+  //   speaker: "Uchechukwu Azubuko",
+  //   img: lekan,
+  // },
 ];
 
 export const scheduleFour = [
@@ -207,14 +207,14 @@ export const engineeringTwoSchedules = [
     speaker: "Olusegun Joe-Alabi",
     img: temi,
   },
-  {
-    title: "Getting started with Hugging face",
-    time: "09:40 AM - 10:05 AM",
-    duration: "25 minutes",
-    session: "AI/ML",
-    speaker: "Mayowa Bello",
-    img: lekan,
-  },
+  // {
+  //   title: "Getting started with Hugging face",
+  //   time: "09:40 AM - 10:05 AM",
+  //   duration: "25 minutes",
+  //   session: "AI/ML",
+  //   speaker: "Mayowa Bello",
+  //   img: lekan,
+  // },
   {
     title: "Now You See Me: A Day as a Tester",
     time: "10:05 AM - 10:30 AM",
