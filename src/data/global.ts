@@ -28,10 +28,10 @@ export const menuLinks: MenuItem[] = [
     title: "Get DP",
     path: "/get-dp",
   },
-  // {
-  //   title: "Speakers",
-  //   path: "/speakers",
-  // },
+  {
+    title: "Speakers",
+    path: "/speakers",
+  },
   // {
   //   title: "Schedule",
   //   path: "/schedule",
