@@ -1,6 +1,6 @@
-import React from "react";
-import lanyard from "@public/icons/lanyard-white-bg.svg";
-import Image, { StaticImageData } from "next/image";
+import React from 'react';
+import lanyard from '@public/icons/lanyard-white-bg.svg';
+import Image, { StaticImageData } from 'next/image';
 
 type SpeakersCardProps = {
   image: StaticImageData;
@@ -19,11 +19,13 @@ const SpeakersCard: React.FC<SpeakersCardProps> = ({
     <aside className="border-4 border-black bg-black rounded-xl relative overflow-hidden">
       <div
         className={`p-2 px-4 rounded-full w-fit absolute border-2 border-black top-2 left-2 text-primary-body capitalize ${
-          day === "workshop"
-            ? "bg-[#5CDB6D]"
-            : day === "panelist"
-            ? "bg-[#FFE7A5]"
-            : "bg-[#57CAFF]"
+          day === 'workshop'
+            ? 'bg-[#5CDB6D]'
+            : day === 'panelist'
+            ? 'bg-[#FFE7A5]'
+            : day === 'keynote'
+            ? 'bg-[#e74435] text-white'
+            : 'bg-[#57CAFF]'
         }`}
       >
         {day}

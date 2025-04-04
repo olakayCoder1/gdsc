@@ -1,6 +1,6 @@
-import React from "react";
-import timeIcon from "@public/icons/time.svg";
-import Image from "next/image";
+import React from 'react';
+import timeIcon from '@public/icons/time.svg';
+import Image from 'next/image';
 
 type LongEventScheduleCardProps = {
   title: string;
@@ -19,9 +19,9 @@ export const LongEventScheduleCard: React.FC<LongEventScheduleCardProps> = ({
         <h1 className="text-3xl text-center font-bold text-[#1E1E1E]">
           {title}
         </h1>
-        {time.trim() !== "" && (
+        {time.trim() !== '' && (
           <p className="text-[#5D5D5D] font-light text-lg flex items-center gap-2 justify-center mt-4">
-            <Image src={timeIcon} alt="time" className="w-[20px]" />{" "}
+            <Image src={timeIcon} alt="time" className="w-[20px]" />{' '}
             <span>{time}</span>
           </p>
         )}
@@ -52,13 +52,13 @@ export const ShortEventScheduleCard: React.FC<ShortEventScheduleCardProps> = ({
       <div className="grid lg:grid-cols-2 lg:gap-10">
         <h1
           className={`text-2xl font-bold ${
-            session === "Engineering"
-              ? "text-[#32A852]"
-              : session === "Cybersecurity"
-              ? "text-[#EA4435]"
-              : session === "AI/ML"
-              ? "text-[#F8AB19]"
-              : "text-[#136FDE]"
+            session === 'Engineering'
+              ? 'text-[#32A852]'
+              : session === 'Keynote'
+              ? 'text-[#EA4435]'
+              : session === 'AI/ML'
+              ? 'text-[#F8AB19]'
+              : 'text-[#136FDE]'
           }`}
         >
           {session}
@@ -66,7 +66,7 @@ export const ShortEventScheduleCard: React.FC<ShortEventScheduleCardProps> = ({
 
         <div>
           <p className="text-[#5D5D5D] font-light flex items-center gap-2 text-sm">
-            <Image src={timeIcon} alt="time" className="w-[15px]" />{" "}
+            <Image src={timeIcon} alt="time" className="w-[15px]" />{' '}
             <span className="font-medium">{time}</span>
           </p>
 
@@ -127,7 +127,7 @@ export const PanelEventScheduleCard: React.FC<PanelEventScheduleCardProps> = ({
 
         <div>
           <p className="text-[#5D5D5D] font-light flex items-center gap-2 text-sm">
-            <Image src={timeIcon} alt="time" className="w-[15px]" />{" "}
+            <Image src={timeIcon} alt="time" className="w-[15px]" />{' '}
             <span className="font-medium">{time}</span>
           </p>
 
@@ -154,7 +154,7 @@ export const PanelEventScheduleCard: React.FC<PanelEventScheduleCardProps> = ({
             {speakers.map((speaker, index) => (
               <p className="font-medium text-sm w-fit" key={index}>
                 {speaker}
-                {index < speakers.length - 1 && ", "}
+                {index < speakers.length - 1 && ', '}
               </p>
             ))}
           </div>
@@ -184,9 +184,9 @@ export const IntroductionEventScheduleCard: React.FC<
             <p className="font-medium text-sm">Host</p>
           </div>
 
-          {time.trim() !== "" && (
+          {time.trim() !== '' && (
             <p className="text-[#5D5D5D] font-light flex items-center gap-2 justify-center">
-              <Image src={timeIcon} alt="time" className="w-[15px]" />{" "}
+              <Image src={timeIcon} alt="time" className="w-[15px]" />{' '}
               <span>{time}</span>
             </p>
           )}

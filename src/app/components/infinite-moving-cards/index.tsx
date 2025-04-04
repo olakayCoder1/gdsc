@@ -1,22 +1,22 @@
-"use client";
+'use client';
 
-import { cn } from "@/lib/util";
-import { RecapItem } from "@/types";
-import Image from "next/image";
-import React, { useEffect, useState, useCallback } from "react";
+import { cn } from '@/lib/util';
+import { RecapItem } from '@/types';
+import Image from 'next/image';
+import React, { useEffect, useState, useCallback } from 'react';
 
 export const InfiniteMovingCards = ({
   items,
-  direction = "left",
-  speed = "fast",
+  direction = 'left',
+  speed = 'fast',
   pauseOnHover = false,
   className,
   custom,
   width80,
 }: {
   items: RecapItem[];
-  direction?: "left" | "right";
-  speed?: "fast" | "normal" | "slow";
+  direction?: 'left' | 'right';
+  speed?: 'fast' | 'normal' | 'slow';
   pauseOnHover?: boolean;
   className?: string;
   custom?: boolean;
@@ -28,15 +28,15 @@ export const InfiniteMovingCards = ({
 
   const getDirection = useCallback(() => {
     if (containerRef.current) {
-      if (direction === "left") {
+      if (direction === 'left') {
         containerRef.current.style.setProperty(
-          "--animation-direction",
-          "forwards"
+          '--animation-direction',
+          'forwards'
         );
       } else {
         containerRef.current.style.setProperty(
-          "--animation-direction",
-          "reverse"
+          '--animation-direction',
+          'reverse'
         );
       }
     }
@@ -44,12 +44,12 @@ export const InfiniteMovingCards = ({
 
   const getSpeed = useCallback(() => {
     if (containerRef.current) {
-      if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "20s");
-      } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "40s");
+      if (speed === 'fast') {
+        containerRef.current.style.setProperty('--animation-duration', '20s');
+      } else if (speed === 'normal') {
+        containerRef.current.style.setProperty('--animation-duration', '40s');
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
+        containerRef.current.style.setProperty('--animation-duration', '80s');
       }
     }
   }, [speed]);
@@ -75,16 +75,16 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        'scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]',
         className
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex shrink-0 py-4 w-full flex-nowrap items-center gap-8",
-          start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          'flex shrink-0 py-4 w-full flex-nowrap items-center gap-8',
+          start && 'animate-scroll',
+          pauseOnHover && 'hover:[animation-play-state:paused]'
         )}
       >
         {items.map((item, idx) => (
@@ -95,14 +95,16 @@ export const InfiniteMovingCards = ({
             <Image
               src={item.src}
               alt={`recap-image${idx}`}
-              className={`${
-                custom
-                  ? "h-[32px] w-[auto] object-fill"
-                  : width80
-                  ? "w-[90%]"
-                  : "h-full w-full"
-              }`}
+              // className={`${
+              //   custom
+              //     ? 'h-[32px] w-[auto] object-fill'
+              //     : width80
+              //     ? 'w-[90%]'
+              //     : 'h-full w-full'
+              // }`}
               unoptimized
+              width={custom ? 32 : 600}
+              height={custom ? 32 : 600}
             />
           </li>
         ))}
