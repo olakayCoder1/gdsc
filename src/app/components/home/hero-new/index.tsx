@@ -36,7 +36,10 @@ const NewHomeHeroNew = () => {
       <div className="container mx-auto flex flex-col items-center justify-center gap-2 relative z-10 h-full">
         <Confetti isActive={showConfetti} />
         <div className="w-full relative">
-          {/* <FloatingIcons /> */}
+          <div className='hidden lg:block' >
+          <FloatingIcons />
+          </div>
+          
           <div className="container mx-auto px-4 py-16 relative z-10 ">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-5xl md:text-7xl font-bold mb-6">
