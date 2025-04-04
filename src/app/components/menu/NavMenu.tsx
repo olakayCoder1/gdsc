@@ -27,8 +27,8 @@ export default function NavMenu({ currentPath = "home" }: NavMenuProps) {
           : "#F0F0F0"
       }
     >
-      <div className="container mx-auto w-full flex-nowrap flex flex-col lg:flex-row px-4 lg:px-20 py-5 justify-between">
-        <div className="flex items-center justify-between">
+      <div className="container mx-auto w-full flex-nowrap flex flex-col lg:flex-row lg:items-center px-4 lg:px-20 py-5 justify-between">
+        <div className="flex items-center justify-between ">
           <Link href={"/"}>
             <Image
               src={Logo}
