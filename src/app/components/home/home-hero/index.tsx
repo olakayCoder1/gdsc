@@ -4,12 +4,13 @@ import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import ConfettiContainer from "@component/confetti/ConfettiContainer";
 import { ctaLinks } from "@/data";
+import NewHomeHeroNew from "../hero-new";
 // import Image from "next/image";
 
-const HomeHero = () => {
+const HomeHero = () => { // eslint-disable-line
   return (
     <section className="px-4 lg:px-20 bg-devfest-hero pt-10">
-      <div className="container mx-auto flex flex-col items-center justify-center gap-2 relative z-10">
+      {/* <div className="container mx-auto flex flex-col items-center justify-center gap-2 relative z-10">
         <h1 className="text-wrap text-center mb-4 text-5xl lg:text-7xl font-extrabold tracking-tight leading-none text-gray-900">
           Build With AI <br /> 2025!
         </h1>
@@ -45,7 +46,8 @@ const HomeHero = () => {
             Generate DP! <BsArrowUpRight />
           </Button>
         </div>
-      </div>
+      </div> */}
+      <NewHomeHeroNew /> 
       <ConfettiContainer />
     </section>
   );

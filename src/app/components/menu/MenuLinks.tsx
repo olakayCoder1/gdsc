@@ -3,8 +3,8 @@ import React from "react";
 import { NavMenuProps } from "./NavMenu";
 import clsx from "clsx";
 import Link from "next/link";
-import { Button } from "@chakra-ui/react";
-import { BsArrowUpRight } from "react-icons/bs";
+// import { Button } from "@chakra-ui/react";
+// import { BsArrowUpRight } from "react-icons/bs";
 import { usePathname } from "next/navigation";
 
 export default function MenuLinks({ currentPath }: NavMenuProps) {
@@ -34,7 +34,7 @@ export default function MenuLinks({ currentPath }: NavMenuProps) {
           );
         })}
       </ul>
-      {pathname === "/" && (
+      {/* {pathname === "/" && (
         <Button
           as={Link}
           href="/2024"
@@ -45,7 +45,7 @@ export default function MenuLinks({ currentPath }: NavMenuProps) {
         >
           2024 <BsArrowUpRight />
         </Button>
-      )}
+      )} */}
     </div>
   );
 }
