@@ -1,30 +1,30 @@
-"use client";
+'use client';
 
-import { Button } from "@chakra-ui/react";
-import Image from "next/image";
-import { BsArrowUpRight } from "react-icons/bs";
+import { Button } from '@chakra-ui/react';
+import Image from 'next/image';
+import { BsArrowUpRight } from 'react-icons/bs';
 
-import mainVenue from "@public/venues/main-venue.png";
-import privateNetwork from "@public/venues/private-network.png";
-import workshopVenue from "@public/venues/workshop-venue.png";
+import mainVenue from '@public/venues/main-venue.png';
+import privateNetwork from '@public/venues/private-network.png';
+import workshopVenue from '@public/venues/workshop-venue.png';
 
-import { partners, sponsors } from "@/data";
+import { partners, sponsors } from '@/data';
 
-import { ctaLinks } from "@/data";
-import Link from "next/link";
-import EventRecap from "./components/home/event-recap";
-import HomeHero from "./components/home/home-hero";
-import SpeakerSection from "./components/home/speaker-section";
-import SectionTitle from "./components/section-title";
-import CommunityPartners from "./components/home/community-partners";
-import Schedule from "./components/schedule";
+import { ctaLinks } from '@/data';
+import Link from 'next/link';
+import EventRecap from './components/home/event-recap';
+import HomeHero from './components/home/home-hero';
+import SpeakerSection from './components/home/speaker-section';
+import SectionTitle from './components/section-title';
+import CommunityPartners from './components/home/community-partners';
+import Schedule from './components/schedule';
 
 export default function Home() {
   return (
     <>
       <HomeHero />
 
-      {/* <EventRecap /> */}
+      <EventRecap />
 
       <SpeakerSection />
 
@@ -42,9 +42,10 @@ export default function Home() {
             </aside>
 
             <aside className="flex flex-col gap-6">
-              <Image src={workshopVenue}
-               alt="workshop-venue"
-               className="rounded-xl" // Added rounded corners
+              <Image
+                src={workshopVenue}
+                alt="workshop-venue"
+                className="rounded-xl" // Added rounded corners
               />
               <Image src={privateNetwork} alt="private-network" />
             </aside>
@@ -121,8 +122,8 @@ export default function Home() {
                 alt={`sponsor-${index}`}
                 className={
                   index === 5
-                    ? "w-[50px] lg:w-[80px]"
-                    : "w-[110px] lg:w-[180px]"
+                    ? 'w-[50px] lg:w-[80px]'
+                    : 'w-[110px] lg:w-[180px]'
                 }
               />
             ))}
