@@ -14,7 +14,7 @@ export default function Home() {
     <>
       {/* <NewHomeHero /> */}
       <NewHomeHeroNew />
-      <EventRecap />
+      {/* <EventRecap /> */}
       <SpeakerSection />
 
       <section className="bg-[#CCF6C5] py-10 lg:py-20">
