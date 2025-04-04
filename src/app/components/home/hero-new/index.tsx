@@ -37,7 +37,7 @@ const NewHomeHeroNew = () => {
         <Confetti isActive={showConfetti} />
         <div className="w-full relative">
           <FloatingIcons />
-          <div className="container mx-auto px-4 py-16 relative z-10">
+          <div className="container mx-auto px-4 py-16 relative z-10 ">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-5xl md:text-7xl font-bold mb-6">
                 <span className="text-[#4285F4]">G</span>

@@ -50,7 +50,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate, onComplete }) => {
 
   return (
     <div className="flex flex-col items-center my-8">
-      <div className="grid grid-cols-4 gap-4 text-center">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
         <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg">
           <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary">
             {String(timeLeft.days).padStart(2, '0')}
